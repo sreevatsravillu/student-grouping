@@ -11,12 +11,5 @@
       "src": "/(.*)",
       "dest": "server.js"
     }
-  ],
-  "includeFiles": [
-    "views/**/*",
-    "public/**/*",
-    "routes/**/*",
-    "utils/**/*",
-    "data/**/*"
   ]
 }
