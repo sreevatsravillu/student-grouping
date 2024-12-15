@@ -1,0 +1,221 @@
+[
+  {
+    "name": "a1",
+    "uid": "1",
+    "email": "sreevatsravillu96@gmail.com",
+    "gender": "Female",
+    "pursuingYr": "First Year",
+    "skillArr": [
+      "pursuingYr-First Year",
+      "Presentation-1",
+      "Writing-2",
+      "Business planning-3",
+      "Tech-4",
+      "MKTG",
+      "African American or Black"
+    ],
+    "skills": [
+      {
+        "skillName": "pursuingYr-First Year",
+        "value": "First Year",
+        "hasSkill": true
+      },
+      {
+        "skillName": "Presentation-1",
+        "value": "1",
+        "hasSkill": true
+      },
+      {
+        "skillName": "Writing-2",
+        "value": "2",
+        "hasSkill": true
+      },
+      {
+        "skillName": "Business planning-3",
+        "value": "3",
+        "hasSkill": true
+      },
+      {
+        "skillName": "Tech-4",
+        "value": "4",
+        "hasSkill": true
+      },
+      {
+        "skillName": "MKTG",
+        "hasSkill": true
+      },
+      {
+        "skillName": "African American or Black",
+        "hasSkill": true
+      }
+    ]
+  },
+  {
+    "name": "a2",
+    "uid": "2",
+    "email": "sreevatsravillu96@gmail.com",
+    "gender": "Male",
+    "pursuingYr": "First Year",
+    "skillArr": [
+      "pursuingYr-First Year",
+      "experienceLevel-N.U.in Czech Republic – University of New York in Prague",
+      "Presentation-1",
+      "Writing-2",
+      "Business planning-3",
+      "Tech-4",
+      "MKTG",
+      "African American or Black"
+    ],
+    "skills": [
+      {
+        "skillName": "pursuingYr-First Year",
+        "value": "First Year",
+        "hasSkill": true
+      },
+      {
+        "skillName": "experienceLevel-N.U.in Czech Republic – University of New York in Prague",
+        "value": "N.U.in Czech Republic – University of New York in Prague",
+        "hasSkill": true
+      },
+      {
+        "skillName": "Presentation-1",
+        "value": "1",
+        "hasSkill": true
+      },
+      {
+        "skillName": "Writing-2",
+        "value": "2",
+        "hasSkill": true
+      },
+      {
+        "skillName": "Business planning-3",
+        "value": "3",
+        "hasSkill": true
+      },
+      {
+        "skillName": "Tech-4",
+        "value": "4",
+        "hasSkill": true
+      },
+      {
+        "skillName": "MKTG",
+        "hasSkill": true
+      },
+      {
+        "skillName": "African American or Black",
+        "hasSkill": true
+      }
+    ]
+  },
+  {
+    "name": "a3",
+    "uid": "3",
+    "email": "sreevatsravillu96@gmail.com",
+    "gender": "Prefer not to say",
+    "pursuingYr": "First Year",
+    "skillArr": [
+      "pursuingYr-First Year",
+      "Presentation-1",
+      "Writing-2",
+      "Business planning-3",
+      "Tech-4",
+      "MKTG",
+      "N.U.in Portugal – CIEE Lisbon",
+      "White"
+    ],
+    "skills": [
+      {
+        "skillName": "pursuingYr-First Year",
+        "value": "First Year",
+        "hasSkill": true
+      },
+      {
+        "skillName": "Presentation-1",
+        "value": "1",
+        "hasSkill": true
+      },
+      {
+        "skillName": "Writing-2",
+        "value": "2",
+        "hasSkill": true
+      },
+      {
+        "skillName": "Business planning-3",
+        "value": "3",
+        "hasSkill": true
+      },
+      {
+        "skillName": "Tech-4",
+        "value": "4",
+        "hasSkill": true
+      },
+      {
+        "skillName": "MKTG",
+        "hasSkill": true
+      },
+      {
+        "skillName": "N.U.in Portugal – CIEE Lisbon",
+        "hasSkill": true
+      },
+      {
+        "skillName": "White",
+        "hasSkill": true
+      }
+    ]
+  },
+  {
+    "name": "a5",
+    "uid": "5",
+    "email": "sreevatsravillu96@gmail.com",
+    "gender": "Female",
+    "pursuingYr": "Second Year",
+    "skillArr": [
+      "pursuingYr-Second Year",
+      "Presentation-1",
+      "Writing-2",
+      "Business planning-4",
+      "Tech-1",
+      "MKTG",
+      null,
+      "White"
+    ],
+    "skills": [
+      {
+        "skillName": "pursuingYr-Second Year",
+        "value": "Second Year",
+        "hasSkill": true
+      },
+      {
+        "skillName": "Presentation-1",
+        "value": "1",
+        "hasSkill": true
+      },
+      {
+        "skillName": "Writing-2",
+        "value": "2",
+        "hasSkill": true
+      },
+      {
+        "skillName": "Business planning-4",
+        "value": "4",
+        "hasSkill": true
+      },
+      {
+        "skillName": "Tech-1",
+        "value": "1",
+        "hasSkill": true
+      },
+      {
+        "skillName": "MKTG",
+        "hasSkill": true
+      },
+      {
+        "hasSkill": true
+      },
+      {
+        "skillName": "White",
+        "hasSkill": true
+      }
+    ]
+  }
+]

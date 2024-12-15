@@ -1,0 +1,12 @@
+node_modules/
+docs/
+credentials/
+sample-data/
+.next/
+.env*
+lib/
+.idea/
+.firebaserc
+firebase.json
+firestore.indexes.json
+firestore.rules

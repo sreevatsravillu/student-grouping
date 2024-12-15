@@ -1,0 +1,225 @@
+{
+  "presentation": {
+    "count": 5,
+    "rollNo": [
+      "1",
+      "2",
+      "6",
+      "7",
+      "77"
+    ],
+    "name": [
+      "a1",
+      "a2",
+      "a6",
+      "a7",
+      "t5"
+    ]
+  },
+  "business planning": {
+    "count": 6,
+    "rollNo": [
+      "1",
+      "2",
+      "3",
+      "6",
+      "9",
+      "77"
+    ],
+    "name": [
+      "a1",
+      "a2",
+      "a3",
+      "a6",
+      "a9",
+      "t5"
+    ]
+  },
+  "FIN": {
+    "count": 5,
+    "rollNo": [
+      "1",
+      "2",
+      "5",
+      "6",
+      "7"
+    ],
+    "name": [
+      "a1",
+      "a2",
+      "a5",
+      "a6",
+      "a7"
+    ]
+  },
+  "Asian - South Asian (e.g., Indian, Pakistani, Bangladeshi)": {
+    "count": 3,
+    "rollNo": [
+      "1",
+      "2",
+      "6"
+    ],
+    "name": [
+      "a1",
+      "a2",
+      "a6"
+    ]
+  },
+  "writing": {
+    "count": 6,
+    "rollNo": [
+      "2",
+      "4",
+      "5",
+      "6",
+      "9",
+      "77"
+    ],
+    "name": [
+      "a2",
+      "a4",
+      "a5",
+      "a6",
+      "a9",
+      "t5"
+    ]
+  },
+  "Tech ": {
+    "count": 5,
+    "rollNo": [
+      "2",
+      "4",
+      "6",
+      "7",
+      "77"
+    ],
+    "name": [
+      "a2",
+      "a4",
+      "a6",
+      "a7",
+      "t5"
+    ]
+  },
+  "MKTG": {
+    "count": 11,
+    "rollNo": [
+      "3",
+      "4",
+      "9",
+      "111",
+      "22",
+      "3",
+      "4",
+      "4",
+      "4",
+      "77",
+      "66"
+    ],
+    "name": [
+      "a3",
+      "a4",
+      "a9",
+      "t111",
+      "t2",
+      "t3",
+      "t4",
+      "t4",
+      "t4",
+      "t5",
+      "t6"
+    ]
+  },
+  "African American or Black": {
+    "count": 11,
+    "rollNo": [
+      "3",
+      "4",
+      "5",
+      "111",
+      "22",
+      "3",
+      "4",
+      "4",
+      "4",
+      "77",
+      "66"
+    ],
+    "name": [
+      "a3",
+      "a4",
+      "a5",
+      "t111",
+      "t2",
+      "t3",
+      "t4",
+      "t4",
+      "t4",
+      "t5",
+      "t6"
+    ]
+  },
+  "Asian - East Asian (e.g., Chinese, Japanese, Korean)": {
+    "count": 1,
+    "rollNo": [
+      "7"
+    ],
+    "name": [
+      "a7"
+    ]
+  },
+  "Explore": {
+    "count": 1,
+    "rollNo": [
+      "8"
+    ],
+    "name": [
+      "a8"
+    ]
+  },
+  "White": {
+    "count": 1,
+    "rollNo": [
+      "8"
+    ],
+    "name": [
+      "a8"
+    ]
+  },
+  "Hispanic or Latino/a/x": {
+    "count": 1,
+    "rollNo": [
+      "9"
+    ],
+    "name": [
+      "a9"
+    ]
+  },
+  "business planning-1": {
+    "count": 1,
+    "rollNo": [
+      "66"
+    ],
+    "name": [
+      "t6"
+    ]
+  },
+  "writing-2": {
+    "count": 1,
+    "rollNo": [
+      "66"
+    ],
+    "name": [
+      "t6"
+    ]
+  },
+  "Tech -3": {
+    "count": 1,
+    "rollNo": [
+      "66"
+    ],
+    "name": [
+      "t6"
+    ]
+  }
+}
