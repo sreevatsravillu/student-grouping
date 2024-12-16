@@ -8,7 +8,7 @@ router.get('/', (req, res) => {
 });
 
 router.post('/create', (req, res) => {
-  const { skillName, groupSize } = req.body;
+  const { groupSize, skillName } = req.body;
   const forms = readJSONFile('forms.json');
   const newForm = {
     skills: skillName.map(name => ({ skillName: name, required: true })),
