@@ -10,7 +10,7 @@ app.set('views', path.join(__dirname, 'views'));
 
 // Serve static files from the public directory
 app.use(express.static(path.join(__dirname, 'public')));
-
+app.use(express.urlencoded({ extended: true }));
 // Import and use routes
 const dashboardRoutes = require('./routes/dashboard');
 const formBuilderRoutes = require('./routes/formBuilder');
