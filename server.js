@@ -15,13 +15,13 @@ app.use(express.urlencoded({ extended: true }));
 const dashboardRoutes = require('./routes/dashboard');
 const formBuilderRoutes = require('./routes/formBuilder');
 const studentFormRoutes = require('./routes/studentForm');
-
+app.use('/', dashboardRoutes)
 app.use('/dashboard', dashboardRoutes);
 app.use('/form-builder', formBuilderRoutes);
 app.use('/student-form', studentFormRoutes);
 
 // Default route
-app.get('/', (req, res) => {
+app.get('/*', (req, res) => {
   res.render('dashboard'); // Render `dashboard.ejs` as the default page
 });
 
