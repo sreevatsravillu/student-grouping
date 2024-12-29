@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node server.js",
     "dev": "nodemon server.js",
-     "build": "echo \"No build step required for this Express.js app\""
+    "build": "webpack",
+    "prod": "node dist/final.js"
   },
   "author": "",
   "license": "ISC",
@@ -21,7 +22,9 @@
   "react-dom": "^18.2.0"
 },
   "devDependencies": {
-    "nodemon": "^3.1.7"
+    "nodemon": "^3.1.7",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^6.0.1"
   },
   "engines": {
     "node": "18.x"
