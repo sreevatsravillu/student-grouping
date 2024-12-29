@@ -10,7 +10,7 @@ router.get('/', (req, res) => {
 router.post('/create', (req, res) => {
   console.log('FB.js 11',req.body)
   const { groupSize, skillName } = req.body;
-  console.log('FB.js 13' skillName, groupSize )
+  console.log('FB.js 13', skillName, groupSize )
   const forms = readJSONFile('forms.json');
   const newForm = {
     skills: skillName.map(name => ({ skillName: name, required: true })),
