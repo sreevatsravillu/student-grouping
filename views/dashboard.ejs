@@ -75,6 +75,11 @@
       padding: 16px !important;
       border-bottom: 1px solid rgba(224, 224, 224, 0.5);
     } */
+    #url-text{
+      border-radius: 4px;
+      padding: 10px;
+      border: 0.2px solid gray;
+    }
     .chip-container {
       display: flex;
       flex-wrap: wrap;
@@ -231,6 +236,12 @@
           </table>
         </div>
       </div> -->
+<!-- New URL Display with Copy Button -->
+<div id="student-form-url" style="margin-bottom: 20px;">
+  <span id="url-text"></span> <!-- Added this line for URL text -->
+  <button id="copy-url-btn" class="btn waves-effect waves-light" style="margin-left: 10px; background-color: #1976d2; color: white;">Copy URL</button> <!-- Updated Copy button style -->
+</div>
+
       <div class="row">
         <div class="col s12">
           <div class="card">
@@ -315,6 +326,20 @@
         }
       }
     }
+
+     // Fetch and display the student form URL
+    const studentFormUrl = window.location.origin + '/student-form';
+    document.getElementById('url-text').innerText = studentFormUrl; // Display the URL
+
+    // Copy to clipboard function
+    document.getElementById('copy-url-btn').addEventListener('click', function() {
+        navigator.clipboard.writeText(studentFormUrl).then(() => {
+            M.toast({html: 'URL copied to clipboard!'}); // Show success message
+        }).catch(err => {
+            console.error('Error copying URL: ', err);
+            M.toast({html: 'Failed to copy URL'}); // Show error message
+        });
+    });
   </script>
 </body>
 </html>
