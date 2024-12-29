@@ -39,7 +39,7 @@ router.post('/create', (req, res) => {
   };
   forms.push(newForm);
   writeJSONFile('forms.json', forms);
-  res.redirect('/');
+  res.redirect('/dashboard');
 });
 
 module.exports = router;
