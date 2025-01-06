@@ -5,172 +5,85 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link rel="stylesheet" href="./../public/style.css">
-  
   <style>
-    /* Add styles for clipped drawer */
     body {
       display: flex;
       min-height: 100vh;
       flex-direction: column;
     }
-
     main {
       flex: 1 0 auto;
-      padding-left: 100px; /* Width of the side nav */
+      padding-left: 100px;
     }
-
-    /* Fixed navbar */
     nav {
       position: fixed;
       top: 0;
       width: 100%;
       z-index: 997;
     }
-
-    /* Fixed sidenav */
     .sidenav {
-      width:220px !important; 
-      height: calc(100% - 64px); /* Subtract navbar height */
-      top: 64px; /* Start below navbar */
-      box-shadow: none;
+      width: 220px !important;
+      height: calc(100% - 64px);
+      top: 64px;
       border-right: 1px solid #ddd;
     }
-
-    .brand-logo {
-      margin-left: 20px;
-    }
-
-    .side-nav-button {
-      width: 100%;
-      text-align: left;
-      padding: 0 32px;
-    }
-
-    .clear-data-btn {
-      color: #f44336;
-      display: flex;
-      float: right;
-      border: 0.4px solid #f44336;
-      border-radius: 6px;
-    }
-    /* .card {
-      border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-
-    table {
-      border-collapse: separate;
-      border-spacing: 0;
-    }
-
-    th {
-      min-width: 110px;
-      background-color: #f5f5f5;
-      padding: 16px !important;
-      border-bottom: 1px solid rgba(224, 224, 224, 1);
-    }
-
-    td {
-      min-width: 110px;
-      padding: 16px !important;
-      border-bottom: 1px solid rgba(224, 224, 224, 0.5);
-    } */
-    #url-text{
-      border-radius: 4px;
-      padding: 10px;
-      border: 0.2px solid gray;
+    .main-content {
+      margin-top: 84px;
     }
     .chip-container {
       display: flex;
       flex-wrap: wrap;
       gap: 8px;
     }
-
     .chip {
       display: inline-flex;
       align-items: center;
       height: 32px;
       padding: 0 12px;
-      margin: 0;
       font-size: 13px;
       border-radius: 16px;
     }
-
     .chip i {
       margin-right: 4px;
     }
-
     .group-name {
       font-weight: 500;
-      color: rgba(0, 0, 0, 0.87);
     }
-
     .highlight tbody tr:hover {
       background-color: rgba(0, 0, 0, 0.04);
     }
-    .card .table-container {
-    margin: 0;
-    padding: 0;
-    overflow-x: auto;
-  }
-
-  table.bordered {
-    border: 1px solid rgba(177 174 174);
-    border-collapse: collapse;
-  }
-
-  table.bordered th,
-  table.bordered td {
-    border: 1px solid rgba(177 174 174);
-  }
-  thead {
-    background-color: #1565c0 !important; /* Material Blue 800 */
-  }
-
-  th {
-    min-width: 110px;
-    background-color: #f5f5f5;
-    padding: 16px !important;
-    border-bottom: 1px solid rgba(177 174 174);
-    font-weight: 600 !important;
-  }
-  td {
-    padding: 16px !important;
-    border-bottom: 1px solid rgba(177 174 174);
-  }
-
-  /* Vertical grid lines */
-  td:not(:last-child),
-  th:not(:last-child) {
-    border-right: 1px solid rgba(177 174 174);
-  }
-
-  /* Horizontal grid lines */
-  tr:not(:last-child) td {
-    border-bottom: 1px solid rgba(177 174 174);
-  }
-
-
-    /* Responsive adjustments */
+    .table-container {
+      overflow-x: auto;
+    }
+    table.bordered {
+      border: 1px solid rgba(177, 174, 174);
+      border-collapse: collapse;
+    }
+    table.bordered th, table.bordered td {
+      border: 1px solid rgba(177, 174, 174);
+    }
+    thead {
+      background-color: #1565c0 !important;
+    }
+    th, td {
+      padding: 16px !important;
+      border-bottom: 1px solid rgba(177, 174, 174);
+    }
+    td:not(:last-child), th:not(:last-child) {
+      border-right: 1px solid rgba(177, 174, 174);
+    }
     @media only screen and (max-width: 992px) {
       main {
         padding-left: 0;
       }
-      
       .sidenav {
         height: 100%;
         top: 0;
       }
     }
-
-    /* Add padding to main content to prevent overlap with navbar */
-    .main-content {
-      margin-top: 84px;
-    }
   </style>
 </head>
 <body>
-  <!-- Fixed Navbar -->
   <nav class="blue darken-3">
     <div class="nav-wrapper">
       <a href="#" data-target="slide-out" class="sidenav-trigger hide-on-large-only">
@@ -180,165 +93,60 @@
     </div>
   </nav>
 
-  <!-- Clipped Side Navigation -->
   <ul id="slide-out" class="sidenav sidenav-fixed">
     <li><a href="/form-builder" class="waves-effect"><i class="material-icons">build</i>Form Builder</a></li>
-    <li><div class="divider"></div></li>
     <li><a href="/student-form" class="waves-effect"><i class="material-icons">person_add</i>Student Form</a></li>
-
-    <!-- <li>
-      <a class="waves-effect side-nav-button clear-button" onclick="confirmClear()">
-        <i class="material-icons">delete</i>Clear All Data
-      </a>
-    </li> -->
   </ul>
 
-  <!-- Main Content -->
   <main>
     <div class="container main-content">
-        <div class="drawer-header">
-          <button class="clear-data-btn btn-flat waves-effect btn-outlined" onclick="confirmClear()">
-            <i class="material-icons">delete</i>
-            Clear Data
-          </button>
-        </div>
-      <!-- <div class="row">
-        <div class="col s12">
-          <table class="striped responsive-table">
-            <thead>
+      <div class="table-container">
+        <table class="highlight bordered responsive-table">
+          <thead>
+            <tr>
+              <th>Group</th>
+              <th>Students</th>
+              <th>Skills</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% for (const group in groups) { %>
               <tr>
-                <th>Group</th>
-                <th>Students</th>
-                <th>Skills</th>
+                <td class="group-cell">
+                  <div class="group-name"><%= group %></div>
+                </td>
+                <td>
+                  <div class="chip-container">
+                    <% groups[group].students.forEach(student => { %>
+                      <div class="chip">
+                        <i class="material-icons tiny">person</i>
+                        <%= student %>
+                      </div>
+                    <% }) %>
+                  </div>
+                </td>
+                <td>
+                  <div class="chip-container">
+                    <% Array.from(groups[group].skills).forEach(skill => { %>
+                      <div class="chip blue-grey lighten-4">
+                        <i class="material-icons tiny">code</i>
+                        <%= skill %>
+                      </div>
+                    <% }) %>
+                  </div>
+                </td>
               </tr>
-            </thead>
-            <tbody>
-              <% for (const group in groups) { %>
-                <tr>
-                  <td><%= group %></td>
-                  <td>
-                    <ul class="collection">
-                      <% groups[group].students.forEach(student => { %>
-                        <li class="collection-item"><%= student %></li>
-                      <% }) %>
-                    </ul>
-                  </td>
-                  <td>
-                    <ul class="collection">
-                      <% Array.from(groups[group].skills).forEach(skill => { %>
-                        <li class="collection-item"><%= skill %></li>
-                      <% }) %>
-                    </ul>
-                  </td>
-                </tr>
-              <% } %>
-            </tbody>
-          </table>
-        </div>
-      </div> -->
-<!-- New URL Display with Copy Button -->
-<div id="student-form-url" style="margin-bottom: 20px;">
-  <span id="url-text"></span> <!-- Added this line for URL text -->
-  <button id="copy-url-btn" class="btn waves-effect waves-light" style="margin-left: 10px; background-color: #1976d2; color: white;">Copy URL</button> <!-- Updated Copy button style -->
-</div>
-
-      <div class="row">
-        <div class="col s12">
-          <div class="card">
-            <div class="card-content">
-              <div class="table-container">
-                <table class="highlight bordered responsive-table">
-                  <thead>
-                    <tr>
-                      <th style="font-weight: 600; color: rgba(0, 0, 0, 0.87); background-color: #cfd8dc;">Group</th>
-                      <th style="font-weight: 600; color: rgba(0, 0, 0, 0.87); background-color: #cfd8dc;">Students</th>
-                      <th style="font-weight: 600; color: rgba(0, 0, 0, 0.87); background-color: #cfd8dc;">Skills</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <% for (const group in groups) { %>
-                      <tr>
-                        <td class="group-cell">
-                          <div class="group-name"><%= group %></div>
-                        </td>
-                        <td>
-                          <div class="chip-container">
-                            <% groups[group].students.forEach(student => { %>
-                              <div class="chip">
-                                <i class="material-icons tiny">person</i>
-                                <%= student %>
-                              </div>
-                              <% }) %>
-                          </div>
-                  </td>
-                  <td>
-                    <div class="chip-container">
-                      <% Array.from(groups[group].skills).forEach(skill => { %>
-                        <div class="chip blue-grey lighten-4">
-                          <i class="material-icons tiny">code</i>
-                          <%= skill %>
-                        </div>
-                      <% }) %>
-                    </div>
-                  </td>
-                </tr>
-              <% } %>
-            </tbody>
-          </table>
-        </div>
-            </div>
-          </div>
-        </div>
+            <% } %>
+          </tbody>
+        </table>
       </div>
     </div>
   </main>
 
-  <!-- Scripts -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', function() {
-      var elems = document.querySelectorAll('.sidenav');
-      var instances = M.Sidenav.init(elems, {
-        edge: 'left',
-        draggable: true
-      });
-    });
-
-    async function confirmClear() {
-      if (confirm('Are you sure you want to clear all student data and start a new batch?')) {
-        try {
-          const response = await fetch('/clear-all', {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json'
-            }
-          });
-          
-          if (response.ok) {
-            window.location.reload();
-          } else {
-            M.toast({html: 'Failed to clear data'});
-          }
-        } catch (error) {
-          console.error('Error:', error);
-          M.toast({html: 'Failed to clear data'});
-        }
-      }
-    }
-
-     // Fetch and display the student form URL
-    const studentFormUrl = window.location.origin + '/student-form';
-    document.getElementById('url-text').innerText = studentFormUrl; // Display the URL
-
-    // Copy to clipboard function
-    document.getElementById('copy-url-btn').addEventListener('click', function() {
-        navigator.clipboard.writeText(studentFormUrl).then(() => {
-            M.toast({html: 'URL copied to clipboard!'}); // Show success message
-        }).catch(err => {
-            console.error('Error copying URL: ', err);
-            M.toast({html: 'Failed to copy URL'}); // Show error message
-        });
+      const elems = document.querySelectorAll('.sidenav');
+      M.Sidenav.init(elems, { edge: 'left', draggable: true });
     });
   </script>
 </body>
