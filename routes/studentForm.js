@@ -4,7 +4,9 @@ const { readJSONFile, writeJSONFile } = require('../utils/fileHandler');
 
 router.get('/', (req, res) => {
   const forms = readJSONFile('forms.json');
+  console.log("student.js",forms)
   const form = forms[forms.length - 1]; // Get the latest form
+  console.log("student.js 2",form)
   res.render('studentForm', { form });
 });
 
