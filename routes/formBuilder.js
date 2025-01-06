@@ -38,7 +38,10 @@ router.post('/create', (req, res) => {
     "N.U.in Spain – Saint Louis University Madrid"]
   };
   forms[formName] = newForm;
+  console.log('form builder.js ===',forms)
   writeJSONFile('forms.json', forms);
+   const formsFetch = readJSONFile('forms.json');
+  console.log(formsFetch)
   res.redirect('/');
 });
 
