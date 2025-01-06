@@ -1,119 +1,350 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Student Form</title>
+    <title>Student Skills Form</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Add Material UI and other necessary styles -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mui/material@latest/dist/mui-styles.min.css">
     <link rel="stylesheet" href="/style.css">
-    <style>
-        .form-container {
-            max-width: 600px;
-            margin: 50px auto;
-            padding: 20px;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        .form-section {
-            margin-bottom: 20px;
-        }
-        .form-section h5 {
-            margin-bottom: 15px;
-        }
-        .form-field {
-            margin-bottom: 15px;
-        }
-        .form-field label {
-            display: block;
-            margin-bottom: 5px;
-        }
-        .form-actions {
-            text-align: center;
-        }
-        .form-actions button {
-            background-color: #1565c0;
-            color: #fff;
-        }
-    </style>
 </head>
 <body>
-    <div class="form-container">
-        <h4>Student Information Form</h4>
-        <form action="/student-form/submit" method="POST">
-            <!-- Personal Information Section -->
-            <div class="form-section">
-                <h5>Personal Information</h5>
-                <div class="form-field">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required class="validate">
+  <div>
+    <div >
+      <img src="/PPS.svg" alt="College" class="blurred-image">
+    </div>
+    <div class="container">
+        
+        <div class="form-container">
+            <form action="/student-form/submit" method="POST">
+                <!-- Personal Information Section -->
+                <div class="form-section">
+                    <h2 class="section-title">Personal Information</h2>
+                    
+                    <div class="form-field">
+                        <label class="field-label">Name:</label>
+                        <input type="text" name="name" class="text-input" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label class="field-label">Email:</label>
+                        <input type="email" name="email" class="text-input" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label class="field-label">NUID:</label>
+                        <input type="text" name="uid" class="text-input" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label class="field-label">Gender:</label>
+                        <div class="radio-group">
+                            <% form.genders.forEach(gen => { %>
+                                <label class="radio-label">
+                                    <input type="radio" name="gender" value="<%= gen %>" required>
+                                    <%= gen %>
+                                </label>
+                            <% }) %>
+                        </div>
+                    </div>
                 </div>
-                <div class="form-field">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required class="validate">
+
+                <!-- Academic Information Section -->
+                <div class="form-section">
+                    <h2 class="section-title">Academic Information</h2>
+                    
+                    <div class="form-field">
+                        <label class="field-label">Current Year:</label>
+                        <select name="pursuingYr" class="select-input" required>
+                            <% form.pursuingYr.forEach(yr => { %>
+                                <option value="<%= yr %>"><%= yr %></option>
+                            <% }) %>
+                        </select>
+                    </div>
+
+                    <div class="form-field">
+                        <label class="field-label">Ethnicity:</label>
+                        <select name="ethnicity" class="select-input" required>
+                            <% form.ethnicity.forEach(ethnicity => { %>
+                                <option value="<%= ethnicity %>"><%= ethnicity %></option>
+                            <% }) %>
+                        </select>
+                    </div>
+
+                    <div class="form-field">
+                        <label class="field-label">Major:</label>
+                        <select name="major" class="select-input" required>
+                            <% form.majors.forEach(major => { %>
+                                <option value="<%= major %>"><%= major %></option>
+                            <% }) %>
+                        </select>
+                    </div>
+
+                    <div class="form-field">
+                        <label class="field-label">NUIN:</label>
+                        <div class="toggle-container">
+                            <label class="toggle-switch">
+                                <input type="checkbox" id="nuin">
+                                <span class="toggle-slider"></span>
+                            </label>
+                            <div id="experienceDropdown" class="hidden">
+                                <select name="nuin" class="select-input">
+                                    <% form.nuin.forEach(nuin => { %>
+                                        <option value="<%= nuin %>"><%= nuin %></option>
+                                    <% }) %>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="form-field">
-                    <label>Gender:</label>
-                    <% form.genders.forEach(gen => { %>
-                        <label>
-                            <input type="radio" name="gender" value="<%= gen %>" required>
-                            <span><%= gen %></span>
-                        </label>
+
+                <!-- Skills Section -->
+                <div class="form-section">
+                    <h2 class="section-title">Skills Assessment</h2>
+                    <div style="font-size: 14px;"> Please rate your proficiency or agreement with the following statements on a scale from 0 to 5:</div>
+                    <div style="margin-bottom: 20px;">
+                      <ul style="list-style-type: none;font-size: 12px;">
+                          <li style="padding-bottom: 10px;">
+                            <span> 0 – Not at all</span> 
+                          </li>
+                          <li style="padding-bottom: 10px;">
+                            <span> 1 – Slightly</span> 
+                          </li>
+                          <li style="padding-bottom: 10px;">
+                            <span> 2 – Moderately</span> 
+                          </li>
+                          <li style="padding-bottom: 10px;">
+                            <span> 3 – Fairly</span> 
+                          </li>
+                          <li style="padding-bottom: 10px;">
+                              <span> 4 – Very</span> 
+                            </li>
+                          </li style="padding-bottom: 10px;">
+                            <span> 5 – Extremely</span> 
+                          </li>
+                      </ul>
+                    </div>
+                    <% form.skills.forEach(skill => { %>
+                        <div class="form-field">
+                            <label class="field-label"><%= skill.skillName %>:</label>
+                            <div class="slider-container">
+                                <input type="range" 
+                                       name="<%= skill.skillName %>" 
+                                       min="0" 
+                                       max="5" 
+                                       value="0" 
+                                       class="mui-slider" 
+                                       required>
+                                <span class="slider-value">0</span>
+                            </div>
+                        </div>
                     <% }) %>
                 </div>
-            </div>
 
-            <!-- Academic Information Section -->
-            <div class="form-section">
-                <h5>Academic Information</h5>
-                <div class="form-field">
-                    <label for="year">Current Year:</label>
-                    <select id="year" name="pursuingYr" required>
-                        <% form.pursuingYr.forEach(yr => { %>
-                            <option value="<%= yr %>"><%= yr %></option>
-                        <% }) %>
-                    </select>
+                <div class="form-actions">
+                    <button type="submit" class="submit-button">Submit</button>
                 </div>
-                <div class="form-field">
-                    <label for="ethnicity">Ethnicity:</label>
-                    <select id="ethnicity" name="ethnicity" required>
-                        <% form.ethnicity.forEach(e => { %>
-                            <option value="<%= e %>"><%= e %></option>
-                        <% }) %>
-                    </select>
-                </div>
-                <div class="form-field">
-                    <label for="major">Major:</label>
-                    <select id="major" name="major" required>
-                        <% form.majors.forEach(major => { %>
-                            <option value="<%= major %>"><%= major %></option>
-                        <% }) %>
-                    </select>
-                </div>
-            </div>
-
-            <!-- Skills Section -->
-            <div class="form-section">
-                <h5>Skills Assessment</h5>
-                <% form.skills.forEach(skill => { %>
-                    <div class="form-field">
-                        <label for="<%= skill.skillName %>"><%= skill.skillName %>:</label>
-                        <input type="range" id="<%= skill.skillName %>" name="<%= skill.skillName %>" min="0" max="5" step="1">
-                    </div>
-                <% }) %>
-            </div>
-
-            <!-- Form Actions -->
-            <div class="form-actions">
-                <button type="submit" class="btn waves-effect">Submit</button>
-            </div>
-        </form>
+            </form>
+        </div>
     </div>
+  </div>
 
+    <!-- Add your existing scripts -->
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const elems = document.querySelectorAll('select');
-            M.FormSelect.init(elems);
+        // Your existing JavaScript code
+        document.querySelectorAll('.mui-slider').forEach(slider => {
+            slider.addEventListener('input', function() {
+                this.nextElementSibling.textContent = this.value;
+            });
+        });
+
+        const nuin = document.getElementById('nuin');
+        const experienceDropdown = document.getElementById('experienceDropdown');
+        
+        nuin.addEventListener('change', function() {
+            experienceDropdown.classList.toggle('hidden', !this.checked);
+            if (!this.checked) {
+                experienceDropdown.querySelector('select').value = '';
+            }
         });
     </script>
+
+    <style>
+        /* Add these new styles */
+
+    .blurred-image {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 26rem 20px 20px 20px;
+            font-family: FF Real Head, Lato, Arial, sans-serif !important;
+        }
+
+        .form-title {
+            text-align: center;
+            color: #c8102e;
+            margin-bottom: 30px;
+        }
+
+        .form-container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .form-section {
+            margin-bottom: 30px;
+            padding: 20px;
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+        }
+
+        .section-title {
+            color: #c8102e;
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        .form-field {
+            margin-bottom: 20px;
+        }
+
+        .field-label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+
+        .text-input, .select-input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        .radio-group {
+            display: flex;
+            gap: 20px;
+        }
+
+        .radio-label {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .form-actions {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .submit-button {
+            background-color: #c8102e;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .submit-button:hover {
+            background-color: #dd3350;
+        }
+
+        .slider-container {
+        width: 200px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin: 10px 0;
+      }
+    
+      .mui-slider {
+        width: 100%;
+        height: 4px;
+        -webkit-appearance: none;
+        appearance: none;
+        background: #e0e0e0;
+        border-radius: 4px;
+        outline: none;
+      }
+    
+      .mui-slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        width: 20px;
+        height: 20px;
+        background: #c8102e;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: background .15s ease-in-out;
+      }
+    
+      .mui-slider::-webkit-slider-thumb:hover {
+        background: #dd3350;
+      }
+      .slider-value {
+        min-width: 30px;
+      }
+      /* Toggle button styles */
+      .toggle-switch {
+          position: relative;
+          display: inline-block;
+          width: 60px;
+          height: 34px;
+        }
+    
+        .toggle-switch input {
+          opacity: 0;
+          width: 0;
+          height: 0;
+        }
+    
+        .toggle-slider {
+          position: absolute;
+          cursor: pointer;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: #ccc;
+          transition: .4s;
+          border-radius: 34px;
+        }
+        .toggle-slider:before {
+          position: absolute;
+          content: "";
+          height: 26px;
+          width: 26px;
+          left: 4px;
+          bottom: 4px;
+          background-color: white;
+          transition: .4s;
+          border-radius: 50%;
+        }
+    
+        input:checked + .toggle-slider {
+          background-color: #c8102e;
+        }
+    
+        input:checked + .toggle-slider:before {
+          transform: translateX(26px);
+        }
+    
+        .hidden {
+          display: none;
+        }
+    </style>
 </body>
 </html>
