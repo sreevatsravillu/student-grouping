@@ -1,6 +1,6 @@
 const express = require('express');
 const path = require('path');
- 
+
 const app = express();
 const PORT = process.env.PORT || 3000;
 
@@ -11,14 +11,27 @@ app.set('views', path.join(__dirname, 'views'));
 // Serve static files from the public directory
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.urlencoded({ extended: true }));
-// Import and use routes
-const dashboardRoutes = require('./routes/dashboard');
-const formBuilderRoutes = require('./routes/formBuilder');
-const studentFormRoutes = require('./routes/studentForm');
-app.use('/', dashboardRoutes)
-app.use('/dashboard', dashboardRoutes);
-app.use('/form-builder', formBuilderRoutes);
-app.use('/student-form', studentFormRoutes);
+
+// Routes
+app.get('/dashboard', (req, res) => {
+    const groups = {
+        GroupA: { students: ['Alice', 'Bob'], skills: ['JavaScript', 'React'] },
+        GroupB: { students: ['Charlie'], skills: ['Python', 'Django'] },
+    };
+    res.render('dashboard', { groups });
+});
+
+app.get('/student-form', (req, res) => {
+    const form = {
+        genders: ['Male', 'Female', 'Other'],
+        pursuingYr: ['Freshman', 'Sophomore', 'Junior', 'Senior'],
+        ethnicity: ['Asian', 'Black', 'Hispanic', 'White'],
+        majors: ['Computer Science', 'Biology', 'Mathematics'],
+        nuin: ['Program A', 'Program B'],
+        skills: [{ skillName: 'Problem Solving' }, { skillName: 'Teamwork' }],
+    };
+    res.render('studentForm', { form });
+});
 
 // Default route
 app.get('/*', (req, res) => {
