@@ -9,8 +9,11 @@
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
+  <div>
+    <div >
+      <img src="/PPS.svg" alt="College" class="blurred-image">
+    </div>
     <div class="container">
-        <h1 class="form-title">Student Skills Form</h1>
         
         <div class="form-container">
             <form action="/student-form/submit" method="POST">
@@ -29,7 +32,7 @@
                     </div>
 
                     <div class="form-field">
-                        <label class="field-label">UID:</label>
+                        <label class="field-label">NUID:</label>
                         <input type="text" name="uid" class="text-input" required>
                     </div>
 
@@ -98,7 +101,29 @@
                 <!-- Skills Section -->
                 <div class="form-section">
                     <h2 class="section-title">Skills Assessment</h2>
-                    
+                    <div style="font-size: 14px;"> Please rate your proficiency or agreement with the following statements on a scale from 0 to 5:</div>
+                    <div style="margin-bottom: 20px;">
+                      <ul style="list-style-type: none;font-size: 12px;">
+                          <li style="padding-bottom: 10px;">
+                            <span> 0 – Not at all</span> 
+                          </li>
+                          <li style="padding-bottom: 10px;">
+                            <span> 1 – Slightly</span> 
+                          </li>
+                          <li style="padding-bottom: 10px;">
+                            <span> 2 – Moderately</span> 
+                          </li>
+                          <li style="padding-bottom: 10px;">
+                            <span> 3 – Fairly</span> 
+                          </li>
+                          <li style="padding-bottom: 10px;">
+                              <span> 4 – Very</span> 
+                            </li>
+                          </li style="padding-bottom: 10px;">
+                            <span> 5 – Extremely</span> 
+                          </li>
+                      </ul>
+                    </div>
                     <% form.skills.forEach(skill => { %>
                         <div class="form-field">
                             <label class="field-label"><%= skill.skillName %>:</label>
@@ -122,6 +147,7 @@
             </form>
         </div>
     </div>
+  </div>
 
     <!-- Add your existing scripts -->
     <script>
@@ -145,15 +171,26 @@
 
     <style>
         /* Add these new styles */
+
+    .blurred-image {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
         .container {
             max-width: 800px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 26rem 20px 20px 20px;
+            font-family: FF Real Head, Lato, Arial, sans-serif !important;
         }
 
         .form-title {
             text-align: center;
-            color: #1976d2;
+            color: #c8102e;
             margin-bottom: 30px;
         }
 
@@ -172,7 +209,7 @@
         }
 
         .section-title {
-            color: #1976d2;
+            color: #c8102e;
             font-size: 1.5em;
             margin-bottom: 20px;
         }
@@ -212,7 +249,7 @@
         }
 
         .submit-button {
-            background-color: #1976d2;
+            background-color: #c8102e;
             color: white;
             padding: 12px 24px;
             border: none;
@@ -223,7 +260,7 @@
         }
 
         .submit-button:hover {
-            background-color: #1565c0;
+            background-color: #dd3350;
         }
 
         .slider-container {
@@ -248,14 +285,14 @@
         -webkit-appearance: none;
         width: 20px;
         height: 20px;
-        background: #1976d2;
+        background: #c8102e;
         border-radius: 50%;
         cursor: pointer;
         transition: background .15s ease-in-out;
       }
     
       .mui-slider::-webkit-slider-thumb:hover {
-        background: #1565c0;
+        background: #dd3350;
       }
       .slider-value {
         min-width: 30px;
@@ -298,7 +335,7 @@
         }
     
         input:checked + .toggle-slider {
-          background-color: #1976d2;
+          background-color: #c8102e;
         }
     
         input:checked + .toggle-slider:before {
