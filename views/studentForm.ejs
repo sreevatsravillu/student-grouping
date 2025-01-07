@@ -17,6 +17,7 @@
         
         <div class="form-container">
             <form action="/student-form/submit" method="POST">
+              <input type="hidden" name="pageUri" id="pageUri" value="pageUri">
                 <!-- Personal Information Section -->
                 <div class="form-section">
                     <h2 class="section-title">Personal Information</h2>
@@ -151,6 +152,9 @@
 
     <!-- Add your existing scripts -->
     <script>
+      const pageUri = window.location.pathname.split('/').pop();
+      document.getElementById('pageUri').value = pageUri;
+      
         // Your existing JavaScript code
         document.querySelectorAll('.mui-slider').forEach(slider => {
             slider.addEventListener('input', function() {
