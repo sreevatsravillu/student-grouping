@@ -12,15 +12,19 @@
       display: flex;
       min-height: 100vh;
       flex-direction: column;
+      font-family: FF Real Head, Lato, Arial, sans-serif !important;
     }
 
     main {
       flex: 1 0 auto;
-      padding-left: 100px; /* Width of the side nav */
+      padding-left: 60px; /* Width of the side nav */
     }
-
+    default-bg-color{
+      background-color: #c8102e !important
+    }
     /* Fixed navbar */
     nav {
+      background-color: #c8102e !important;
       position: fixed;
       top: 0;
       width: 100%;
@@ -29,11 +33,14 @@
 
     /* Fixed sidenav */
     .sidenav {
-      width:220px !important; 
+      width:160px !important; 
       height: calc(100% - 64px); /* Subtract navbar height */
       top: 64px; /* Start below navbar */
       box-shadow: none;
       border-right: 1px solid #ddd;
+      a{
+        padding:0 18px !important;
+      }
     }
 
     .brand-logo {
@@ -45,6 +52,9 @@
       text-align: left;
       padding: 0 32px;
     }
+    .sidenav li>a>i.material-icons {
+    margin: 0px 12px 0 0;
+    }
 
     .clear-data-btn {
       color: #f44336;
@@ -53,28 +63,7 @@
       border: 0.4px solid #f44336;
       border-radius: 6px;
     }
-    /* .card {
-      border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-
-    table {
-      border-collapse: separate;
-      border-spacing: 0;
-    }
-
-    th {
-      min-width: 110px;
-      background-color: #f5f5f5;
-      padding: 16px !important;
-      border-bottom: 1px solid rgba(224, 224, 224, 1);
-    }
-
-    td {
-      min-width: 110px;
-      padding: 16px !important;
-      border-bottom: 1px solid rgba(224, 224, 224, 0.5);
-    } */
+ 
     #url-text{
       border-radius: 4px;
       padding: 10px;
@@ -112,7 +101,11 @@
     margin: 0;
     padding: 0;
     overflow-x: auto;
-  }
+    }
+    #formNameLabel{
+      font-weight: bold;
+      font-size: 18px;
+    }
 
   table.bordered {
     border: 1px solid rgba(177 174 174);
@@ -124,7 +117,7 @@
     border: 1px solid rgba(177 174 174);
   }
   thead {
-    background-color: #1565c0 !important; /* Material Blue 800 */
+    background-color: #dd3350 !important; /* Material Blue 800 */
   }
 
   th {
@@ -166,12 +159,18 @@
     /* Add padding to main content to prevent overlap with navbar */
     .main-content {
       margin-top: 84px;
+      margin-left: 140px;
+      width: 86%;
+      .drawer-header{
+        display: flex;
+        justify-content: flex-end;
+      }
     }
   </style>
 </head>
 <body>
   <!-- Fixed Navbar -->
-  <nav class="blue darken-3">
+  <nav class="default-bg-color">
     <div class="nav-wrapper">
       <a href="#" data-target="slide-out" class="sidenav-trigger hide-on-large-only">
         <i class="material-icons">menu</i>
@@ -185,12 +184,6 @@
     <li><a href="/form-builder" class="waves-effect"><i class="material-icons">build</i>Form Builder</a></li>
     <li><div class="divider"></div></li>
     <li><a href="/student-form" class="waves-effect"><i class="material-icons">person_add</i>Student Form</a></li>
-
-    <!-- <li>
-      <a class="waves-effect side-nav-button clear-button" onclick="confirmClear()">
-        <i class="material-icons">delete</i>Clear All Data
-      </a>
-    </li> -->
   </ul>
 
   <!-- Main Content -->
@@ -202,46 +195,25 @@
             Clear Data
           </button>
         </div>
-      <!-- <div class="row">
-        <div class="col s12">
-          <table class="striped responsive-table">
-            <thead>
-              <tr>
-                <th>Group</th>
-                <th>Students</th>
-                <th>Skills</th>
-              </tr>
-            </thead>
-            <tbody>
-              <% for (const group in groups) { %>
-                <tr>
-                  <td><%= group %></td>
-                  <td>
-                    <ul class="collection">
-                      <% groups[group].students.forEach(student => { %>
-                        <li class="collection-item"><%= student %></li>
-                      <% }) %>
-                    </ul>
-                  </td>
-                  <td>
-                    <ul class="collection">
-                      <% Array.from(groups[group].skills).forEach(skill => { %>
-                        <li class="collection-item"><%= skill %></li>
-                      <% }) %>
-                    </ul>
-                  </td>
-                </tr>
-              <% } %>
-            </tbody>
-          </table>
-        </div>
-      </div> -->
-<!-- New URL Display with Copy Button -->
+  
 <div id="student-form-url" style="margin-bottom: 20px;">
-  <span id="url-text"></span> <!-- Added this line for URL text -->
-  <button id="copy-url-btn" class="btn waves-effect waves-light" style="margin-left: 10px; background-color: #1976d2; color: white;">Copy URL</button> <!-- Updated Copy button style -->
+  <ul>
+    <% formKeys.forEach(key => { %>
+      <li style="padding-bottom: 10px;">
+        <span id="formNameLabel"><%= `${key}` %> : </span>
+        <span id="url-text"><%= `${baseUrl}/${key}` %></span> <!-- Construct the URL directly in EJS -->
+        <button class="btn copy-url-btn waves-effect waves-light" style="margin-left: 10px; background-color: #c8102e; color: white;">Copy URL</button> <!-- Updated Copy button style -->
+        <button class="btn show-groups-btn waves-effect waves-light" 
+        style="margin-left: 10px; background-color: #c8102e; color: white;"
+        data-key="<%= key %>">Show groups</button> 
+      </li>
+    <% }) %>
+  </ul>
 </div>
 
+<div>
+  <h5>Selected form for grouping : <span style="color:#c8102e"><%= `${selectedForm}` %></span></h5>
+</div>
       <div class="row">
         <div class="col s12">
           <div class="card">
@@ -327,19 +299,43 @@
       }
     }
 
-     // Fetch and display the student form URL
-    const studentFormUrl = window.location.origin + '/student-form';
-    document.getElementById('url-text').innerText = studentFormUrl; // Display the URL
+  
+    document.querySelectorAll('.copy-url-btn').forEach((button, index) => {
+      button.addEventListener('click', function() {
+        const key = JSON.parse('<%- JSON.stringify(formKeys) %>')[index]; // Get the corresponding key
+        const studentFormUrl = '<%- baseUrl %>' + '/' + key; // Use the base URL from the server
 
-    // Copy to clipboard function
-    document.getElementById('copy-url-btn').addEventListener('click', function() {
+        console.log('Copying URL:', studentFormUrl); // Debugging line
+
         navigator.clipboard.writeText(studentFormUrl).then(() => {
-            M.toast({html: 'URL copied to clipboard!'}); // Show success message
+          M.toast({html: 'URL copied to clipboard!'}); // Show success message
         }).catch(err => {
-            console.error('Error copying URL: ', err);
-            M.toast({html: 'Failed to copy URL'}); // Show error message
+          console.error('Error copying URL: ', err);
+          M.toast({html: 'Failed to copy URL'}); // Show error message
         });
+      });
     });
+ 
+document.querySelectorAll('.show-groups-btn').forEach(button => {
+  button.addEventListener('click', function() {
+    const reqKey = this.getAttribute('data-key'); // Get the key from the button's data attribute 
+    try {
+      const response =   fetch('/fetchFormGrouing', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ key: reqKey }) // Send the key in the request body
+    });
+      
+        window.location.reload(); // Refresh the page after successful clear
+  
+    }catch(error) {
+      console.error('There was a problem with the fetch operation:', error);
+    };
+  });
+});
+
   </script>
 </body>
 </html>
