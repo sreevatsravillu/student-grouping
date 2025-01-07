@@ -154,7 +154,7 @@
     <script>
       const pageUri = window.location.pathname.split('/').pop();
       document.getElementById('pageUri').value = pageUri;
-      
+
         // Your existing JavaScript code
         document.querySelectorAll('.mui-slider').forEach(slider => {
             slider.addEventListener('input', function() {
@@ -179,7 +179,7 @@
     .blurred-image {
         width: 100%;
         height: auto;
-        position: absolute;
+        position: relative;
         top: 0;
         left: 0;
         z-index: 1;
@@ -188,7 +188,6 @@
         .container {
             max-width: 800px;
             margin: 0 auto;
-            padding: 26rem 20px 20px 20px;
             font-family: FF Real Head, Lato, Arial, sans-serif !important;
         }
 
