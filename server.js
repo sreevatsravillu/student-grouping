@@ -12,6 +12,8 @@ app.use(express.json());
 app.use('/', require('./routes/dashboard'));
 app.use('/form-builder', require('./routes/formBuilder'));
 app.use('/student-form', require('./routes/studentForm'));
+app.use('/student-form-submit', require('./routes/studentFormSubmit'));
+
 
 const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
