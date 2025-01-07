@@ -9,8 +9,8 @@ router.get('/', (req, res) => {
 
 router.post('/create', (req, res) => {
   console.log(req.body)
-  const { groupSize, skillName } = req.body;
-  console.log( skillName, groupSize )
+  const { formName, groupSize, skillName } = req.body;
+  console.log( formName, skillName, groupSize )
   const forms = readJSONFile('forms.json');
   const newForm = {
     skills: skillName.map(name => ({ skillName: name, required: true })),
@@ -37,7 +37,7 @@ router.post('/create', (req, res) => {
    "N.U.in Scotland – University of Glasgow",
     "N.U.in Spain – Saint Louis University Madrid"]
   };
-  forms.push(newForm);
+  forms[formName] = newForm;
   writeJSONFile('forms.json', forms);
   res.redirect('/');
 });
