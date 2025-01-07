@@ -82,7 +82,8 @@ writeJSONFile('students.json', {})
 console.log("studentsDetails",students, studentsDetails)
 studentsDetails[req.body.pageUri] = students;
 writeJSONFile('students.json', studentsDetails);
-  res.redirect('/');
+  // res.redirect('/');
+   res.redirect('/student-form-submit');
 });
 
 module.exports = router;
