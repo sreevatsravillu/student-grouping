@@ -24,13 +24,20 @@
     }
     /* Fixed navbar */
     nav {
-      background-color: #c8102e !important;
+      background-color: black !important;
       position: fixed;
       top: 0;
       width: 100%;
       z-index: 997;
     }
-
+    .header-logo{
+      height: 100%;
+      width: 6%;
+    }
+    .brand-logo{
+      font-size: 1.5rem !important;
+      font-weight: bold;
+    }
     /* Fixed sidenav */
     .sidenav {
       width:160px !important; 
@@ -43,9 +50,6 @@
       }
     }
 
-    .brand-logo {
-      margin-left: 20px;
-    }
 
     .side-nav-button {
       width: 100%;
@@ -161,10 +165,6 @@
       margin-top: 84px;
       margin-left: 140px;
       width: 86%;
-      .drawer-header{
-        display: flex;
-        justify-content: flex-end;
-      }
     }
   </style>
 </head>
@@ -175,6 +175,7 @@
       <a href="#" data-target="slide-out" class="sidenav-trigger hide-on-large-only">
         <i class="material-icons">menu</i>
       </a>
+      <img src="/Northeastern_Huskies.svg" alt="logo" class="header-logo" >
       <a href="#" class="brand-logo">Student Groups Dashboard</a>
     </div>
   </nav>
@@ -183,7 +184,6 @@
   <ul id="slide-out" class="sidenav sidenav-fixed">
     <li><a href="/form-builder" class="waves-effect"><i class="material-icons">build</i>Form Builder</a></li>
     <li><div class="divider"></div></li>
-    <li><a href="/student-form" class="waves-effect"><i class="material-icons">person_add</i>Student Form</a></li>
   </ul>
 
   <!-- Main Content -->
@@ -212,7 +212,7 @@
 </div>
 
 <div>
-  <h5>Selected form for grouping : <span style="color:#c8102e"><%= `${selectedForm}` %></span></h5>
+  <h5>Student Groups : <span style="color:#c8102e"><%= `${selectedForm}` %></span></h5>
 </div>
       <div class="row">
         <div class="col s12">
