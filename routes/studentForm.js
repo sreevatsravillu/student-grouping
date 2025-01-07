@@ -2,23 +2,32 @@ const express = require('express');
 const router = express.Router();
 const { readJSONFile, writeJSONFile } = require('../utils/fileHandler');
 
-router.get('/', (req, res) => {
+// router.get('/*', (req, res) => {
+//   const forms = readJSONFile('forms.json');
+//   const form = forms[forms.length - 1]; // Get the latest form
+//   res.render('studentForm', { form });
+// });
+router.get('/:value', (req, res) => { // Capture the value after /student-form/
   const forms = readJSONFile('forms.json');
-  console.log("student.js",forms)
-  const form = forms[forms.length - 1]; // Get the latest form
-  console.log("student.js 2",form)
-  res.render('studentForm', { form });
+  const value = req.params.value; // Access the captured value
+  console.log("student form",value, forms[value])
+  res.render('studentForm', {form:forms[value]} ); // Pass the value to the template if needed
 });
 
 router.post('/submit', (req, res) => {
-  const students = readJSONFile('students.json');
-  let skillsObj = readJSONFile('skills.json');
-  console.log("===+++++++====",Object.entries(req.body))
+  const studentsDetails = readJSONFile('students.json');
+  const students = studentsDetails[req.body.pageUri] || [];
+  const skillsDetails = readJSONFile('skills.json');
+  let skillsObj = skillsDetails[req.body.pageUri] || {};
+
+  console.log("===+++++++====",Object.entries(req.body),req.body)
+  console.log("URL of the page that hit the POST call:", req.originalUrl);
+
   console.log(Object.entries(req.body)
-  .filter(([key]) => key !== 'name' && key !== 'email' 
+  .filter(([key]) => key !== 'name' && key !== 'email' && key !== 'pageUri'
   && key !== 'major' && key !=='uid' && key !== 'ethnicity' && key !== 'gender'))
   const skills = Object.entries(req.body)
-    .filter(([key]) => key !== 'name' && key !== 'email' 
+    .filter(([key]) => key !== 'name' && key !== 'email' && key !== 'email' && key !== 'pageUri'
     && key !== 'major' && key !=='uid' && key !== "ethnicity"
      && key !== 'gender' && key !=='nuin')
     .map(([skillName,value]) => ({
@@ -66,9 +75,13 @@ skills.forEach(skill => {
     skillsObj[skill.skillName].name.push(req.body.name);
   }
 });
-writeJSONFile('skills.json', skillsObj);
+skillsDetails[req.body.pageUri] = skillsObj;
+writeJSONFile('skills.json', skillsDetails);
 
-  writeJSONFile('students.json', students);
+writeJSONFile('students.json', {})
+console.log("studentsDetails",students, studentsDetails)
+studentsDetails[req.body.pageUri] = students;
+writeJSONFile('students.json', studentsDetails);
   res.redirect('/');
 });
 
