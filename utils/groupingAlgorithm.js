@@ -87,19 +87,14 @@ class GroupingAlgorithm {
   console.log("x:", x);
   console.log("y:", y);
   console.log("z:", z);
+  console.log("groupSize",groupSize)
+  console.log("formData",formData)
 
   console.log(this.groupingStudents(x,z,groupSize,formData))
   return this.groupingStudents(x,z,groupSize,formData)
 }
   
   static groupingStudents(studentsArr,namesArr,group,formData){
-      // console.log("students; ",students)
-      //    console.log("names: ",names)
-      //    console.log("formData: ",formData)
-      // let groupState =0
-      // let groupedStudent =[]
-      // let finalGroup={}
-
       console.log("students; ", studentsArr, studentsArr.flat())
       console.log("names: ", namesArr)
       const students = studentsArr.flat()
