@@ -27,18 +27,25 @@ router.get('/', (req, res) => {
   
   const groups = GroupingAlgorithm.groupingPreparation(fetchSkillObj,groupSize,fetchStudentObj);
 console.log("dash.js, groups",groups,"selecedForm ====",selecedForm)
+let formKeys =[]
+for(let i=0 ;i< Object.keys(forms).length;i++){
+  const formKeysObj={
+    fileName:Object.keys(forms)[i],
+    studentCount: students[Object.keys(forms)[i]] ? students[Object.keys(forms)[i]].length : 0
+  }
+  formKeys.push(formKeysObj)
 
-
+}
 
   // Construct the base URL
   const baseUrl = `${req.protocol}://${req.get('host')}/student-form`;
-  console.log("ONE--",{ groups, formKeys: Object.keys(forms), baseUrl, selectedForm:(selecedForm || Object.keys(forms)[0] ||'') })
-  res.render('dashboard', { groups, formKeys: Object.keys(forms), baseUrl, selectedForm:(selecedForm || Object.keys(forms)[0] ||'') });
+  console.log("ONE--",{ groups, formKeys, baseUrl, selectedForm:(selecedForm || Object.keys(forms)[0] ||'') })
+  res.render('dashboard', { groups, formKeys, baseUrl, selectedForm:(selecedForm || Object.keys(forms)[0] ||'') });
 });
 router.post('/fetchFormGrouing', async(req, res) => {
   try {
-     console.log("dash.js -----, key", req.body);
-     selecedForm = req.body.key
+     console.log("dash.js -----, key", req.body.key.fileName);
+     selecedForm =  req.body.key.fileName
   } catch (error) {
      console.error('Error routing for grouping table data:', error);
      res.status(500).json({ error: 'Grouping failed' });
