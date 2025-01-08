@@ -303,7 +303,7 @@
     document.querySelectorAll('.copy-url-btn').forEach((button, index) => {
       button.addEventListener('click', function() {
         const key = JSON.parse('<%- JSON.stringify(formKeys) %>')[index]; // Get the corresponding key
-        const studentFormUrl = '<%- baseUrl %>' + '/' + key; // Use the base URL from the server
+        const studentFormUrl = '<%- baseUrl %>' + '/' + key.fileName; // Use the base URL from the server
 
         console.log('Copying URL:', studentFormUrl); // Debugging line
 
