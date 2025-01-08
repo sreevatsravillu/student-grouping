@@ -189,23 +189,23 @@
   <!-- Main Content -->
   <main>
     <div class="container main-content">
-        <div class="drawer-header">
+        <!-- <div class="drawer-header">
           <button class="clear-data-btn btn-flat waves-effect btn-outlined" onclick="confirmClear()">
             <i class="material-icons">delete</i>
             Clear Data
           </button>
-        </div>
+        </div> -->
   
 <div id="student-form-url" style="margin-bottom: 20px;">
   <ul>
     <% formKeys.forEach(key => { %>
       <li style="padding-bottom: 10px;">
-        <span id="formNameLabel"><%= `${key}` %> : </span>
-        <span id="url-text"><%= `${baseUrl}/${key}` %></span> <!-- Construct the URL directly in EJS -->
+        <span id="formNameLabel"><%= `${key.fileName}` %> : </span>
+        <span id="url-text"><%= `${baseUrl}/${key.fileName}` %></span> <!-- Construct the URL directly in EJS -->
         <button class="btn copy-url-btn waves-effect waves-light" style="margin-left: 10px; background-color: #c8102e; color: white;">Copy URL</button> <!-- Updated Copy button style -->
         <button class="btn show-groups-btn waves-effect waves-light" 
         style="margin-left: 10px; background-color: #c8102e; color: white;"
-        data-key="<%= key %>">Show groups</button> 
+        data-key="<%= JSON.stringify(key) %>">Show groups</button> 
       </li>
     <% }) %>
   </ul>
@@ -277,27 +277,27 @@
       });
     });
 
-    async function confirmClear() {
-      if (confirm('Are you sure you want to clear all student data and start a new batch?')) {
-        try {
-          const response = await fetch('/clear-all', {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json'
-            }
-          });
+    // async function confirmClear() {
+    //   if (confirm('Are you sure you want to clear all student data and start a new batch?')) {
+    //     try {
+    //       const response = await fetch('/clear-all', {
+    //         method: 'POST',
+    //         headers: {
+    //           'Content-Type': 'application/json'
+    //         }
+    //       });
           
-          if (response.ok) {
-            window.location.reload();
-          } else {
-            M.toast({html: 'Failed to clear data'});
-          }
-        } catch (error) {
-          console.error('Error:', error);
-          M.toast({html: 'Failed to clear data'});
-        }
-      }
-    }
+    //       if (response.ok) {
+    //         window.location.reload();
+    //       } else {
+    //         M.toast({html: 'Failed to clear data'});
+    //       }
+    //     } catch (error) {
+    //       console.error('Error:', error);
+    //       M.toast({html: 'Failed to clear data'});
+    //     }
+    //   }
+    // }
 
   
     document.querySelectorAll('.copy-url-btn').forEach((button, index) => {
@@ -318,21 +318,26 @@
  
 document.querySelectorAll('.show-groups-btn').forEach(button => {
   button.addEventListener('click', function() {
-    const reqKey = this.getAttribute('data-key'); // Get the key from the button's data attribute 
-    try {
-      const response =   fetch('/fetchFormGrouing', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({ key: reqKey }) // Send the key in the request body
-    });
-      
-        window.location.reload(); // Refresh the page after successful clear
-  
-    }catch(error) {
-      console.error('There was a problem with the fetch operation:', error);
-    };
+    const reqKey = JSON.parse(this.getAttribute('data-key'));; // Get the key from the button's data attribute 
+    console.log(reqKey,reqKey.studentCount)
+    if(reqKey.studentCount > 0){
+      try {
+        const response =   fetch('/fetchFormGrouing', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ key: reqKey }) // Send the key in the request body
+      });
+        
+          window.location.reload(); // Refresh the page after successful clear
+    
+      }catch(error) {
+        console.error('There was a problem with the fetch operation:', error);
+      };
+    }else{
+      M.toast({html: 'None of the students have filled the form for grouping'});
+    }
   });
 });
 
