@@ -17,7 +17,7 @@ router.post('/create', (req, res) => {
     groupSize: parseInt(groupSize, 10),
     genders:['Male','Female','Prefer not to say'],
     pursuingYr:["First Year","Second Year","Third Year","Fourth Year","Fifth Year"],
-    majors:['MKTG','FIN','Explore', 'Entrepreneurship', 'Accounting','MIS','Supply Chain','Psycology','MGMT'],
+    majors:['MKTG','FIN','Explore', 'Entrepreneurship', 'Accounting','MIS','Supply Chain','Psychology','MGMT'],
    ethnicity:['African American or Black','Asian - East Asian (e.g., Chinese, Japanese, Korean)',
     'Asian - South Asian (e.g., Indian, Pakistani, Bangladeshi)','Asian - Southeast Asian (e.g., Vietnamese, Filipino, Thai)',
     'Hispanic or Latino/a/x','Middle Eastern or North African (MENA)',
