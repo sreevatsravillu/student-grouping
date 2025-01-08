@@ -13,6 +13,9 @@ app.use('/', require('./routes/dashboard'));
 app.use('/form-builder', require('./routes/formBuilder'));
 app.use('/student-form', require('./routes/studentForm'));
 app.use('/student-form-submit', require('./routes/studentFormSubmit'));
+app.use('/download', require('./routes/download'));
+
+app.use('/data', express.static(path.join(__dirname, 'data')));
 
 
 const PORT = process.env.PORT || 3001;
