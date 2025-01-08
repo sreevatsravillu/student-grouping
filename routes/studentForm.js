@@ -33,7 +33,7 @@ router.post('/submit', (req, res) => {
     .map(([skillName,value]) => ({
       skillName: `${skillName}-${value}`,
       value: value,  // This will now capture the numeric value from the request
-      hasSkill: value && value !== '0'
+      hasSkill: value || value === '0'
     }));
     skills.push({
       "skillName": req.body.major,
