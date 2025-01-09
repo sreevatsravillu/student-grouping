@@ -206,6 +206,8 @@
         <button class="btn show-groups-btn waves-effect waves-light" 
         style="margin-left: 10px; background-color: #c8102e; color: white;"
         data-key="<%= JSON.stringify(key) %>">Show groups</button> 
+        <input type="number" min="2" style="margin-left: 10px;width: 11vw;border: solid black 1px;border-radius: 7px;" placeholder="Change Group Size"
+         oninput="this.value = this.value.replace(/[^0-9]/g, '')" class="group-input">
       </li>
     <% }) %>
   </ul>
@@ -276,7 +278,6 @@
         draggable: true
       });
     });
-
     // async function confirmClear() {
     //   if (confirm('Are you sure you want to clear all student data and start a new batch?')) {
     //     try {
@@ -315,19 +316,20 @@
         });
       });
     });
- 
+
 document.querySelectorAll('.show-groups-btn').forEach(button => {
   button.addEventListener('click', function() {
-    const reqKey = JSON.parse(this.getAttribute('data-key'));; // Get the key from the button's data attribute 
-    console.log(reqKey,reqKey.studentCount)
-    if(reqKey.studentCount > 0){
+    const reqKey = JSON.parse(this.getAttribute('data-key')); // Get the key from the button's data attribute 
+    const inputField = this.nextElementSibling; // Get the input field next to the button
+    const manualGroupValue = inputField.value;
+    if(reqKey.studentCount > 0 && ( !manualGroupValue || manualGroupValue > 1) ){
       try {
         const response =   fetch('/fetchFormGrouing', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ key: reqKey }) // Send the key in the request body
+        body: JSON.stringify({ key: reqKey, manualGroupSize:manualGroupValue }) // Send the key in the request body
       });
         
           window.location.reload(); // Refresh the page after successful clear
@@ -335,8 +337,10 @@ document.querySelectorAll('.show-groups-btn').forEach(button => {
       }catch(error) {
         console.error('There was a problem with the fetch operation:', error);
       };
-    }else{
+    }else if(reqKey.studentCount <= 0){
       M.toast({html: 'None of the students have filled the form for grouping'});
+    }else if(manualGroupValue <= 1){
+      M.toast({html: 'Please enter a value of 2 or greater for the group size.'});
     }
   });
 });
