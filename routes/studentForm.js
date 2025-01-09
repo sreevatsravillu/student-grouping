@@ -39,13 +39,10 @@ router.post('/submit', (req, res) => {
       "skillName": req.body.major,
       "hasSkill": true
     });
-    if(req.body.nuin){
-      skills.push({
-        "skillName": req.body.nuin,
-        "hasSkill": true,
-        "priority":1
-      });
-    }
+    skills.push({
+      "skillName": req.body.nuin,
+      "hasSkill": true
+    });
     skills.push({
       "skillName": req.body.ethnicity,
       "hasSkill": true
@@ -68,16 +65,12 @@ skills.forEach(skill => {
   if (skill.hasSkill) {
     if (!skillsObj[skill.skillName]) {
       skillsObj[skill.skillName] = {
-        count: 0, 
-        priority:0,   
+        count: 0,    
         uid: [],    
         name: []      
       };
     }
-    skillsObj[skill.skillName].count += 1; 
-    if(skill.priority){
-      skillsObj[skill.skillName].priority = 1;
-    }   
+    skillsObj[skill.skillName].count += 1;  
     skillsObj[skill.skillName].uid.push(req.body.uid);  
     skillsObj[skill.skillName].name.push(req.body.name);
   }
@@ -90,11 +83,7 @@ console.log("studentsDetails",students, studentsDetails)
 studentsDetails[req.body.pageUri] = students;
 writeJSONFile('students.json', studentsDetails);
   // res.redirect('/');
-  res.redirect('/student-form-submit');
-  
-
-
+   res.redirect('/student-form-submit');
 });
-
 
 module.exports = router;
