@@ -164,35 +164,6 @@
     .create-form-btn:hover {
       background-color: #dd3350;
     }
-
-    .tooltip {
-    position: relative;
-    display: inline-block;
-    }
-
-  .tooltip .tooltiptext {
-    visibility: hidden;
-    width: 120px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    border-radius: 5px;
-    padding: 5px;
-    position: absolute;
-    z-index: 1;
-    bottom: 125%; /* Position above the icon */
-    left: 50%;
-    margin-left: -60px; /* Center the tooltip */
-    opacity: 0;
-    transition: opacity 0.3s;
-  }
-
-  .tooltip:hover .tooltiptext {
-    visibility: visible;
-    opacity: 1;
-    width: 200px;
-    font-size: 12px;
-  }
   </style>
 </head>
 <body>
@@ -207,11 +178,9 @@
       <div class="form-group">
         <label>
           Enter Course Name
-          <span class="tooltip">
-            <span class="material-icons" 
-              style="cursor: pointer; font-size: 16px; vertical-align: middle;">info</span>
-            <span class="tooltiptext">Only alphabets, numbers, hyphens, and spaces are allowed.</span>
-          </span>
+          <span class="material-icons" 
+            title="Only alphabets, numbers, hyphens, and spaces are allowed." 
+            style="cursor: pointer; font-size: 16px; vertical-align: middle;">info</span>
         </label>
         <input 
           type="text" 
@@ -266,7 +235,8 @@
       
       <button 
         type="submit" 
-        class="create-form-btn">
+        class="create-form-btn"
+      >
         Create Form
       </button>
     </form>
