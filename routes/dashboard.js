@@ -12,16 +12,19 @@ router.get('/', (req, res) => {
   let skillsObj = readJSONFile('skills.json');
   let fetchSkillObj={};
   let fetchStudentObj=[];
+  let formSkills = []
   console.log(selecedForm," ---------------- ",Object.keys(forms)[0])
   if(selecedForm){
     groupSize = forms[selecedForm]['groupSize'] 
     fetchSkillObj = skillsObj[selecedForm] 
     fetchStudentObj = students[selecedForm] 
+    formSkills = forms[selecedForm]['skills']
   }
   else if(Object.keys(forms).length > 0){
     groupSize = forms[Object.keys(forms)[0]]['groupSize']
     fetchSkillObj = skillsObj[Object.keys(forms)[0]] || {}
     fetchStudentObj = students[Object.keys(forms)[0]] || []
+    formSkills = forms[Object.keys(forms)[0]]['skills']
   }
   console.log("dash.js, groupSize",fetchSkillObj,fetchStudentObj,"====",groupSize)
   
@@ -31,7 +34,8 @@ let formKeys =[]
 for(let i=0 ;i< Object.keys(forms).length;i++){
   const formKeysObj={
     fileName:Object.keys(forms)[i],
-    studentCount: students[Object.keys(forms)[i]] ? students[Object.keys(forms)[i]].length : 0
+    studentCount: students[Object.keys(forms)[i]] ? students[Object.keys(forms)[i]].length : 0,
+    selectedFormSkills : forms[Object.keys(forms)[i]]['skills']
   }
   formKeys.push(formKeysObj)
 
@@ -39,18 +43,21 @@ for(let i=0 ;i< Object.keys(forms).length;i++){
 
   // Construct the base URL
   const baseUrl = `${req.protocol}://${req.get('host')}/student-form`;
-  console.log("ONE--",{ groups, formKeys, baseUrl, selectedForm:(selecedForm || Object.keys(forms)[0] ||'') })
+  console.log("ONE--",{ groups, formKeys, baseUrl, selectedForm:(selecedForm || Object.keys(forms)[0] ||'')  })
   res.render('dashboard', { groups, formKeys, baseUrl, selectedForm:(selecedForm || Object.keys(forms)[0] ||'') });
 });
 router.post('/fetchFormGrouing', async(req, res) => {
   try {
-    
-     console.log("dash.js -----, key", req.body.key.fileName, req.body.manualGroupSize);
-     selecedForm =  req.body.key.fileName
+    const forms = readJSONFile('forms.json');
+     console.log("dash.js -----, key", req.body.fileName, req.body.manualGroupSize, req.body.selectedFormSkills);
+     selecedForm =  req.body.fileName
      if(req.body.manualGroupSize){
-      const forms = readJSONFile('forms.json');
-      forms[req.body.key.fileName]['groupSize'] = JSON.parse(req.body.manualGroupSize);
-      console.log("UPDATED SIZE ====",forms[req.body.key.fileName]['groupSize'])
+      forms[req.body.fileName]['groupSize'] = JSON.parse(req.body.manualGroupSize);
+      console.log("UPDATED SIZE ====",forms[req.body.fileName]['groupSize'])
+      writeJSONFile('forms.json', forms);
+     }else if(req.body.selectedFormSkills){
+      forms[req.body.fileName]['skills'] = req.body.selectedFormSkills;
+      console.log("UPDATED skills ====",forms[req.body.fileName]['skills'])
       writeJSONFile('forms.json', forms);
      }
    
@@ -60,7 +67,6 @@ router.post('/fetchFormGrouing', async(req, res) => {
      res.status(500).json({ error: 'Grouping failed' });
   }
 });
-
 
 
 router.post('/clear-all', async(req, res) => {
