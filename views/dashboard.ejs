@@ -5,7 +5,8 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link rel="stylesheet" href="./../public/style.css">
-  
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
   <style>
     /* Add styles for clipped drawer */
     body {
@@ -19,7 +20,7 @@
       flex: 1 0 auto;
       padding-left: 60px; /* Width of the side nav */
     }
-    default-bg-color{
+    .default-bg-color{
       background-color: #c8102e !important
     }
     /* Fixed navbar */
@@ -166,11 +167,64 @@
       margin-left: 140px;
       width: 86%;
     }
+
+    
+   /* Add styles for modal */
+   #skillsModal {
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+  }
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+#skillsListDisplay {
+    list-style-type: none;
+    padding: 0;
+}
+
+#skillsListDisplay li {
+    background-color: #dfd6d6;
+    padding: 10px;
+    margin: 5px;
+    cursor: grab;
+    border-radius: 4px;
+}
+
+#skillsListDisplay li.dragging {
+    opacity: 0.5;
+}
+.drag-icon{
+  padding: 5px 5px 0 0;
+}
+
   </style>
 </head>
 <body>
   <!-- Fixed Navbar -->
-  <nav class="default-bg-color">
+  <nav >
     <div class="nav-wrapper">
       <a href="#" data-target="slide-out" class="sidenav-trigger hide-on-large-only">
         <i class="material-icons">menu</i>
@@ -212,6 +266,20 @@
     <% }) %>
   </ul>
 </div>
+      <!-- Modal for confirming skills -->
+      <div id="skillsModal" style="display:none;">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <h4 style="font-weight: bold;">Set Skill Priority</h4>
+          <span class="material-icons" 
+          style=" font-size: 16px; vertical-align: middle;">info</span>
+          <span style="font-style: italic;font-size: 14px;">Drag to Reorder</span>
+          <ul id="skillsListDisplay"></ul>
+          <div style="text-align: center;">
+            <button  type="submit"  class="btn waves-effect waves-light default-bg-color" onclick="closeModal()">Confirm</button>
+          </div>
+        </div>
+      </div>
 
 <div>
   <h5>Student Groups : <span style="color:#c8102e"><%= `${selectedForm}` %></span></h5>
@@ -269,8 +337,11 @@
 
   <!-- Scripts -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
   <script>
+    var fileNameSelected ="";
+    var manualGroupValueGlob = 0;
+    var selectedFormSkillsGlob =[];
     document.addEventListener('DOMContentLoaded', function() {
       var elems = document.querySelectorAll('.sidenav');
       var instances = M.Sidenav.init(elems, {
@@ -317,26 +388,64 @@
       });
     });
 
+function clearGlobalVar(){
+  fileNameSelected ="";
+  manualGroupValueGlob = 0;
+  selectedFormSkills =[];
+}
+
 document.querySelectorAll('.show-groups-btn').forEach(button => {
   button.addEventListener('click', function() {
+    clearGlobalVar()
+
     const reqKey = JSON.parse(this.getAttribute('data-key')); // Get the key from the button's data attribute 
     const inputField = this.nextElementSibling; // Get the input field next to the button
     const manualGroupValue = inputField.value;
-    if(reqKey.studentCount > 0 && ( !manualGroupValue || manualGroupValue > 1) ){
-      try {
-        const response =   fetch('/fetchFormGrouing', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ key: reqKey, manualGroupSize:manualGroupValue }) // Send the key in the request body
-      });
+    console.log(reqKey,reqKey.studentCount,manualGroupValue)
+
+    fileNameSelected = reqKey.fileName
+    manualGroupValueGlob = manualGroupValue
+    selectedFormSkillsGlob = reqKey.selectedFormSkills
+    // Clear previous skills in the modal
+    const skillsListDisplay = document.getElementById('skillsListDisplay');
+    skillsListDisplay.innerHTML = ''; 
+    if (reqKey['selectedFormSkills'] && reqKey.studentCount > 0 && ( !manualGroupValue || manualGroupValue > 1) ){
+      reqKey['selectedFormSkills'].forEach(skill => {
+        const li = document.createElement('li');
+        li.style.display = 'flex'; // Set li to use flexbox
+        li.style.alignItems = 'center'; // Center items vertically
         
-          window.location.reload(); // Refresh the page after successful clear
+        const iconSpan = document.createElement('span');
+        iconSpan.className = 'icon-container'; // Add a class for styling
+        iconSpan.innerHTML = '<i class="material-icons drag_handle drag-icon">drag_handle</i>'; // Use Material Icons for drag handle
+        li.appendChild(iconSpan);
+        // li.textContent = skill.skillName;
+        li.appendChild(document.createTextNode(skill.skillName)); // Correctly append the skill name
+
+        li.setAttribute('draggable', 'true');
+        li.addEventListener('dragstart', dragStart);
+        li.addEventListener('dragend', dragEnd);
+        skillsListDisplay.appendChild(li);
+      });
+
+      // // Show the modal
+      document.getElementById('skillsModal').style.display = 'block'
+     
+      // try {
+      //   const response =   fetch('/fetchFormGrouing', {
+      //   method: 'POST',
+      //   headers: {
+      //     'Content-Type': 'application/json',
+      //   },
+      //   body: JSON.stringify({ key: reqKey, manualGroupSize:manualGroupValue }) // Send the key in the request body
+      // });
+      //     // // Show the modal
+      // document.getElementById('skillsModal').style.display = 'block'
+      //     // window.location.reload(); // Refresh the page after successful clear
     
-      }catch(error) {
-        console.error('There was a problem with the fetch operation:', error);
-      };
+      // }catch(error) {
+      //   console.error('There was a problem with the fetch operation:', error);
+      // };
     }else if(reqKey.studentCount <= 0){
       M.toast({html: 'None of the students have filled the form for grouping'});
     }else if(manualGroupValue <= 1){
@@ -344,6 +453,84 @@ document.querySelectorAll('.show-groups-btn').forEach(button => {
     }
   });
 });
+
+let draggedItem = null;
+
+  function closeModal() {
+    document.getElementById('skillsModal').style.display = 'none'; // Hide modal
+    // const newOrder = Array.from(document.querySelectorAll('#skillsListDisplay li')).map(li => li.textContent);
+    const newOrder = Array.from(document.querySelectorAll('#skillsListDisplay li')).map(li => li.childNodes[1].textContent.trim());
+
+    console.log(newOrder)
+    selectedFormSkillsGlob.sort((a, b) => {
+    return newOrder.indexOf(a.skillName) - newOrder.indexOf(b.skillName);
+});
+
+    console.log({ key: {fileName :fileNameSelected,
+      manualGroupValue:manualGroupValueGlob, selectedFormSkills:selectedFormSkillsGlob }})
+     try {
+        const response =   fetch('/fetchFormGrouing', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify( {fileName :fileNameSelected,
+           selectedFormSkills:selectedFormSkillsGlob , manualGroupSize:manualGroupValueGlob }) // Send the key in the request body
+      });
+
+      clearGlobalVar();
+          window.location.reload(); // Refresh the page after successful clear
+    
+      }catch(error) {
+        console.error('There was a problem with the fetch operation:', error);
+      };
+
+  }
+    
+  // Drag and drop event handlers
+function dragStart(e) {
+    draggedItem = e.target;
+    setTimeout(() => {
+        e.target.style.display = 'none';
+    }, 0);
+}
+
+function dragEnd(e) {
+    setTimeout(() => {
+        e.target.style.display = '';
+        draggedItem = null;
+    }, 0);
+}
+document.getElementById('skillsListDisplay').addEventListener('dragover', (e) => {
+    e.preventDefault();
+    const afterElement = getDragAfterElement(e.clientY);
+    const currentElement = document.querySelector('.dragging');
+    if (afterElement == null) {
+        skillsListDisplay.appendChild(draggedItem);
+    } else {
+        skillsListDisplay.insertBefore(draggedItem, afterElement);
+    }
+});
+const getDragAfterElement = (y) => {
+    const draggableElements = [
+        ...document.querySelectorAll('#skillsListDisplay li:not(.dragging)'),
+    ];
+
+    return draggableElements.reduce((closest, child) => {
+        const box = child.getBoundingClientRect();
+        const offset = y - box.top - box.height / 2;
+        if (offset < 0 && offset > closest.offset) {
+            return {
+                offset: offset,
+                element: child,
+            };
+        } else {
+            return closest;
+        }
+    }, {
+        offset: Number.NEGATIVE_INFINITY,
+    }).element;
+};
 
   </script>
 </body>
