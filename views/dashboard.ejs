@@ -260,8 +260,6 @@
         <button class="btn show-groups-btn waves-effect waves-light" 
         style="margin-left: 10px; background-color: #c8102e; color: white;"
         data-key="<%= JSON.stringify(key) %>">Show groups</button> 
-        <input type="number" min="2" style="margin-left: 10px;width: 11vw;border: solid black 1px;border-radius: 7px;" placeholder="Change Group Size"
-         oninput="this.value = this.value.replace(/[^0-9]/g, '')" class="group-input">
       </li>
     <% }) %>
   </ul>
@@ -270,11 +268,13 @@
       <div id="skillsModal" style="display:none;">
         <div class="modal-content">
           <span class="close" onclick="closeModal()">&times;</span>
-          <h4 style="font-weight: bold;">Set Skill Priority</h4>
+          <h4 style="font-weight: bold;">Sorting Priority</h4>
           <span class="material-icons" 
           style=" font-size: 16px; vertical-align: middle;">info</span>
           <span style="font-style: italic;font-size: 14px;">Drag to Reorder</span>
           <ul id="skillsListDisplay"></ul>
+          <input type="number" id="groupSizeInput" min="2" style="margin-top: 10px; width: 100%; border: solid black 1px; border-radius: 7px;" placeholder="Change Group Size"
+          oninput="this.value = this.value.replace(/[^0-9]/g, '')" class="group-input">
           <div style="text-align: center;">
             <button  type="submit"  class="btn waves-effect waves-light default-bg-color" onclick="closeModal()">Confirm</button>
           </div>
@@ -340,7 +340,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
   <script>
     var fileNameSelected ="";
-    var manualGroupValueGlob = 0;
     var selectedFormSkillsGlob =[];
     document.addEventListener('DOMContentLoaded', function() {
       var elems = document.querySelectorAll('.sidenav');
@@ -390,7 +389,6 @@
 
 function clearGlobalVar(){
   fileNameSelected ="";
-  manualGroupValueGlob = 0;
   selectedFormSkills =[];
 }
 
@@ -399,17 +397,16 @@ document.querySelectorAll('.show-groups-btn').forEach(button => {
     clearGlobalVar()
 
     const reqKey = JSON.parse(this.getAttribute('data-key')); // Get the key from the button's data attribute 
-    const inputField = this.nextElementSibling; // Get the input field next to the button
-    const manualGroupValue = inputField.value;
-    console.log(reqKey,reqKey.studentCount,manualGroupValue)
+    // const inputField = this.nextElementSibling; // Get the input field next to the button
+    // const manualGroupValue = inputField.value;
+    console.log(reqKey,reqKey.studentCount)
 
     fileNameSelected = reqKey.fileName
-    manualGroupValueGlob = manualGroupValue
     selectedFormSkillsGlob = reqKey.selectedFormSkills
     // Clear previous skills in the modal
     const skillsListDisplay = document.getElementById('skillsListDisplay');
     skillsListDisplay.innerHTML = ''; 
-    if (reqKey['selectedFormSkills'] && reqKey.studentCount > 0 && ( !manualGroupValue || manualGroupValue > 1) ){
+    if (reqKey['selectedFormSkills'] && reqKey.studentCount > 0  ){
       reqKey['selectedFormSkills'].forEach(skill => {
         const li = document.createElement('li');
         li.style.display = 'flex'; // Set li to use flexbox
@@ -448,16 +445,15 @@ document.querySelectorAll('.show-groups-btn').forEach(button => {
       // };
     }else if(reqKey.studentCount <= 0){
       M.toast({html: 'None of the students have filled the form for grouping'});
-    }else if(manualGroupValue <= 1){
-      M.toast({html: 'Please enter a value of 2 or greater for the group size.'});
     }
+    
   });
 });
 
 let draggedItem = null;
 
   function closeModal() {
-    document.getElementById('skillsModal').style.display = 'none'; // Hide modal
+  
     // const newOrder = Array.from(document.querySelectorAll('#skillsListDisplay li')).map(li => li.textContent);
     const newOrder = Array.from(document.querySelectorAll('#skillsListDisplay li')).map(li => li.childNodes[1].textContent.trim());
 
@@ -465,25 +461,32 @@ let draggedItem = null;
     selectedFormSkillsGlob.sort((a, b) => {
     return newOrder.indexOf(a.skillName) - newOrder.indexOf(b.skillName);
 });
-
+const manualGroupValue = document.getElementById('groupSizeInput').value; // Get the value from the input in the modal
+    // ... existing code to handle the confirmation ...
+    console.log('Group Size:', manualGroupValue);
     console.log({ key: {fileName :fileNameSelected,
-      manualGroupValue:manualGroupValueGlob, selectedFormSkills:selectedFormSkillsGlob }})
-     try {
-        const response =   fetch('/fetchFormGrouing', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify( {fileName :fileNameSelected,
-           selectedFormSkills:selectedFormSkillsGlob , manualGroupSize:manualGroupValueGlob }) // Send the key in the request body
-      });
+      manualGroupValue:manualGroupValue, selectedFormSkills:selectedFormSkillsGlob }})
+      if( !manualGroupValue || manualGroupValue > 1){
+        document.getElementById('skillsModal').style.display = 'none'; // Hide modal
+          try {
+              const response =   fetch('/fetchFormGrouing', {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+              },
+              body: JSON.stringify( {fileName :fileNameSelected,
+                selectedFormSkills:selectedFormSkillsGlob , manualGroupSize:manualGroupValue }) // Send the key in the request body
+            });
 
-      clearGlobalVar();
-          window.location.reload(); // Refresh the page after successful clear
-    
-      }catch(error) {
-        console.error('There was a problem with the fetch operation:', error);
-      };
+            clearGlobalVar();
+                window.location.reload(); // Refresh the page after successful clear
+          
+            }catch(error) {
+              console.error('There was a problem with the fetch operation:', error);
+            };
+          }else if(manualGroupValue <= 1){
+             M.toast({html: 'Please enter a value of 2 or greater for the group size.'});
+          }
 
   }
     
