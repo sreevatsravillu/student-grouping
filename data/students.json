@@ -2299,68 +2299,6 @@
       ]
     },
     {
-      "name": "joey florentine",
-      "uid": "002319708",
-      "email": "florentine.j@northeastern.edu",
-      "gender": "Male",
-      "pursuingYr": "First Year",
-      "skillArr": [
-        "pursuingYr-First Year",
-        "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-1",
-        "How comfortable are you presenting in front of others or speaking publicly?-4",
-        "My teachers or others have frequently told me that I am a good writer-2",
-        "I am generally more outgoing than shy in social or group settings-3",
-        "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-0",
-        "MKTG",
-        "N.U.in Portugal – CIEE Lisbon",
-        "Hispanic or Latino/a/x"
-      ],
-      "skills": [
-        {
-          "skillName": "pursuingYr-First Year",
-          "value": "First Year",
-          "hasSkill": "First Year"
-        },
-        {
-          "skillName": "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-1",
-          "value": "1",
-          "hasSkill": "1"
-        },
-        {
-          "skillName": "How comfortable are you presenting in front of others or speaking publicly?-4",
-          "value": "4",
-          "hasSkill": "4"
-        },
-        {
-          "skillName": "My teachers or others have frequently told me that I am a good writer-2",
-          "value": "2",
-          "hasSkill": "2"
-        },
-        {
-          "skillName": "I am generally more outgoing than shy in social or group settings-3",
-          "value": "3",
-          "hasSkill": "3"
-        },
-        {
-          "skillName": "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-0",
-          "value": "0",
-          "hasSkill": "0"
-        },
-        {
-          "skillName": "MKTG",
-          "hasSkill": true
-        },
-        {
-          "skillName": "N.U.in Portugal – CIEE Lisbon",
-          "hasSkill": true
-        },
-        {
-          "skillName": "Hispanic or Latino/a/x",
-          "hasSkill": true
-        }
-      ]
-    },
-    {
       "name": "Jai Saraf",
       "uid": "002208939",
       "email": "saraf.j@northeastern.edu",
