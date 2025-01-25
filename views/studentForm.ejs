@@ -89,7 +89,7 @@
                                 <span class="toggle-slider"></span>
                             </label>
                             <div id="experienceDropdown" class="hidden">
-                                <select name="nuin" class="select-input" onchange="updateNuinSelection(this)"></select>
+                                <select name="nuin" class="select-input" onchange="updateNuinSelection(this)">
                                     <option value="">Select NUIN</option> <!-- Added default option -->
                                     <% form.nuin.forEach(nuin => { %>
                                         <option value="<%= nuin %>"><%= nuin %></option>
