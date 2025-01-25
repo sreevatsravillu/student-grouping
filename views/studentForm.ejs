@@ -85,11 +85,12 @@
                         <label class="field-label">NUIN:</label>
                         <div class="toggle-container">
                             <label class="toggle-switch">
-                                <input type="checkbox" id="nuin">
+                                <input type="checkbox" id="nuin" onchange="toggleNuinDropdown()">
                                 <span class="toggle-slider"></span>
                             </label>
                             <div id="experienceDropdown" class="hidden">
-                                <select name="nuin" class="select-input">
+                                <select name="nuin" class="select-input" onchange="updateNuinSelection(this)"></select>
+                                    <option value="">Select NUIN</option> <!-- Added default option -->
                                     <% form.nuin.forEach(nuin => { %>
                                         <option value="<%= nuin %>"><%= nuin %></option>
                                     <% }) %>
@@ -171,6 +172,23 @@
                 experienceDropdown.querySelector('select').value = '';
             }
         });
+
+        function toggleNuinDropdown() {
+        const nuin = document.getElementById('nuin');
+        const experienceDropdown = document.getElementById('experienceDropdown');
+        experienceDropdown.classList.toggle('hidden', !nuin.checked);
+        if (!nuin.checked) {
+            experienceDropdown.querySelector('select').value = ''; // Reset selection
+        }
+    }
+
+    function updateNuinSelection(selectElement) {
+        const nuinCheckbox = document.getElementById('nuin');
+        if (selectElement.value === "") {
+            nuinCheckbox.checked = false; // Uncheck if no option is selected
+            document.getElementById('experienceDropdown').classList.add('hidden');
+        }
+    }
     </script>
 
     <style>
