@@ -57,28 +57,27 @@
                    <div class="form-field">
     <label class="field-label">Current Year:</label>
     <select name="pursuingYr" class="select-input" required>
-        <option value="" disabled selected>Pick your Year</option> <!-- Default option -->
+        <option value="" disabled selected>Select your current academic year</option>
         <% form.pursuingYr.forEach(yr => { %>
             <option value="<%= yr %>"><%= yr %></option>
         <% }) %>
     </select>
 </div>
 
-                    <div class="form-field">
+<div class="form-field">
     <label class="field-label">Ethnicity:</label>
     <select name="ethnicity" class="select-input" required>
-        <option value="" disabled selected>Pick One</option> <!-- Default option -->
+        <option value="" disabled selected>Choose your ethnicity</option>
         <% form.ethnicity.forEach(ethnicity => { %>
             <option value="<%= ethnicity %>"><%= ethnicity %></option>
         <% }) %>
     </select>
 </div>
 
-
-                    <div class="form-field">
+<div class="form-field">
     <label class="field-label">Major:</label>
     <select name="major" class="select-input" required>
-        <option value="" disabled selected>Pick your Major</option> <!-- Default option -->
+        <option value="" disabled selected>Select your major</option>
         <% form.majors.forEach(major => { %>
             <option value="<%= major %>"><%= major %></option>
         <% }) %>
