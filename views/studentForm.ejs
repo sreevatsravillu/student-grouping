@@ -54,33 +54,36 @@
                 <div class="form-section">
                     <h2 class="section-title">Academic Information</h2>
                     
-                    <div class="form-field">
-                        <label class="field-label">Current Year:</label>
-                        <select name="pursuingYr" class="select-input" required>
-                            <% form.pursuingYr.forEach(yr => { %>
-                                <option value="<%= yr %>"><%= yr %></option>
-                            <% }) %>
-                        </select>
-                    </div>
+                   <div class="form-field">
+    <label class="field-label">Current Year:</label>
+    <select name="pursuingYr" class="select-input" required>
+        <option value="" disabled selected>Pick your Year</option> <!-- Default option -->
+        <% form.pursuingYr.forEach(yr => { %>
+            <option value="<%= yr %>"><%= yr %></option>
+        <% }) %>
+    </select>
+</div>
 
                     <div class="form-field">
-                        <label class="field-label">Ethnicity:</label>
-                        <select name="ethnicity" class="select-input" required>
-                            <% form.ethnicity.forEach(ethnicity => { %>
-                                <option value="<%= ethnicity %>"><%= ethnicity %></option>
-                            <% }) %>
-                        </select>
-                    </div>
+    <label class="field-label">Ethnicity:</label>
+    <select name="ethnicity" class="select-input" required>
+        <option value="" disabled selected>Pick One</option> <!-- Default option -->
+        <% form.ethnicity.forEach(ethnicity => { %>
+            <option value="<%= ethnicity %>"><%= ethnicity %></option>
+        <% }) %>
+    </select>
+</div>
+
 
                     <div class="form-field">
-                        <label class="field-label">Major:</label>
-                        <select name="major" class="select-input" required>
-                            <% form.majors.forEach(major => { %>
-                                <option value="<%= major %>"><%= major %></option>
-                            <% }) %>
-                        </select>
-                    </div>
-
+    <label class="field-label">Major:</label>
+    <select name="major" class="select-input" required>
+        <option value="" disabled selected>Pick your Major</option> <!-- Default option -->
+        <% form.majors.forEach(major => { %>
+            <option value="<%= major %>"><%= major %></option>
+        <% }) %>
+    </select>
+</div>
                     <div class="form-field">
                         <label class="field-label">Were you a part of the NUin Program?</label>
                         <div class="toggle-container">
