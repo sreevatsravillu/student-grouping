@@ -82,7 +82,7 @@
                     </div>
 
                     <div class="form-field">
-                        <label class="field-label">NUIN:</label>
+                        <label class="field-label">Were you a part of the NUin Program?</label>
                         <div class="toggle-container">
                             <label class="toggle-switch">
                                 <input type="checkbox" id="nuin" onchange="toggleNuinDropdown()">
@@ -90,7 +90,7 @@
                             </label>
                             <div id="experienceDropdown" class="hidden">
                                 <select name="nuin" class="select-input" onchange="updateNuinSelection(this)">
-                                    <option value="">Select NUIN</option> <!-- Added default option -->
+                                    <option value="">Select NUin Location</option> <!-- Added default option -->
                                     <% form.nuin.forEach(nuin => { %>
                                         <option value="<%= nuin %>"><%= nuin %></option>
                                     <% }) %>
