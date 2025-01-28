@@ -19,6 +19,7 @@ router.post('/submit', (req, res) => {
   const students = studentsDetails[req.body.pageUri] || [];
   const skillsDetails = readJSONFile('skills.json');
   let skillsObj = skillsDetails[req.body.pageUri] || {};
+  const incrementVal = req.body.nuin ? 3 : 2
 
   console.log("===+++++++====",Object.entries(req.body),req.body)
   console.log("URL of the page that hit the POST call:", req.originalUrl);
@@ -30,23 +31,53 @@ router.post('/submit', (req, res) => {
     .filter(([key]) => key !== 'name' && key !== 'email' && key !== 'email' && key !== 'pageUri'
     && key !== 'major' && key !=='uid' && key !== "ethnicity"
      && key !== 'gender' && key !=='nuin')
-    .map(([skillName,value]) => ({
+    .map(([skillName,value], index) => ({
       skillName: `${skillName}-${value}`,
       value: value,  // This will now capture the numeric value from the request
-      hasSkill: value || value === '0'
+      hasSkill: value || value === '0',
+      priority:index + incrementVal,
+      tableTitle: `${skillName}`,
     }));
+    const tableSkills = skills
+    tableSkills.push({
+      "tableTitle":"Gender",
+      "value":req.body.gender,
+      "hasSkill": true
+    });
+    tableSkills.push({
+      "tableTitle":"Major",
+      "value":req.body.major,
+      "hasSkill": true
+    });
+    
     skills.push({
       "skillName": req.body.major,
       "hasSkill": true
     });
-    skills.push({
-      "skillName": req.body.nuin,
-      "hasSkill": true
-    });
+
+
     skills.push({
       "skillName": req.body.ethnicity,
+      "hasSkill": true,
+      "priority":2
+    });
+    tableSkills.push({
+      "tableTitle":"Ethnicity",
+      "value":req.body.ethnicity,
       "hasSkill": true
     });
+    if(req.body.nuin){
+      skills.push({
+        "skillName": req.body.nuin,
+        "hasSkill": true,
+        "priority":1
+      });
+      tableSkills.push({
+        "tableTitle":"NUIN",
+        "value":req.body.nuin,
+        "hasSkill": true
+      });
+    }
 
   students.push({
     name: req.body.name,
@@ -57,7 +88,8 @@ router.post('/submit', (req, res) => {
     // majors:req.body.major,
     skillArr:skills.filter(skill => skill.hasSkill)
     .map(skill => skill.skillName),
-    skills
+    skills,
+    tableSkills:tableSkills
   });
 
 
@@ -65,12 +97,16 @@ skills.forEach(skill => {
   if (skill.hasSkill) {
     if (!skillsObj[skill.skillName]) {
       skillsObj[skill.skillName] = {
-        count: 0,    
+        count: 0, 
+        priority:0,   
         uid: [],    
         name: []      
       };
     }
-    skillsObj[skill.skillName].count += 1;  
+    skillsObj[skill.skillName].count += 1; 
+    if(skill.priority){
+      skillsObj[skill.skillName].priority = skill.priority;
+    }   
     skillsObj[skill.skillName].uid.push(req.body.uid);  
     skillsObj[skill.skillName].name.push(req.body.name);
   }
@@ -83,7 +119,11 @@ console.log("studentsDetails",students, studentsDetails)
 studentsDetails[req.body.pageUri] = students;
 writeJSONFile('students.json', studentsDetails);
   // res.redirect('/');
-   res.redirect('/student-form-submit');
+  res.redirect('/student-form-submit');
+  
+
+
 });
+
 
 module.exports = router;
