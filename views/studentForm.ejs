@@ -31,7 +31,7 @@
         .form-title {
             text-align: center;
             color: #c8102e;
-            font-size: 26px;
+            font-size: 28px;
             font-weight: bold;
             margin-bottom: 20px;
         }
@@ -40,8 +40,37 @@
             padding: 20px;
             margin-bottom: 30px;
             border: 1px solid #e0e0e0;
-            border-radius: 6px;
+            border-radius: 8px;
             background-color: #fafafa;
+        }
+
+        .form-field {
+            margin-bottom: 20px;
+        }
+
+        .field-label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        .text-input, .select-input {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        .text-input:focus, .select-input:focus {
+            border-color: #c8102e;
+        }
+
+        .radio-group {
+            display: flex;
+            gap: 20px;
         }
 
         .slider-container {
@@ -63,6 +92,10 @@
             transition: background 0.3s;
         }
 
+        .mui-slider:hover {
+            background: #ccc;
+        }
+
         .mui-slider::-webkit-slider-thumb {
             -webkit-appearance: none;
             width: 20px;
@@ -73,27 +106,49 @@
             transition: background 0.3s;
         }
 
+        .mui-slider::-webkit-slider-thumb:hover {
+            background: #dd3350;
+        }
+
         .tooltip {
             position: absolute;
-            top: -30px;
-            left: 50%;
-            transform: translateX(-50%);
+            top: -35px;
             background: #c8102e;
             color: white;
             padding: 4px 8px;
             border-radius: 4px;
             font-size: 14px;
-            opacity: 0;
+            transform: translateX(-50%);
+            white-space: nowrap;
             transition: opacity 0.3s, top 0.3s;
+            opacity: 0;
         }
 
-        .slider-container:hover .tooltip {
+        .slider-container:hover .tooltip,
+        .slider-container:focus-within .tooltip {
             opacity: 1;
-            top: -40px;
+            top: -45px;
         }
 
         .hidden {
             display: none;
+        }
+
+        .submit-button {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            color: white;
+            background-color: #c8102e;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .submit-button:hover {
+            background-color: #dd3350;
         }
     </style>
 </head>
