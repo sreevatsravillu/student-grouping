@@ -2,42 +2,34 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Student Skills Form</title>
 
-  <!-- Roboto & Material Icons (optional) -->
+  <!-- Optional: Material UI or other libraries -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-  <!-- Example Material UI / other necessary styles -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mui/material@latest/dist/mui-styles.min.css">
-  <!-- Your own stylesheet -->
-  <link rel="stylesheet" href="/style.css"> 
-
   <style>
-    /* ================================
-       GENERAL PAGE STYLES
-    ================================ */
+    /* =================================
+       GENERAL PAGE & FORM STYLES
+    ================================== */
     body {
-      margin: 0;
-      padding: 0;
-      font-family: "Roboto", "Arial", sans-serif;
-      background-color: #f8f8f8; /* Light background for contrast */
-      color: #333;               /* Dark text for good readability */
+      margin: 0; 
+      padding: 0; 
+      font-family: "Roboto", Arial, sans-serif;
+      background-color: #f8f8f8;
+      color: #333;
     }
-
     .blurred-image {
       width: 100%;
       height: auto;
       display: block;
     }
-
     .container {
       max-width: 800px;
       margin: 0 auto;
       padding: 1rem;
     }
-
     .form-container {
       background: #fff;
       padding: 2rem;
@@ -45,36 +37,30 @@
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
       margin-top: 1rem;
     }
-
     .form-title {
       text-align: center;
       color: #c8102e;
       margin-bottom: 2rem;
     }
-
     .form-section {
       margin-bottom: 2rem;
       border: 1px solid #e0e0e0;
       border-radius: 4px;
       padding: 1rem;
     }
-
     .section-title {
       color: #c8102e;
       font-size: 1.5em;
       margin-bottom: 1rem;
     }
-
     .form-field {
       margin-bottom: 1.5rem;
     }
-
     .field-label {
       display: block;
       margin-bottom: 0.5rem;
       font-weight: 600;
     }
-
     .text-input, .select-input {
       width: 100%;
       padding: 0.5rem;
@@ -82,32 +68,26 @@
       border-radius: 4px;
       font-size: 1rem;
     }
-
     .text-input:focus, .select-input:focus {
       outline: 2px solid #c8102e;
       border-color: #c8102e;
     }
 
-    /* Radio Group */
+    /* Radio Buttons */
     .radio-group {
-      display: flex;
-      flex-wrap: wrap;
+      display: flex; 
+      flex-wrap: wrap; 
       gap: 1rem;
     }
     .radio-label {
-      display: flex;
-      align-items: center;
+      display: flex; 
+      align-items: center; 
       gap: 0.25rem;
-    }
-
-    /* Toggle Switch Container */
-    .toggle-container {
-      margin-top: 0.5rem;
     }
 
     /* Submit Button */
     .form-actions {
-      text-align: center;
+      text-align: center; 
       margin-top: 2rem;
     }
     .submit-button {
@@ -120,88 +100,18 @@
       font-size: 1rem;
       transition: background-color 0.3s;
     }
-    .submit-button:hover,
+    .submit-button:hover, 
     .submit-button:focus {
       background-color: #dd3350;
       outline: none;
     }
 
-    /* ================================
-       SLIDER + TOOLTIP STYLES
-    ================================ */
-    .slider-container {
-      width: 100%;
-      max-width: 300px;
-      position: relative;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
+    /* =================================
+       TOGGLE SWITCH (NUIn)
+    ================================== */
+    .toggle-container {
       margin-top: 0.5rem;
     }
-
-    .range-slider {
-      width: 100%;
-      height: 4px;
-      appearance: none;
-      background: #e0e0e0;
-      border-radius: 4px;
-      outline: none;
-    }
-    /* Slider Track */
-    .range-slider::-webkit-slider-runnable-track {
-      height: 4px;
-      background: #e0e0e0;
-      border-radius: 4px;
-    }
-    .range-slider:focus::-webkit-slider-runnable-track {
-      outline: none;
-    }
-
-    /* Slider Thumb */
-    .range-slider::-webkit-slider-thumb {
-      appearance: none;
-      width: 18px;
-      height: 18px;
-      background: #c8102e;
-      border-radius: 50%;
-      cursor: pointer;
-      transition: background 0.15s ease-in-out;
-      margin-top: -7px; /* center the thumb on track */
-    }
-    .range-slider::-webkit-slider-thumb:hover {
-      background: #dd3350;
-    }
-
-    /* Show ticks with <datalist> in some browsers */
-    .range-slider::-webkit-slider-runnable-track {
-      position: relative;
-    }
-
-    /* Value Display Next to Slider */
-    .slider-value {
-      min-width: 20px;
-      text-align: center;
-      font-weight: 500;
-    }
-
-    /* Tooltip on Hover */
-    .slider-tooltip {
-      display: none;            /* Hidden by default */
-      position: absolute;
-      top: -35px;               /* Move above the slider */
-      padding: 4px 8px;
-      background: #c8102e;
-      color: #fff;
-      border-radius: 4px;
-      font-size: 0.8rem;
-      white-space: nowrap;
-      pointer-events: none;     /* Let mouse events pass through */
-      transform: translateX(-50%);
-    }
-
-    /* ================================
-       TOGGLE SWITCH
-    ================================ */
     .toggle-switch {
       position: relative;
       display: inline-block;
@@ -224,12 +134,12 @@
     .toggle-slider:before {
       position: absolute;
       content: "";
-      height: 26px;
-      width: 26px;
-      left: 4px;
-      bottom: 4px;
-      background-color: #fff;
-      transition: 0.4s;
+      height: 26px; 
+      width: 26px; 
+      left: 4px; 
+      bottom: 4px; 
+      background-color: #fff; 
+      transition: 0.4s; 
       border-radius: 50%;
     }
     .toggle-switch input:checked + .toggle-slider {
@@ -241,82 +151,166 @@
     .hidden {
       display: none;
     }
+
+    /* =================================
+       SLIDER STYLES + TICKMARKS
+    ================================== */
+    .slider-container {
+      width: 100%;
+      max-width: 300px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-top: 0.5rem;
+    }
+    .range-slider {
+      width: 100%;
+      height: 4px;
+      appearance: none;
+      background: #e0e0e0;
+      border-radius: 4px;
+      outline: none;
+    }
+    /* Slider Track */
+    .range-slider::-webkit-slider-runnable-track {
+      height: 4px;
+      background: #e0e0e0;
+      border-radius: 4px;
+    }
+    .range-slider:focus::-webkit-slider-runnable-track {
+      outline: none;
+    }
+    /* Slider Thumb */
+    .range-slider::-webkit-slider-thumb {
+      appearance: none;
+      width: 18px;
+      height: 18px;
+      background: #c8102e;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: background 0.15s ease-in-out;
+      margin-top: -7px; /* center the thumb on track */
+    }
+    .range-slider::-webkit-slider-thumb:hover {
+      background: #dd3350;
+    }
+
+    /* Real-time numeric display next to slider */
+    .slider-value {
+      min-width: 20px;
+      text-align: center;
+      font-weight: 500;
+    }
+
+    /* Hover tooltip */
+    .slider-tooltip {
+      display: none;            /* Hidden by default */
+      position: absolute;
+      top: -35px;               /* Move above the slider */
+      padding: 4px 8px;
+      background: #c8102e;
+      color: #fff;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      white-space: nowrap;
+      pointer-events: none;     /* Let mouse events pass through */
+      transform: translateX(-50%);
+    }
+
+    /* A row of labels to show each possible value (0–5) */
+    .slider-scale {
+      margin-top: 0.25rem;
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.9rem;
+      color: #555;
+      max-width: 300px; /* match slider width */
+    }
   </style>
 </head>
 
 <body>
-  <!-- Top Image (Hero or Header) -->
-  <img src="/PPS.svg" alt="College Logo" class="blurred-image" />
+  <!-- Top Image (e.g. University or Program Banner) -->
+  <img src="/PPS.svg" alt="College Logo" class="blurred-image"/>
 
   <div class="container">
     <h1 class="form-title">Student Skills Form</h1>
 
     <div class="form-container" role="form" aria-labelledby="form-title">
       <form action="/student-form/submit" method="POST">
-        <!-- For EJS context, store the page name -->
-        <input type="hidden" name="pageUri" id="pageUri" value="pageUri" />
+        <!-- Hidden input for page name (EJS, Node, etc.) -->
+        <input type="hidden" name="pageUri" id="pageUri" value="pageUri"/>
 
-        <!-- ==============================================
+        <!-- =================================
              PERSONAL INFORMATION SECTION
-        =============================================== -->
+        ================================== -->
         <div class="form-section">
           <h2 class="section-title">Personal Information</h2>
-
+          
           <!-- Name -->
           <div class="form-field">
-            <label for="name" class="field-label">Name <span aria-hidden="true">*</span></label>
-            <input 
-              type="text" 
-              id="name" 
-              name="name" 
-              class="text-input" 
-              placeholder="Enter your full name" 
-              required 
+            <label for="name" class="field-label">
+              Name <span aria-hidden="true">*</span>
+            </label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="text-input"
+              placeholder="Enter your full name"
+              required
               aria-required="true"
-            >
+            />
           </div>
 
           <!-- Email -->
           <div class="form-field">
-            <label for="email" class="field-label">Email <span aria-hidden="true">*</span></label>
-            <input 
-              type="email" 
-              id="email" 
-              name="email" 
-              class="text-input" 
-              placeholder="you@example.com" 
-              required 
+            <label for="email" class="field-label">
+              Email <span aria-hidden="true">*</span>
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="text-input"
+              placeholder="you@example.com"
+              required
               aria-required="true"
-            >
+            />
           </div>
 
           <!-- NUID -->
           <div class="form-field">
-            <label for="uid" class="field-label">NUID <span aria-hidden="true">*</span></label>
-            <input 
-              type="text" 
-              id="uid" 
-              name="uid" 
-              class="text-input" 
-              placeholder="Enter your university ID" 
-              required 
+            <label for="uid" class="field-label">
+              NUID <span aria-hidden="true">*</span>
+            </label>
+            <input
+              type="text"
+              id="uid"
+              name="uid"
+              class="text-input"
+              placeholder="Enter your university ID"
+              required
               aria-required="true"
-            >
+            />
           </div>
 
           <!-- Gender -->
           <fieldset class="form-field">
-            <legend class="field-label">Gender <span aria-hidden="true">*</span></legend>
+            <legend class="field-label">
+              Gender <span aria-hidden="true">*</span>
+            </legend>
             <div class="radio-group" role="radiogroup" aria-required="true">
               <% form.genders.forEach(gen => { %>
                 <label class="radio-label">
                   <input 
-                    type="radio" 
-                    name="gender" 
-                    value="<%= gen %>" 
+                    type="radio"
+                    name="gender"
+                    value="<%= gen %>"
                     required
                     aria-required="true"
-                  >
+                  />
                   <%= gen %>
                 </label>
               <% }) %>
@@ -324,20 +318,22 @@
           </fieldset>
         </div>
 
-        <!-- ==============================================
+        <!-- =================================
              ACADEMIC INFORMATION SECTION
-        =============================================== -->
+        ================================== -->
         <div class="form-section">
           <h2 class="section-title">Academic Information</h2>
 
           <!-- Current Year -->
           <div class="form-field">
-            <label for="pursuingYr" class="field-label">Current Year <span aria-hidden="true">*</span></label>
-            <select 
-              id="pursuingYr" 
-              name="pursuingYr" 
-              class="select-input" 
-              required 
+            <label for="pursuingYr" class="field-label">
+              Current Year <span aria-hidden="true">*</span>
+            </label>
+            <select
+              id="pursuingYr"
+              name="pursuingYr"
+              class="select-input"
+              required
               aria-required="true"
             >
               <option value="" disabled selected>Select your current academic year</option>
@@ -349,12 +345,14 @@
 
           <!-- Ethnicity -->
           <div class="form-field">
-            <label for="ethnicity" class="field-label">Ethnicity <span aria-hidden="true">*</span></label>
-            <select 
-              id="ethnicity" 
-              name="ethnicity" 
-              class="select-input" 
-              required 
+            <label for="ethnicity" class="field-label">
+              Ethnicity <span aria-hidden="true">*</span>
+            </label>
+            <select
+              id="ethnicity"
+              name="ethnicity"
+              class="select-input"
+              required
               aria-required="true"
             >
               <option value="" disabled selected>Choose your ethnicity</option>
@@ -366,12 +364,14 @@
 
           <!-- Major -->
           <div class="form-field">
-            <label for="major" class="field-label">Major <span aria-hidden="true">*</span></label>
-            <select 
-              id="major" 
-              name="major" 
-              class="select-input" 
-              required 
+            <label for="major" class="field-label">
+              Major <span aria-hidden="true">*</span>
+            </label>
+            <select
+              id="major"
+              name="major"
+              class="select-input"
+              required
               aria-required="true"
             >
               <option value="" disabled selected>Select your major</option>
@@ -383,27 +383,28 @@
 
           <!-- NUIn Toggle -->
           <div class="form-field">
-            <label class="field-label">Were you a part of the NUin Program?</label>
+            <label class="field-label">
+              Were you a part of the NUin Program?
+            </label>
             <div class="toggle-container">
               <label class="toggle-switch">
-                <!-- Checkbox controlling NUIn dropdown -->
                 <input 
                   type="checkbox" 
                   id="nuin" 
                   onchange="toggleNuinDropdown()" 
                   aria-label="Toggle NUIn Program"
-                >
+                />
                 <span class="toggle-slider"></span>
               </label>
               <!-- NUIn Dropdown (hidden by default) -->
               <div id="experienceDropdown" class="hidden" style="margin-top: 0.5rem;">
-                <label for="nuinSelect" class="field-label" style="display: none;">
+                <label for="nuinSelect" class="field-label" style="display:none;">
                   NUIn Program Location
                 </label>
                 <select 
-                  id="nuinSelect" 
-                  name="nuin" 
-                  class="select-input" 
+                  id="nuinSelect"
+                  name="nuin"
+                  class="select-input"
                   onchange="updateNuinSelection(this)"
                 >
                   <option value="">Select NUin Location</option>
@@ -416,15 +417,15 @@
           </div>
         </div>
 
-        <!-- ==============================================
+        <!-- =================================
              SKILLS ASSESSMENT SECTION
-        =============================================== -->
+        ================================== -->
         <div class="form-section">
           <h2 class="section-title">Skills Assessment</h2>
-          <p style="font-size: 1rem;">
+          <p>
             Please rate your proficiency or agreement with the statements below on a scale from 0 to 5:
           </p>
-          <ul style="list-style-type: none; font-size: 0.9rem; margin-bottom: 1rem; padding-left: 0;">
+          <ul style="list-style-type: none; padding-left: 0; margin-bottom: 1rem;">
             <li>0 – Not at all</li>
             <li>1 – Slightly</li>
             <li>2 – Moderately</li>
@@ -433,17 +434,20 @@
             <li>5 – Extremely</li>
           </ul>
 
+          <!-- Example repeating block for each skill -->
           <% form.skills.forEach(skill => { %>
             <div class="form-field">
-              <label 
-                for="slider-<%= skill.skillName %>" 
+              <!-- Slider Label -->
+              <label
+                for="slider-<%= skill.skillName %>"
                 class="field-label"
               >
                 <%= skill.skillName %> <span aria-hidden="true">*</span>
               </label>
+
+              <!-- Slider Container -->
               <div class="slider-container">
-                <!-- Slider -->
-                <input 
+                <input
                   id="slider-<%= skill.skillName %>"
                   type="range"
                   name="<%= skill.skillName %>"
@@ -462,8 +466,8 @@
                   aria-valuemax="5"
                   aria-label="Rating for <%= skill.skillName %>"
                   aria-describedby="slider-value-<%= skill.skillName %>"
-                >
-                <!-- Tickmarks for better visual steps (supported in many browsers) -->
+                />
+                <!-- Tickmarks for browsers that render them -->
                 <datalist id="tickmarks">
                   <option value="0" label="0"></option>
                   <option value="1" label="1"></option>
@@ -473,24 +477,33 @@
                   <option value="5" label="5"></option>
                 </datalist>
 
-                <!-- Real-time numeric display -->
+                <!-- Real-time slider value -->
                 <span 
-                  id="slider-value-<%= skill.skillName %>" 
-                  class="slider-value" 
+                  id="slider-value-<%= skill.skillName %>"
+                  class="slider-value"
                   aria-live="polite"
-                >
-                  0
-                </span>
+                >0</span>
+                
                 <!-- Hover tooltip -->
                 <span class="slider-tooltip" role="tooltip" aria-hidden="true"></span>
+              </div>
+
+              <!-- Labels for each possible value (0–5) below the slider -->
+              <div class="slider-scale" aria-hidden="true">
+                <span>0</span>
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span>5</span>
               </div>
             </div>
           <% }) %>
         </div>
 
-        <!-- ==============================================
+        <!-- =================================
              SUBMIT BUTTON
-        =============================================== -->
+        ================================== -->
         <div class="form-actions">
           <button type="submit" class="submit-button">Submit</button>
         </div>
@@ -498,15 +511,15 @@
     </div>
   </div>
 
-  <!-- ================================
-       SCRIPT: SLIDER & NUIN TOGGLE
-  ================================ -->
+  <!-- =================================
+       SCRIPTS: NUIN TOGGLE + SLIDER
+  ================================== -->
   <script>
-    // Capture the page name for potential usage
+    // 1) Page name for reference
     const pageUri = window.location.pathname.split('/').pop();
     document.getElementById('pageUri').value = pageUri;
 
-    // 1. NUIn Toggle Logic
+    // 2) NUIn Toggle Logic
     const nuinCheckbox = document.getElementById('nuin');
     const experienceDropdown = document.getElementById('experienceDropdown');
 
@@ -523,23 +536,25 @@
       }
     }
 
-    // 2. Slider & Tooltip
+    // 3) Slider & Tooltip
     function updateSliderValue(input) {
-      // Update the numeric display
+      // Update text next to slider
       const sliderValueSpan = input.parentElement.querySelector('.slider-value');
       sliderValueSpan.textContent = input.value;
 
-      // Also update the tooltip content
+      // Update tooltip text
       const tooltip = input.parentElement.querySelector('.slider-tooltip');
       tooltip.textContent = input.value;
-      // Update ARIA attribute for screen readers
+
+      // ARIA updates for screen readers
       input.setAttribute('aria-valuenow', input.value);
     }
 
     function showTooltip(input, event) {
       const tooltip = input.parentElement.querySelector('.slider-tooltip');
       tooltip.style.display = 'inline-block';
-      // Position tooltip based on mouse X offset inside the slider
+
+      // Position tooltip based on mouse X offset
       const offsetX = event.offsetX;
       tooltip.style.left = offsetX + 'px';
     }
