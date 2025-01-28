@@ -73,31 +73,14 @@
                             <% }) %>
                         </select>
                     </div>
-                    <div class="form-field">
-                        <label class="field-label">Were you a part of the NUin Program?</label>
-                        <div class="toggle-container">
-                            <label class="toggle-switch">
-                                <input type="checkbox" id="nuin" onchange="toggleNuinDropdown()">
-                                <span class="toggle-slider"></span>
-                            </label>
-                            <div id="experienceDropdown" class="hidden">
-                                <select name="nuin" class="select-input">
-                                    <option value="">Select NUin Location</option>
-                                    <% form.nuin.forEach(nuin => { %>
-                                        <option value="<%= nuin %>"><%= nuin %></option>
-                                    <% }) %>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
                 </div>
 
                 <!-- Skills Section -->
                 <div class="form-section">
                     <h2 class="section-title">Skills Assessment</h2>
-                    <div style="font-size: 14px;"> Please rate your proficiency or agreement with the following statements on a scale from 0 to 5:</div>
+                    <div style="font-size: 16px;"> Please rate your proficiency or agreement with the following statements on a scale from 0 to 5:</div>
                     <div style="margin-bottom: 20px;">
-                        <ul style="list-style-type: none; font-size: 12px;">
+                        <ul style="list-style-type: none; font-size: 15px;">
                             <li>0 – Not at all</li>
                             <li>1 – Slightly</li>
                             <li>2 – Moderately</li>
@@ -112,16 +95,18 @@
                             <div class="slider-container">
                                 <div class="slider-wrapper">
                                     <span class="slider-scale">0</span>
-                                    <input type="range" 
-                                           name="<%= skill.skillName %>" 
-                                           min="0" 
-                                           max="5" 
-                                           value="0" 
-                                           class="mui-slider" 
-                                           required>
+                                    <div class="slider-tooltip">
+                                        <input type="range" 
+                                               name="<%= skill.skillName %>" 
+                                               min="0" 
+                                               max="5" 
+                                               value="0" 
+                                               class="mui-slider" 
+                                               required>
+                                        <span class="tooltip">0</span>
+                                    </div>
                                     <span class="slider-scale">5</span>
                                 </div>
-                                <span class="slider-value">0</span>
                             </div>
                         </div>
                     <% }) %>
@@ -140,19 +125,13 @@
         document.getElementById('pageUri').value = pageUri;
 
         document.querySelectorAll('.mui-slider').forEach(slider => {
+            const tooltip = slider.nextElementSibling;
+
             slider.addEventListener('input', function () {
-                this.parentElement.nextElementSibling.textContent = this.value;
+                tooltip.textContent = this.value;
+                tooltip.style.left = `${((this.value - this.min) / (this.max - this.min)) * 100}%`;
             });
         });
-
-        function toggleNuinDropdown() {
-            const nuin = document.getElementById('nuin');
-            const experienceDropdown = document.getElementById('experienceDropdown');
-            experienceDropdown.classList.toggle('hidden', !nuin.checked);
-            if (!nuin.checked) {
-                experienceDropdown.querySelector('select').value = '';
-            }
-        }
     </script>
 
     <style>
@@ -212,49 +191,10 @@
             font-size: 16px;
         }
 
-        .radio-group {
-            display: flex;
-            gap: 20px;
-        }
-
-        .radio-label {
-            display: flex;
-            align-items: center;
-            gap: 5px;
-        }
-
-        .form-actions {
-            text-align: center;
-            margin-top: 30px;
-        }
-
-        .submit-button {
-            background-color: #c8102e;
-            color: white;
-            padding: 12px 24px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 16px;
-            transition: background-color 0.3s;
-        }
-
-        .submit-button:hover {
-            background-color: #dd3350;
-        }
-
-        .slider-container {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            gap: 5px;
-        }
-
         .slider-wrapper {
             display: flex;
             align-items: center;
             gap: 10px;
-            width: 100%;
         }
 
         .mui-slider {
@@ -274,69 +214,43 @@
             background: #c8102e;
             border-radius: 50%;
             cursor: pointer;
-            transition: background 0.15s;
         }
 
         .mui-slider::-webkit-slider-thumb:hover {
             background: #dd3350;
         }
 
+        .slider-tooltip {
+            position: relative;
+            width: 100%;
+        }
+
+        .tooltip {
+            position: absolute;
+            bottom: 25px;
+            background: #c8102e;
+            color: white;
+            font-size: 12px;
+            padding: 2px 6px;
+            border-radius: 4px;
+            transform: translateX(-50%);
+            white-space: nowrap;
+        }
+
+        .tooltip::after {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            border-width: 5px;
+            border-style: solid;
+            border-color: #c8102e transparent transparent transparent;
+        }
+
         .slider-scale {
             font-size: 14px;
             color: #555;
-        }
-
-        .slider-value {
-            font-size: 14px;
-        }
-
-        .toggle-switch {
-            position: relative;
-            display: inline-block;
-            width: 60px;
-            height: 34px;
-        }
-
-        .toggle-switch input {
-            opacity: 0;
-            width: 0;
-            height: 0;
-        }
-
-        .toggle-slider {
-            position: absolute;
-            cursor: pointer;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: #ccc;
-            transition: .4s;
-            border-radius: 34px;
-        }
-
-        .toggle-slider:before {
-            position: absolute;
-            content: "";
-            height: 26px;
-            width: 26px;
-            left: 4px;
-            bottom: 4px;
-            background-color: white;
-            transition: .4s;
-            border-radius: 50%;
-        }
-
-        input:checked + .toggle-slider {
-            background-color: #c8102e;
-        }
-
-        input:checked + .toggle-slider:before {
-            transform: translateX(26px);
-        }
-
-        .hidden {
-            display: none;
         }
     </style>
 </body>
