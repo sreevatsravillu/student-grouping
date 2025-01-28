@@ -204,7 +204,7 @@
 
     /* A row of labels to show each possible value (0–5) */
     .slider-scale {
-      margin-top: 0.25rem;
+      margin-top: 1rem; /* Increase this to add more spacing */
       display: flex;
       justify-content: space-between;
       font-size: 0.9rem;
@@ -425,7 +425,7 @@
                 <%= skill.skillName %> <span aria-hidden="true">*</span>
               </label>
 
-              <!-- Single slider container (no numeric label next to it) -->
+              <!-- Single slider container (no numeric label to the right) -->
               <div class="slider-container">
                 <input
                   id="slider-<%= skill.skillName %>"
@@ -512,10 +512,9 @@
       }
     }
 
-    // Update ARIA for screen readers & tooltip text
+    // Slider & tooltip logic
     function updateSliderValue(input) {
-      // If you want no numeric display at all, 
-      // we only update the tooltip text below:
+      // Update the tooltip text (if you want no hover display, remove the tooltip logic)
       const tooltip = input.parentElement.querySelector('.slider-tooltip');
       tooltip.textContent = input.value;
       // ARIA for screen readers
