@@ -5,25 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Student Skills Form</title>
 
-  <!-- Optional: Material UI or other libraries -->
+  <!-- Optional: Fonts or Material Icons -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
+  
   <style>
     /* =================================
        GENERAL PAGE & FORM STYLES
     ================================== */
     body {
-      margin: 0; 
-      padding: 0; 
+      margin: 0;
+      padding: 0;
       font-family: "Roboto", Arial, sans-serif;
       background-color: #f8f8f8;
       color: #333;
-    }
-    .blurred-image {
-      width: 100%;
-      height: auto;
-      display: block;
     }
     .container {
       max-width: 800px;
@@ -153,7 +148,7 @@
     }
 
     /* =================================
-       SLIDER STYLES + TICKMARKS
+       SLIDER + LABELS FOR 0–5
     ================================== */
     .slider-container {
       width: 100%;
@@ -161,7 +156,6 @@
       position: relative;
       display: flex;
       align-items: center;
-      gap: 0.5rem;
       margin-top: 0.5rem;
     }
     .range-slider {
@@ -178,9 +172,6 @@
       background: #e0e0e0;
       border-radius: 4px;
     }
-    .range-slider:focus::-webkit-slider-runnable-track {
-      outline: none;
-    }
     /* Slider Thumb */
     .range-slider::-webkit-slider-thumb {
       appearance: none;
@@ -196,25 +187,18 @@
       background: #dd3350;
     }
 
-    /* Real-time numeric display next to slider */
-    .slider-value {
-      min-width: 20px;
-      text-align: center;
-      font-weight: 500;
-    }
-
-    /* Hover tooltip */
+    /* Hover tooltip (optional) */
     .slider-tooltip {
-      display: none;            /* Hidden by default */
+      display: none;            
       position: absolute;
-      top: -35px;               /* Move above the slider */
+      top: -35px;               
       padding: 4px 8px;
       background: #c8102e;
       color: #fff;
       border-radius: 4px;
       font-size: 0.8rem;
       white-space: nowrap;
-      pointer-events: none;     /* Let mouse events pass through */
+      pointer-events: none;     
       transform: translateX(-50%);
     }
 
@@ -231,15 +215,12 @@
 </head>
 
 <body>
-  <!-- Top Image (e.g. University or Program Banner) -->
-  <img src="/PPS.svg" alt="College Logo" class="blurred-image"/>
-
   <div class="container">
     <h1 class="form-title">Student Skills Form</h1>
 
     <div class="form-container" role="form" aria-labelledby="form-title">
       <form action="/student-form/submit" method="POST">
-        <!-- Hidden input for page name (EJS, Node, etc.) -->
+        <!-- Hidden input for your server logic -->
         <input type="hidden" name="pageUri" id="pageUri" value="pageUri"/>
 
         <!-- =================================
@@ -425,7 +406,7 @@
           <p>
             Please rate your proficiency or agreement with the statements below on a scale from 0 to 5:
           </p>
-          <ul style="list-style-type: none; padding-left: 0; margin-bottom: 1rem;">
+          <ul style="list-style-type:none; padding-left:0; margin-bottom:1rem;">
             <li>0 – Not at all</li>
             <li>1 – Slightly</li>
             <li>2 – Moderately</li>
@@ -434,7 +415,6 @@
             <li>5 – Extremely</li>
           </ul>
 
-          <!-- Example repeating block for each skill -->
           <% form.skills.forEach(skill => { %>
             <div class="form-field">
               <!-- Slider Label -->
@@ -445,7 +425,7 @@
                 <%= skill.skillName %> <span aria-hidden="true">*</span>
               </label>
 
-              <!-- Slider Container -->
+              <!-- Single slider container (no numeric label next to it) -->
               <div class="slider-container">
                 <input
                   id="slider-<%= skill.skillName %>"
@@ -465,9 +445,8 @@
                   aria-valuemin="0"
                   aria-valuemax="5"
                   aria-label="Rating for <%= skill.skillName %>"
-                  aria-describedby="slider-value-<%= skill.skillName %>"
                 />
-                <!-- Tickmarks for browsers that render them -->
+                <!-- Tickmarks -->
                 <datalist id="tickmarks">
                   <option value="0" label="0"></option>
                   <option value="1" label="1"></option>
@@ -477,18 +456,15 @@
                   <option value="5" label="5"></option>
                 </datalist>
 
-                <!-- Real-time slider value -->
+                <!-- Tooltip on hover (optional) -->
                 <span 
-                  id="slider-value-<%= skill.skillName %>"
-                  class="slider-value"
-                  aria-live="polite"
-                >0</span>
-                
-                <!-- Hover tooltip -->
-                <span class="slider-tooltip" role="tooltip" aria-hidden="true"></span>
+                  class="slider-tooltip" 
+                  role="tooltip" 
+                  aria-hidden="true"
+                ></span>
               </div>
 
-              <!-- Labels for each possible value (0–5) below the slider -->
+              <!-- 0–5 scale beneath the slider -->
               <div class="slider-scale" aria-hidden="true">
                 <span>0</span>
                 <span>1</span>
@@ -511,15 +487,15 @@
     </div>
   </div>
 
-  <!-- =================================
-       SCRIPTS: NUIN TOGGLE + SLIDER
-  ================================== -->
+  <!-- ================================
+       SCRIPTS: NUIn & SLIDERS
+  ================================ -->
   <script>
-    // 1) Page name for reference
+    // Identify page
     const pageUri = window.location.pathname.split('/').pop();
     document.getElementById('pageUri').value = pageUri;
 
-    // 2) NUIn Toggle Logic
+    // NUIn toggle logic
     const nuinCheckbox = document.getElementById('nuin');
     const experienceDropdown = document.getElementById('experienceDropdown');
 
@@ -536,27 +512,20 @@
       }
     }
 
-    // 3) Slider & Tooltip
+    // Update ARIA for screen readers & tooltip text
     function updateSliderValue(input) {
-      // Update text next to slider
-      const sliderValueSpan = input.parentElement.querySelector('.slider-value');
-      sliderValueSpan.textContent = input.value;
-
-      // Update tooltip text
+      // If you want no numeric display at all, 
+      // we only update the tooltip text below:
       const tooltip = input.parentElement.querySelector('.slider-tooltip');
       tooltip.textContent = input.value;
-
-      // ARIA updates for screen readers
+      // ARIA for screen readers
       input.setAttribute('aria-valuenow', input.value);
     }
 
     function showTooltip(input, event) {
       const tooltip = input.parentElement.querySelector('.slider-tooltip');
       tooltip.style.display = 'inline-block';
-
-      // Position tooltip based on mouse X offset
-      const offsetX = event.offsetX;
-      tooltip.style.left = offsetX + 'px';
+      tooltip.style.left = event.offsetX + 'px';
     }
 
     function hideTooltip(input) {
