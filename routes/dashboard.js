@@ -29,6 +29,7 @@ router.get('/', (req, res) => {
   console.log("dash.js, groupSize",fetchSkillObj,fetchStudentObj,"====",groupSize)
   
   const groups = GroupingAlgorithm.groupingPreparation(fetchSkillObj,groupSize,fetchStudentObj);
+  // const groups = GroupingAlgorithm.geneticAlgorithm(fetchStudentObj,groupSize)
 console.log("dash.js, groups",groups,"selecedForm ====",selecedForm)
 let formKeys =[]
 for(let i=0 ;i< Object.keys(forms).length;i++){
@@ -43,9 +44,10 @@ for(let i=0 ;i< Object.keys(forms).length;i++){
 
   // Construct the base URL
   const baseUrl = `${req.protocol}://${req.get('host')}/student-form`;
-  console.log("ONE--",{ groups, formKeys, baseUrl, selectedForm:(selecedForm || Object.keys(forms)[0] ||'')  })
-  res.render('dashboard', { groups, formKeys, baseUrl, selectedForm:(selecedForm || Object.keys(forms)[0] ||'') });
+  console.log("ONE--",{ groups:groups.finalGroup, tableTitle:groups.tableTitle,formKeys, baseUrl, selectedForm:(selecedForm || Object.keys(forms)[0] ||'')  })
+  res.render('dashboard', { groups: groups.finalGroup, tableTitle:groups.tableTitle,formKeys, baseUrl, selectedForm:(selecedForm || Object.keys(forms)[0] ||'') });
 });
+
 router.post('/fetchFormGrouing', async(req, res) => {
   try {
     const forms = readJSONFile('forms.json');
