@@ -165,7 +165,8 @@ class GroupingAlgorithm {
   
       //     }
       // }
-      return {finalGroup:finalGroup,tableTitle:tableTitle.map(item => item === "pursuingYr" ? "Current Year" : item)};
+      return {finalGroup:finalGroup,tableTitle:tableTitle.map(item => item === "pursuingYr" ? "Current Year" : item)}
+  }
   }
   
   module.exports = GroupingAlgorithm;
