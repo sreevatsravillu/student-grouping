@@ -24,43 +24,16 @@
             background: white;
             padding: 30px;
             border-radius: 12px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease-in-out;
         }
 
         .form-title {
             text-align: center;
             color: #c8102e;
-            font-size: 24px;
+            font-size: 26px;
+            font-weight: bold;
             margin-bottom: 20px;
-        }
-
-        .form-field {
-            margin-bottom: 20px;
-        }
-
-        .field-label {
-            display: block;
-            font-weight: 500;
-            margin-bottom: 8px;
-        }
-
-        .text-input, .select-input {
-            width: 100%;
-            padding: 10px;
-            font-size: 16px;
-            border: 1px solid #ddd;
-            border-radius: 6px;
-            outline: none;
-            transition: border-color 0.2s;
-        }
-
-        .text-input:focus, .select-input:focus {
-            border-color: #c8102e;
-        }
-
-        .radio-group {
-            display: flex;
-            gap: 20px;
         }
 
         .form-section {
@@ -68,18 +41,14 @@
             margin-bottom: 30px;
             border: 1px solid #e0e0e0;
             border-radius: 6px;
-        }
-
-        .section-title {
-            color: #c8102e;
-            font-size: 20px;
-            margin-bottom: 15px;
+            background-color: #fafafa;
         }
 
         .slider-container {
+            position: relative;
+            width: 100%;
             display: flex;
             align-items: center;
-            position: relative;
             gap: 10px;
         }
 
@@ -87,63 +56,40 @@
             -webkit-appearance: none;
             appearance: none;
             width: 100%;
-            height: 8px;
-            background: #e0e0e0;
-            border-radius: 4px;
+            height: 6px;
+            background: #ddd;
+            border-radius: 5px;
             outline: none;
-            transition: background-color 0.2s;
+            transition: background 0.3s;
         }
 
         .mui-slider::-webkit-slider-thumb {
             -webkit-appearance: none;
-            appearance: none;
             width: 20px;
             height: 20px;
             background: #c8102e;
             border-radius: 50%;
             cursor: pointer;
+            transition: background 0.3s;
         }
 
         .tooltip {
             position: absolute;
+            top: -30px;
+            left: 50%;
+            transform: translateX(-50%);
             background: #c8102e;
             color: white;
-            font-size: 12px;
             padding: 4px 8px;
             border-radius: 4px;
-            top: -35px;
-            transform: translateX(-50%);
-            opacity: 0;
-            transition: opacity 0.2s, top 0.2s;
-        }
-
-        .slider-container:hover .tooltip,
-        .slider-container:active .tooltip {
-            opacity: 1;
-            top: -45px;
-        }
-
-        .slider-scale {
             font-size: 14px;
-            color: #555;
+            opacity: 0;
+            transition: opacity 0.3s, top 0.3s;
         }
 
-        .submit-button {
-            background-color: #c8102e;
-            color: white;
-            padding: 12px 24px;
-            border: none;
-            border-radius: 24px;
-            font-size: 16px;
-            cursor: pointer;
-            transition: transform 0.2s, background-color 0.3s;
-            display: block;
-            margin: 0 auto;
-        }
-
-        .submit-button:hover {
-            background-color: #dd3350;
-            transform: scale(1.05);
+        .slider-container:hover .tooltip {
+            opacity: 1;
+            top: -40px;
         }
 
         .hidden {
@@ -154,108 +100,92 @@
 <body>
     <img src="/PPS.svg" alt="Header Image" class="blurred-image">
     <div class="container">
-        <div class="form-container">
-            <h2 class="form-title">Student Skills Form</h2>
-            <form action="/student-form/submit" method="POST">
-
-                <!-- Personal Information Section -->
-                <div class="form-section">
-                    <h3 class="section-title">Personal Information</h3>
-                    <div class="form-field">
-                        <label class="field-label">Name:</label>
-                        <input type="text" name="name" class="text-input" required>
-                    </div>
-                    <div class="form-field">
-                        <label class="field-label">Email:</label>
-                        <input type="email" name="email" class="text-input" required>
-                    </div>
-                    <div class="form-field">
-                        <label class="field-label">NUID:</label>
-                        <input type="text" name="uid" class="text-input" required>
-                    </div>
+        <h2 class="form-title">Student Skills Form</h2>
+        <form action="/student-form/submit" method="POST">
+            <div class="form-section">
+                <h3 class="section-title">Personal Information</h3>
+                <div class="form-field">
+                    <label class="field-label">Name:</label>
+                    <input type="text" name="name" class="text-input" required>
                 </div>
+                <div class="form-field">
+                    <label class="field-label">Email:</label>
+                    <input type="email" name="email" class="text-input" required>
+                </div>
+                <div class="form-field">
+                    <label class="field-label">NUID:</label>
+                    <input type="text" name="uid" class="text-input" required>
+                </div>
+            </div>
 
-                <!-- Academic Information Section -->
-                <div class="form-section">
-                    <h3 class="section-title">Academic Information</h3>
-                    <div class="form-field">
-                        <label class="field-label">Current Year:</label>
-                        <select name="pursuingYr" class="select-input" required>
-                            <option value="" disabled selected>Select your current academic year</option>
-                            <% form.pursuingYr.forEach(yr => { %>
-                                <option value="<%= yr %>"><%= yr %></option>
+            <div class="form-section">
+                <h3 class="section-title">Academic Information</h3>
+                <div class="form-field">
+                    <label class="field-label">Current Year:</label>
+                    <select name="pursuingYr" class="select-input" required>
+                        <option value="" disabled selected>Select your current academic year</option>
+                        <% form.pursuingYr.forEach(yr => { %>
+                            <option value="<%= yr %>"><%= yr %></option>
+                        <% }) %>
+                    </select>
+                </div>
+                <div class="form-field">
+                    <label class="field-label">Major:</label>
+                    <select name="major" class="select-input" required>
+                        <option value="" disabled selected>Select your major</option>
+                        <% form.majors.forEach(major => { %>
+                            <option value="<%= major %>"><%= major %></option>
+                        <% }) %>
+                    </select>
+                </div>
+                <div class="form-field">
+                    <label class="field-label">Were you a part of the NUin Program?</label>
+                    <div class="radio-group">
+                        <label>
+                            <input type="radio" name="nuin" value="Yes" onclick="toggleNuinDropdown(true)"> Yes
+                        </label>
+                        <label>
+                            <input type="radio" name="nuin" value="No" onclick="toggleNuinDropdown(false)"> No
+                        </label>
+                    </div>
+                    <div id="experienceDropdown" class="hidden">
+                        <label class="field-label">Select NUin Location:</label>
+                        <select name="nuinLocation" class="select-input">
+                            <option value="" disabled selected>Select Location</option>
+                            <% form.nuin.forEach(nuin => { %>
+                                <option value="<%= nuin %>"><%= nuin %></option>
                             <% }) %>
                         </select>
                     </div>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h3 class="section-title">Skills Assessment</h3>
+                <% form.skills.forEach(skill => { %>
                     <div class="form-field">
-                        <label class="field-label">Were you a part of the NUin Program?</label>
-                        <div class="radio-group">
-                            <label>
-                                <input type="radio" name="nuin" value="Yes" onclick="toggleNuinDropdown(true)"> Yes
-                            </label>
-                            <label>
-                                <input type="radio" name="nuin" value="No" onclick="toggleNuinDropdown(false)"> No
-                            </label>
-                        </div>
-                        <div id="experienceDropdown" class="hidden">
-                            <label class="field-label">Select NUin Location:</label>
-                            <select name="nuinLocation" class="select-input">
-                                <option value="" disabled selected>Select Location</option>
-                                <% form.nuin.forEach(nuin => { %>
-                                    <option value="<%= nuin %>"><%= nuin %></option>
-                                <% }) %>
-                            </select>
+                        <label class="field-label"><%= skill.skillName %>:</label>
+                        <div class="slider-container">
+                            <span class="tooltip">0</span>
+                            <input type="range" name="<%= skill.skillName %>" min="0" max="5" value="0" class="mui-slider" oninput="updateTooltip(this)">
                         </div>
                     </div>
-                </div>
-
-                <!-- Skills Section -->
-                <div class="form-section">
-                    <h3 class="section-title">Skills Assessment</h3>
-                    <div style="font-size: 14px;"> Please rate your proficiency on a scale from 0 to 5:</div>
-                    <% form.skills.forEach(skill => { %>
-                        <div class="form-field">
-                            <label class="field-label"><%= skill.skillName %>:</label>
-                            <div class="slider-container">
-                                <span class="slider-scale">0</span>
-                                <input type="range" 
-                                       name="<%= skill.skillName %>" 
-                                       min="0" 
-                                       max="5" 
-                                       value="0" 
-                                       class="mui-slider" 
-                                       oninput="updateSliderMax(this)">
-                                <span class="tooltip">0</span>
-                                <span class="slider-scale">5</span>
-                            </div>
-                        </div>
-                    <% }) %>
-                </div>
-
-                <button type="submit" class="submit-button">Submit</button>
-            </form>
-        </div>
+                <% }) %>
+            </div>
+            <button type="submit" class="submit-button">Submit</button>
+        </form>
     </div>
 
     <script>
-        document.querySelectorAll('.mui-slider').forEach(slider => {
-            const tooltip = slider.nextElementSibling;
-
-            slider.addEventListener('input', function () {
-                tooltip.textContent = this.value;
-                const percent = ((this.value - this.min) / (this.max - this.min)) * 100;
-                tooltip.style.left = `calc(${percent}% - ${tooltip.offsetWidth / 2}px)`;
-            });
-        });
-
         function toggleNuinDropdown(show) {
             const dropdown = document.getElementById('experienceDropdown');
             dropdown.classList.toggle('hidden', !show);
         }
 
-        function updateSliderMax(slider) {
-            const max = parseInt(slider.value, 10);
-            slider.setAttribute('max', max);
+        function updateTooltip(slider) {
+            const tooltip = slider.previousElementSibling;
+            tooltip.textContent = slider.value;
+            tooltip.style.left = `${((slider.value - slider.min) / (slider.max - slider.min)) * 100}%`;
         }
     </script>
 </body>
