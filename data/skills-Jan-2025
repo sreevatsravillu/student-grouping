@@ -1,2 +1,1808 @@
-
-{}
+{
+  "BUSN1101-SV-1335": {
+    "pursuingYr-First Year": {
+      "count": 14,
+      "uid": [
+        "002408486",
+        "002491885",
+        "002407208",
+        "002403463",
+        "002496961",
+        "002494443",
+        "002353143",
+        "002491553",
+        "002496445",
+        "002496062",
+        "002407183",
+        "002495512",
+        "002408395",
+        "002496806"
+      ],
+      "name": [
+        "Bennett Lin",
+        "Sneha Sridhar",
+        "Bharat Jain",
+        "Max Griffin",
+        "Avi Nathan ",
+        "Ayushi Merchant",
+        "Eric Elbery",
+        "Timothy Rocki",
+        "Amy Derr",
+        "Matthew Tobin",
+        "Sarah Cheung",
+        "Naoki",
+        "Andy",
+        "Rebecca Fang"
+      ]
+    },
+    "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-3": {
+      "count": 4,
+      "uid": [
+        "002408486",
+        "002407208",
+        "002496961",
+        "002496062"
+      ],
+      "name": [
+        "Bennett Lin",
+        "Bharat Jain",
+        "Avi Nathan ",
+        "Matthew Tobin"
+      ]
+    },
+    "How comfortable are you presenting in front of others or speaking publicly?-3": {
+      "count": 7,
+      "uid": [
+        "002408486",
+        "002403463",
+        "002496961",
+        "002491553",
+        "002496445",
+        "002407183",
+        "002495512"
+      ],
+      "name": [
+        "Bennett Lin",
+        "Max Griffin",
+        "Avi Nathan ",
+        "Timothy Rocki",
+        "Amy Derr",
+        "Sarah Cheung",
+        "Naoki"
+      ]
+    },
+    "My teachers or others have frequently told me that I am a good writer-4": {
+      "count": 4,
+      "uid": [
+        "002408486",
+        "002403463",
+        "002496445",
+        "002496062"
+      ],
+      "name": [
+        "Bennett Lin",
+        "Max Griffin",
+        "Amy Derr",
+        "Matthew Tobin"
+      ]
+    },
+    "I am generally more outgoing than shy in social or group settings-3": {
+      "count": 5,
+      "uid": [
+        "002408486",
+        "002407208",
+        "002494443",
+        "002495512",
+        "002408395"
+      ],
+      "name": [
+        "Bennett Lin",
+        "Bharat Jain",
+        "Ayushi Merchant",
+        "Naoki",
+        "Andy"
+      ]
+    },
+    "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-3": {
+      "count": 3,
+      "uid": [
+        "002408486",
+        "002491885",
+        "002496445"
+      ],
+      "name": [
+        "Bennett Lin",
+        "Sneha Sridhar",
+        "Amy Derr"
+      ]
+    },
+    "MGMT": {
+      "count": 2,
+      "uid": [
+        "002408486",
+        "002495512"
+      ],
+      "name": [
+        "Bennett Lin",
+        "Naoki"
+      ]
+    },
+    "N.U.in Germany – CIEE Berlin": {
+      "count": 3,
+      "uid": [
+        "002408486",
+        "002496961",
+        "002496806"
+      ],
+      "name": [
+        "Bennett Lin",
+        "Avi Nathan ",
+        "Rebecca Fang"
+      ]
+    },
+    "Asian - East Asian (e.g., Chinese, Japanese, Korean)": {
+      "count": 5,
+      "uid": [
+        "002408486",
+        "002407183",
+        "002495512",
+        "002408395",
+        "002496806"
+      ],
+      "name": [
+        "Bennett Lin",
+        "Sarah Cheung",
+        "Naoki",
+        "Andy",
+        "Rebecca Fang"
+      ]
+    },
+    "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-2": {
+      "count": 3,
+      "uid": [
+        "002491885",
+        "002494443",
+        "002491553"
+      ],
+      "name": [
+        "Sneha Sridhar",
+        "Ayushi Merchant",
+        "Timothy Rocki"
+      ]
+    },
+    "How comfortable are you presenting in front of others or speaking publicly?-5": {
+      "count": 1,
+      "uid": [
+        "002491885"
+      ],
+      "name": [
+        "Sneha Sridhar"
+      ]
+    },
+    "My teachers or others have frequently told me that I am a good writer-5": {
+      "count": 2,
+      "uid": [
+        "002491885",
+        "002407183"
+      ],
+      "name": [
+        "Sneha Sridhar",
+        "Sarah Cheung"
+      ]
+    },
+    "I am generally more outgoing than shy in social or group settings-4": {
+      "count": 8,
+      "uid": [
+        "002491885",
+        "002403463",
+        "002496961",
+        "002353143",
+        "002491553",
+        "002496062",
+        "002407183",
+        "002496806"
+      ],
+      "name": [
+        "Sneha Sridhar",
+        "Max Griffin",
+        "Avi Nathan ",
+        "Eric Elbery",
+        "Timothy Rocki",
+        "Matthew Tobin",
+        "Sarah Cheung",
+        "Rebecca Fang"
+      ]
+    },
+    "FIN": {
+      "count": 8,
+      "uid": [
+        "002491885",
+        "002407208",
+        "002403463",
+        "002496961",
+        "002353143",
+        "002491553",
+        "002407183",
+        "002408395"
+      ],
+      "name": [
+        "Sneha Sridhar",
+        "Bharat Jain",
+        "Max Griffin",
+        "Avi Nathan ",
+        "Eric Elbery",
+        "Timothy Rocki",
+        "Sarah Cheung",
+        "Andy"
+      ]
+    },
+    "N.U.in Scotland – University of Glasgow": {
+      "count": 2,
+      "uid": [
+        "002491885",
+        "002407208"
+      ],
+      "name": [
+        "Sneha Sridhar",
+        "Bharat Jain"
+      ]
+    },
+    "Asian - South Asian (e.g., Indian, Pakistani, Bangladeshi)": {
+      "count": 4,
+      "uid": [
+        "002491885",
+        "002407208",
+        "002496961",
+        "002494443"
+      ],
+      "name": [
+        "Sneha Sridhar",
+        "Bharat Jain",
+        "Avi Nathan ",
+        "Ayushi Merchant"
+      ]
+    },
+    "How comfortable are you presenting in front of others or speaking publicly?-4": {
+      "count": 6,
+      "uid": [
+        "002407208",
+        "002494443",
+        "002353143",
+        "002496062",
+        "002408395",
+        "002496806"
+      ],
+      "name": [
+        "Bharat Jain",
+        "Ayushi Merchant",
+        "Eric Elbery",
+        "Matthew Tobin",
+        "Andy",
+        "Rebecca Fang"
+      ]
+    },
+    "My teachers or others have frequently told me that I am a good writer-1": {
+      "count": 2,
+      "uid": [
+        "002407208",
+        "002495512"
+      ],
+      "name": [
+        "Bharat Jain",
+        "Naoki"
+      ]
+    },
+    "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-1": {
+      "count": 2,
+      "uid": [
+        "002407208",
+        "002353143"
+      ],
+      "name": [
+        "Bharat Jain",
+        "Eric Elbery"
+      ]
+    },
+    "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-0": {
+      "count": 2,
+      "uid": [
+        "002403463",
+        "002496445"
+      ],
+      "name": [
+        "Max Griffin",
+        "Amy Derr"
+      ]
+    },
+    "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-0": {
+      "count": 1,
+      "uid": [
+        "002403463"
+      ],
+      "name": [
+        "Max Griffin"
+      ]
+    },
+    "N.U.in Italy – John Cabot University": {
+      "count": 3,
+      "uid": [
+        "002403463",
+        "002496062",
+        "002407183"
+      ],
+      "name": [
+        "Max Griffin",
+        "Matthew Tobin",
+        "Sarah Cheung"
+      ]
+    },
+    "White": {
+      "count": 5,
+      "uid": [
+        "002403463",
+        "002353143",
+        "002491553",
+        "002496445",
+        "002496062"
+      ],
+      "name": [
+        "Max Griffin",
+        "Eric Elbery",
+        "Timothy Rocki",
+        "Amy Derr",
+        "Matthew Tobin"
+      ]
+    },
+    "My teachers or others have frequently told me that I am a good writer-3": {
+      "count": 5,
+      "uid": [
+        "002496961",
+        "002494443",
+        "002353143",
+        "002491553",
+        "002496806"
+      ],
+      "name": [
+        "Avi Nathan ",
+        "Ayushi Merchant",
+        "Eric Elbery",
+        "Timothy Rocki",
+        "Rebecca Fang"
+      ]
+    },
+    "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-5": {
+      "count": 3,
+      "uid": [
+        "002496961",
+        "002491553",
+        "002407183"
+      ],
+      "name": [
+        "Avi Nathan ",
+        "Timothy Rocki",
+        "Sarah Cheung"
+      ]
+    },
+    "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-4": {
+      "count": 3,
+      "uid": [
+        "002494443",
+        "002496062",
+        "002495512"
+      ],
+      "name": [
+        "Ayushi Merchant",
+        "Matthew Tobin",
+        "Naoki"
+      ]
+    },
+    "Explore": {
+      "count": 2,
+      "uid": [
+        "002494443",
+        "002496445"
+      ],
+      "name": [
+        "Ayushi Merchant",
+        "Amy Derr"
+      ]
+    },
+    "N.U.in Czech Republic – University of New York in Prague": {
+      "count": 2,
+      "uid": [
+        "002494443",
+        "002408395"
+      ],
+      "name": [
+        "Ayushi Merchant",
+        "Andy"
+      ]
+    },
+    "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-4": {
+      "count": 1,
+      "uid": [
+        "002353143"
+      ],
+      "name": [
+        "Eric Elbery"
+      ]
+    },
+    "N.U.in France – The American University of Paris": {
+      "count": 1,
+      "uid": [
+        "002353143"
+      ],
+      "name": [
+        "Eric Elbery"
+      ]
+    },
+    "N.U.in Portugal – CIEE Lisbon": {
+      "count": 3,
+      "uid": [
+        "002491553",
+        "002496445",
+        "002495512"
+      ],
+      "name": [
+        "Timothy Rocki",
+        "Amy Derr",
+        "Naoki"
+      ]
+    },
+    "I am generally more outgoing than shy in social or group settings-5": {
+      "count": 1,
+      "uid": [
+        "002496445"
+      ],
+      "name": [
+        "Amy Derr"
+      ]
+    },
+    "MKTG": {
+      "count": 2,
+      "uid": [
+        "002496062",
+        "002496806"
+      ],
+      "name": [
+        "Matthew Tobin",
+        "Rebecca Fang"
+      ]
+    },
+    "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-1": {
+      "count": 4,
+      "uid": [
+        "002407183",
+        "002495512",
+        "002408395",
+        "002496806"
+      ],
+      "name": [
+        "Sarah Cheung",
+        "Naoki",
+        "Andy",
+        "Rebecca Fang"
+      ]
+    },
+    "My teachers or others have frequently told me that I am a good writer-2": {
+      "count": 1,
+      "uid": [
+        "002408395"
+      ],
+      "name": [
+        "Andy"
+      ]
+    },
+    "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-2": {
+      "count": 2,
+      "uid": [
+        "002408395",
+        "002496806"
+      ],
+      "name": [
+        "Andy",
+        "Rebecca Fang"
+      ]
+    }
+  },
+  "BUSN1101-JA-1335": {
+    "pursuingYr-Second Year": {
+      "count": 2,
+      "uid": [
+        "002236168",
+        "002210104"
+      ],
+      "name": [
+        "Bina",
+        "Rahul Kaycee"
+      ]
+    },
+    "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-5": {
+      "count": 1,
+      "uid": [
+        "002236168"
+      ],
+      "name": [
+        "Bina"
+      ]
+    },
+    "How comfortable are you presenting in front of others or speaking publicly?-5": {
+      "count": 1,
+      "uid": [
+        "002236168"
+      ],
+      "name": [
+        "Bina"
+      ]
+    },
+    "My teachers or others have frequently told me that I am a good writer-5": {
+      "count": 1,
+      "uid": [
+        "002236168"
+      ],
+      "name": [
+        "Bina"
+      ]
+    },
+    "I am generally more outgoing than shy in social or group settings-5": {
+      "count": 2,
+      "uid": [
+        "002236168",
+        "002971515"
+      ],
+      "name": [
+        "Bina",
+        "Hart Mette"
+      ]
+    },
+    "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-4": {
+      "count": 3,
+      "uid": [
+        "002236168",
+        "002359489",
+        "002495610"
+      ],
+      "name": [
+        "Bina",
+        "Rohin Ariff",
+        "William Baynes"
+      ]
+    },
+    "Entrepreneurship": {
+      "count": 3,
+      "uid": [
+        "002236168",
+        "002712225",
+        "002496406"
+      ],
+      "name": [
+        "Bina",
+        "Junkang Pan",
+        "Augustin Crepy D'Orleans"
+      ]
+    },
+    "N.U.in Czech Republic – University of New York in Prague": {
+      "count": 12,
+      "uid": [
+        "002236168",
+        "002325766",
+        "002359489",
+        "002495610",
+        "002210104",
+        "002388483",
+        "002712225",
+        "001009804",
+        "002971515",
+        "002490125",
+        "002490773",
+        "0058617"
+      ],
+      "name": [
+        "Bina",
+        "Eleni Augoustiniatos",
+        "Rohin Ariff",
+        "William Baynes",
+        "Rahul Kaycee",
+        "stella leroy",
+        "Junkang Pan",
+        "Lin Li",
+        "Hart Mette",
+        "Diana Ricci ",
+        "Jack Voges",
+        "Zain Chaudhry"
+      ]
+    },
+    "Asian - East Asian (e.g., Chinese, Japanese, Korean)": {
+      "count": 3,
+      "uid": [
+        "002236168",
+        "002712225",
+        "001009804"
+      ],
+      "name": [
+        "Bina",
+        "Junkang Pan",
+        "Lin Li"
+      ]
+    },
+    "pursuingYr-First Year": {
+      "count": 12,
+      "uid": [
+        "002325766",
+        "002359489",
+        "002495610",
+        "002407883",
+        "002388483",
+        "002499270",
+        "002409905",
+        "002490125",
+        "002496406",
+        "002355150",
+        "002490773",
+        "0058617"
+      ],
+      "name": [
+        "Eleni Augoustiniatos",
+        "Rohin Ariff",
+        "William Baynes",
+        "Abhilash Polaki",
+        "stella leroy",
+        "anaayah makaney",
+        "Greta Gado ",
+        "Diana Ricci ",
+        "Augustin Crepy D'Orleans",
+        "Tina Shahani",
+        "Jack Voges",
+        "Zain Chaudhry"
+      ]
+    },
+    "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-1": {
+      "count": 4,
+      "uid": [
+        "002325766",
+        "002712225",
+        "002409905",
+        "0058617"
+      ],
+      "name": [
+        "Eleni Augoustiniatos",
+        "Junkang Pan",
+        "Greta Gado ",
+        "Zain Chaudhry"
+      ]
+    },
+    "How comfortable are you presenting in front of others or speaking publicly?-3": {
+      "count": 5,
+      "uid": [
+        "002325766",
+        "002495610",
+        "002388483",
+        "001009804",
+        "002490773"
+      ],
+      "name": [
+        "Eleni Augoustiniatos",
+        "William Baynes",
+        "stella leroy",
+        "Lin Li",
+        "Jack Voges"
+      ]
+    },
+    "My teachers or others have frequently told me that I am a good writer-2": {
+      "count": 4,
+      "uid": [
+        "002325766",
+        "002495610",
+        "002388483",
+        "002496406"
+      ],
+      "name": [
+        "Eleni Augoustiniatos",
+        "William Baynes",
+        "stella leroy",
+        "Augustin Crepy D'Orleans"
+      ]
+    },
+    "I am generally more outgoing than shy in social or group settings-4": {
+      "count": 5,
+      "uid": [
+        "002325766",
+        "002359489",
+        "002407883",
+        "002388483",
+        "002490773"
+      ],
+      "name": [
+        "Eleni Augoustiniatos",
+        "Rohin Ariff",
+        "Abhilash Polaki",
+        "stella leroy",
+        "Jack Voges"
+      ]
+    },
+    "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-0": {
+      "count": 4,
+      "uid": [
+        "002325766",
+        "002409905",
+        "002971515",
+        "002490773"
+      ],
+      "name": [
+        "Eleni Augoustiniatos",
+        "Greta Gado ",
+        "Hart Mette",
+        "Jack Voges"
+      ]
+    },
+    "Accounting": {
+      "count": 1,
+      "uid": [
+        "002325766"
+      ],
+      "name": [
+        "Eleni Augoustiniatos"
+      ]
+    },
+    "White": {
+      "count": 6,
+      "uid": [
+        "002325766",
+        "002495610",
+        "002409905",
+        "002971515",
+        "002496406",
+        "002490773"
+      ],
+      "name": [
+        "Eleni Augoustiniatos",
+        "William Baynes",
+        "Greta Gado ",
+        "Hart Mette",
+        "Augustin Crepy D'Orleans",
+        "Jack Voges"
+      ]
+    },
+    "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-3": {
+      "count": 5,
+      "uid": [
+        "002359489",
+        "002495610",
+        "002499270",
+        "002355150",
+        "002490773"
+      ],
+      "name": [
+        "Rohin Ariff",
+        "William Baynes",
+        "anaayah makaney",
+        "Tina Shahani",
+        "Jack Voges"
+      ]
+    },
+    "How comfortable are you presenting in front of others or speaking publicly?-4": {
+      "count": 4,
+      "uid": [
+        "002359489",
+        "002210104",
+        "002971515",
+        "0058617"
+      ],
+      "name": [
+        "Rohin Ariff",
+        "Rahul Kaycee",
+        "Hart Mette",
+        "Zain Chaudhry"
+      ]
+    },
+    "My teachers or others have frequently told me that I am a good writer-4": {
+      "count": 3,
+      "uid": [
+        "002359489",
+        "002409905",
+        "002355150"
+      ],
+      "name": [
+        "Rohin Ariff",
+        "Greta Gado ",
+        "Tina Shahani"
+      ]
+    },
+    "FIN": {
+      "count": 4,
+      "uid": [
+        "002359489",
+        "002210104",
+        "002499270",
+        "0058617"
+      ],
+      "name": [
+        "Rohin Ariff",
+        "Rahul Kaycee",
+        "anaayah makaney",
+        "Zain Chaudhry"
+      ]
+    },
+    "Asian - South Asian (e.g., Indian, Pakistani, Bangladeshi)": {
+      "count": 5,
+      "uid": [
+        "002359489",
+        "002407883",
+        "002499270",
+        "002355150",
+        "0058617"
+      ],
+      "name": [
+        "Rohin Ariff",
+        "Abhilash Polaki",
+        "anaayah makaney",
+        "Tina Shahani",
+        "Zain Chaudhry"
+      ]
+    },
+    "I am generally more outgoing than shy in social or group settings-2": {
+      "count": 4,
+      "uid": [
+        "002495610",
+        "002210104",
+        "002409905",
+        "002355150"
+      ],
+      "name": [
+        "William Baynes",
+        "Rahul Kaycee",
+        "Greta Gado ",
+        "Tina Shahani"
+      ]
+    },
+    "MGMT": {
+      "count": 4,
+      "uid": [
+        "002495610",
+        "002388483",
+        "002355150",
+        "002490773"
+      ],
+      "name": [
+        "William Baynes",
+        "stella leroy",
+        "Tina Shahani",
+        "Jack Voges"
+      ]
+    },
+    "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-2": {
+      "count": 3,
+      "uid": [
+        "002210104",
+        "002407883",
+        "002971515"
+      ],
+      "name": [
+        "Rahul Kaycee",
+        "Abhilash Polaki",
+        "Hart Mette"
+      ]
+    },
+    "My teachers or others have frequently told me that I am a good writer-3": {
+      "count": 5,
+      "uid": [
+        "002210104",
+        "001009804",
+        "002971515",
+        "002490125",
+        "0058617"
+      ],
+      "name": [
+        "Rahul Kaycee",
+        "Lin Li",
+        "Hart Mette",
+        "Diana Ricci ",
+        "Zain Chaudhry"
+      ]
+    },
+    "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-2": {
+      "count": 5,
+      "uid": [
+        "002210104",
+        "002388483",
+        "002712225",
+        "002355150",
+        "0058617"
+      ],
+      "name": [
+        "Rahul Kaycee",
+        "stella leroy",
+        "Junkang Pan",
+        "Tina Shahani",
+        "Zain Chaudhry"
+      ]
+    },
+    "Multiracial": {
+      "count": 2,
+      "uid": [
+        "002210104",
+        "002388483"
+      ],
+      "name": [
+        "Rahul Kaycee",
+        "stella leroy"
+      ]
+    },
+    "How comfortable are you presenting in front of others or speaking publicly?-2": {
+      "count": 5,
+      "uid": [
+        "002407883",
+        "002499270",
+        "002409905",
+        "002490125",
+        "002355150"
+      ],
+      "name": [
+        "Abhilash Polaki",
+        "anaayah makaney",
+        "Greta Gado ",
+        "Diana Ricci ",
+        "Tina Shahani"
+      ]
+    },
+    "My teachers or others have frequently told me that I am a good writer-1": {
+      "count": 4,
+      "uid": [
+        "002407883",
+        "002499270",
+        "002712225",
+        "002490773"
+      ],
+      "name": [
+        "Abhilash Polaki",
+        "anaayah makaney",
+        "Junkang Pan",
+        "Jack Voges"
+      ]
+    },
+    "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-3": {
+      "count": 4,
+      "uid": [
+        "002407883",
+        "002499270",
+        "001009804",
+        "002496406"
+      ],
+      "name": [
+        "Abhilash Polaki",
+        "anaayah makaney",
+        "Lin Li",
+        "Augustin Crepy D'Orleans"
+      ]
+    },
+    "MIS": {
+      "count": 1,
+      "uid": [
+        "002407883"
+      ],
+      "name": [
+        "Abhilash Polaki"
+      ]
+    },
+    "N.U.in Italy – John Cabot University": {
+      "count": 3,
+      "uid": [
+        "002407883",
+        "002409905",
+        "002355150"
+      ],
+      "name": [
+        "Abhilash Polaki",
+        "Greta Gado ",
+        "Tina Shahani"
+      ]
+    },
+    "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-4": {
+      "count": 3,
+      "uid": [
+        "002388483",
+        "001009804",
+        "002490125"
+      ],
+      "name": [
+        "stella leroy",
+        "Lin Li",
+        "Diana Ricci "
+      ]
+    },
+    "I am generally more outgoing than shy in social or group settings-3": {
+      "count": 3,
+      "uid": [
+        "002499270",
+        "002496406",
+        "0058617"
+      ],
+      "name": [
+        "anaayah makaney",
+        "Augustin Crepy D'Orleans",
+        "Zain Chaudhry"
+      ]
+    },
+    "N.U.in Portugal – CIEE Lisbon": {
+      "count": 1,
+      "uid": [
+        "002499270"
+      ],
+      "name": [
+        "anaayah makaney"
+      ]
+    },
+    "pursuingYr-Third Year": {
+      "count": 2,
+      "uid": [
+        "002712225",
+        "002971515"
+      ],
+      "name": [
+        "Junkang Pan",
+        "Hart Mette"
+      ]
+    },
+    "How comfortable are you presenting in front of others or speaking publicly?-1": {
+      "count": 2,
+      "uid": [
+        "002712225",
+        "002496406"
+      ],
+      "name": [
+        "Junkang Pan",
+        "Augustin Crepy D'Orleans"
+      ]
+    },
+    "I am generally more outgoing than shy in social or group settings-0": {
+      "count": 1,
+      "uid": [
+        "002712225"
+      ],
+      "name": [
+        "Junkang Pan"
+      ]
+    },
+    "pursuingYr-Fifth Year": {
+      "count": 1,
+      "uid": [
+        "001009804"
+      ],
+      "name": [
+        "Lin Li"
+      ]
+    },
+    "I am generally more outgoing than shy in social or group settings-1": {
+      "count": 2,
+      "uid": [
+        "001009804",
+        "002490125"
+      ],
+      "name": [
+        "Lin Li",
+        "Diana Ricci "
+      ]
+    },
+    "MKTG": {
+      "count": 4,
+      "uid": [
+        "001009804",
+        "002409905",
+        "002971515",
+        "002490125"
+      ],
+      "name": [
+        "Lin Li",
+        "Greta Gado ",
+        "Hart Mette",
+        "Diana Ricci "
+      ]
+    },
+    "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-1": {
+      "count": 1,
+      "uid": [
+        "002490125"
+      ],
+      "name": [
+        "Diana Ricci "
+      ]
+    },
+    "Hispanic or Latino/a/x": {
+      "count": 1,
+      "uid": [
+        "002490125"
+      ],
+      "name": [
+        "Diana Ricci "
+      ]
+    },
+    "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-0": {
+      "count": 1,
+      "uid": [
+        "002496406"
+      ],
+      "name": [
+        "Augustin Crepy D'Orleans"
+      ]
+    },
+    "N.U.in France – The American University of Paris": {
+      "count": 1,
+      "uid": [
+        "002496406"
+      ],
+      "name": [
+        "Augustin Crepy D'Orleans"
+      ]
+    }
+  },
+  "BUSN1101-SV-1030": {
+    "pursuingYr-First Year": {
+      "count": 19,
+      "uid": [
+        "002327524",
+        "002353097",
+        "002383315",
+        "002328252",
+        "002363402",
+        "002327716",
+        "002319708",
+        "002328837",
+        "00231493d",
+        "002381270",
+        "00231493d",
+        "002313424",
+        "002409040",
+        "002374342",
+        "002329619",
+        "002361011",
+        "002327230",
+        "002326630",
+        "002357962"
+      ],
+      "name": [
+        "Madison Garcia",
+        "Katherine Datlow",
+        "Parla Atalay",
+        "Vincent Chen",
+        "Keaton Lai",
+        "Jessica Poprik",
+        "joey florentine",
+        "Natasha Khosla",
+        "Leah Bulavsky",
+        "Lily Belanger ",
+        "Leah Bulavsky",
+        "Georgia Elsener ",
+        "Maya Quon",
+        "Nick Bonaiuto",
+        "Owen Johnson",
+        "Bhavi Doshi ",
+        "Alex Gilliland",
+        "Gavin Parma",
+        "Elizabeth (Ellie) Stram"
+      ]
+    },
+    "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-1": {
+      "count": 8,
+      "uid": [
+        "002327524",
+        "002353097",
+        "002383315",
+        "002319708",
+        "002381270",
+        "002409040",
+        "002329619",
+        "002357962"
+      ],
+      "name": [
+        "Madison Garcia",
+        "Katherine Datlow",
+        "Parla Atalay",
+        "joey florentine",
+        "Lily Belanger ",
+        "Maya Quon",
+        "Owen Johnson",
+        "Elizabeth (Ellie) Stram"
+      ]
+    },
+    "How comfortable are you presenting in front of others or speaking publicly?-3": {
+      "count": 7,
+      "uid": [
+        "002327524",
+        "002383315",
+        "002327716",
+        "002381270",
+        "002313424",
+        "002409040",
+        "002357962"
+      ],
+      "name": [
+        "Madison Garcia",
+        "Parla Atalay",
+        "Jessica Poprik",
+        "Lily Belanger ",
+        "Georgia Elsener ",
+        "Maya Quon",
+        "Elizabeth (Ellie) Stram"
+      ]
+    },
+    "My teachers or others have frequently told me that I am a good writer-1": {
+      "count": 3,
+      "uid": [
+        "002327524",
+        "002328252",
+        "002328837"
+      ],
+      "name": [
+        "Madison Garcia",
+        "Vincent Chen",
+        "Natasha Khosla"
+      ]
+    },
+    "I am generally more outgoing than shy in social or group settings-3": {
+      "count": 8,
+      "uid": [
+        "002327524",
+        "002327716",
+        "002319708",
+        "00231493d",
+        "00231493d",
+        "002409040",
+        "002374342",
+        "002329619"
+      ],
+      "name": [
+        "Madison Garcia",
+        "Jessica Poprik",
+        "joey florentine",
+        "Leah Bulavsky",
+        "Leah Bulavsky",
+        "Maya Quon",
+        "Nick Bonaiuto",
+        "Owen Johnson"
+      ]
+    },
+    "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-2": {
+      "count": 7,
+      "uid": [
+        "002327524",
+        "002383315",
+        "002328252",
+        "002328837",
+        "002374342",
+        "002327230",
+        "002357962"
+      ],
+      "name": [
+        "Madison Garcia",
+        "Parla Atalay",
+        "Vincent Chen",
+        "Natasha Khosla",
+        "Nick Bonaiuto",
+        "Alex Gilliland",
+        "Elizabeth (Ellie) Stram"
+      ]
+    },
+    "MKTG": {
+      "count": 8,
+      "uid": [
+        "002327524",
+        "002383315",
+        "002319708",
+        "002208939",
+        "002381270",
+        "002313424",
+        "002361011",
+        "002327230"
+      ],
+      "name": [
+        "Madison Garcia",
+        "Parla Atalay",
+        "joey florentine",
+        "Jai Saraf",
+        "Lily Belanger ",
+        "Georgia Elsener ",
+        "Bhavi Doshi ",
+        "Alex Gilliland"
+      ]
+    },
+    "N.U.in Scotland – University of Glasgow": {
+      "count": 2,
+      "uid": [
+        "002327524",
+        "002208939"
+      ],
+      "name": [
+        "Madison Garcia",
+        "Jai Saraf"
+      ]
+    },
+    "Asian - Southeast Asian (e.g., Vietnamese, Filipino, Thai)": {
+      "count": 1,
+      "uid": [
+        "002327524"
+      ],
+      "name": [
+        "Madison Garcia"
+      ]
+    },
+    "How comfortable are you presenting in front of others or speaking publicly?-4": {
+      "count": 9,
+      "uid": [
+        "002353097",
+        "002328252",
+        "002363402",
+        "002319708",
+        "002328837",
+        "002374342",
+        "002329619",
+        "002361011",
+        "002326630"
+      ],
+      "name": [
+        "Katherine Datlow",
+        "Vincent Chen",
+        "Keaton Lai",
+        "joey florentine",
+        "Natasha Khosla",
+        "Nick Bonaiuto",
+        "Owen Johnson",
+        "Bhavi Doshi ",
+        "Gavin Parma"
+      ]
+    },
+    "My teachers or others have frequently told me that I am a good writer-4": {
+      "count": 6,
+      "uid": [
+        "002353097",
+        "002383315",
+        "002327716",
+        "002313424",
+        "002409040",
+        "002374342"
+      ],
+      "name": [
+        "Katherine Datlow",
+        "Parla Atalay",
+        "Jessica Poprik",
+        "Georgia Elsener ",
+        "Maya Quon",
+        "Nick Bonaiuto"
+      ]
+    },
+    "I am generally more outgoing than shy in social or group settings-5": {
+      "count": 7,
+      "uid": [
+        "002353097",
+        "002363402",
+        "002208939",
+        "002328837",
+        "002361011",
+        "002327230",
+        "002326630"
+      ],
+      "name": [
+        "Katherine Datlow",
+        "Keaton Lai",
+        "Jai Saraf",
+        "Natasha Khosla",
+        "Bhavi Doshi ",
+        "Alex Gilliland",
+        "Gavin Parma"
+      ]
+    },
+    "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-3": {
+      "count": 4,
+      "uid": [
+        "002353097",
+        "002363402",
+        "002313424",
+        "002326630"
+      ],
+      "name": [
+        "Katherine Datlow",
+        "Keaton Lai",
+        "Georgia Elsener ",
+        "Gavin Parma"
+      ]
+    },
+    "FIN": {
+      "count": 7,
+      "uid": [
+        "002353097",
+        "002328252",
+        "002363402",
+        "002327716",
+        "00231493d",
+        "00231493d",
+        "002374342"
+      ],
+      "name": [
+        "Katherine Datlow",
+        "Vincent Chen",
+        "Keaton Lai",
+        "Jessica Poprik",
+        "Leah Bulavsky",
+        "Leah Bulavsky",
+        "Nick Bonaiuto"
+      ]
+    },
+    "N.U.in Czech Republic – University of New York in Prague": {
+      "count": 6,
+      "uid": [
+        "002353097",
+        "002327716",
+        "00231493d",
+        "002313424",
+        "002409040",
+        "002326630"
+      ],
+      "name": [
+        "Katherine Datlow",
+        "Jessica Poprik",
+        "Leah Bulavsky",
+        "Georgia Elsener ",
+        "Maya Quon",
+        "Gavin Parma"
+      ]
+    },
+    "White": {
+      "count": 10,
+      "uid": [
+        "002353097",
+        "002327716",
+        "00231493d",
+        "002381270",
+        "00231493d",
+        "002313424",
+        "002374342",
+        "002329619",
+        "002327230",
+        "002357962"
+      ],
+      "name": [
+        "Katherine Datlow",
+        "Jessica Poprik",
+        "Leah Bulavsky",
+        "Lily Belanger ",
+        "Leah Bulavsky",
+        "Georgia Elsener ",
+        "Nick Bonaiuto",
+        "Owen Johnson",
+        "Alex Gilliland",
+        "Elizabeth (Ellie) Stram"
+      ]
+    },
+    "I am generally more outgoing than shy in social or group settings-4": {
+      "count": 5,
+      "uid": [
+        "002383315",
+        "002328252",
+        "002381270",
+        "002313424",
+        "002357962"
+      ],
+      "name": [
+        "Parla Atalay",
+        "Vincent Chen",
+        "Lily Belanger ",
+        "Georgia Elsener ",
+        "Elizabeth (Ellie) Stram"
+      ]
+    },
+    "N.U.in Italy – John Cabot University": {
+      "count": 3,
+      "uid": [
+        "002383315",
+        "00231493d",
+        "002374342"
+      ],
+      "name": [
+        "Parla Atalay",
+        "Leah Bulavsky",
+        "Nick Bonaiuto"
+      ]
+    },
+    "African American or Black": {
+      "count": 1,
+      "uid": [
+        "002383315"
+      ],
+      "name": [
+        "Parla Atalay"
+      ]
+    },
+    "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-2": {
+      "count": 9,
+      "uid": [
+        "002328252",
+        "002363402",
+        "002327716",
+        "002208939",
+        "002328837",
+        "00231493d",
+        "00231493d",
+        "002313424",
+        "002374342"
+      ],
+      "name": [
+        "Vincent Chen",
+        "Keaton Lai",
+        "Jessica Poprik",
+        "Jai Saraf",
+        "Natasha Khosla",
+        "Leah Bulavsky",
+        "Leah Bulavsky",
+        "Georgia Elsener ",
+        "Nick Bonaiuto"
+      ]
+    },
+    "N.U.in Germany – CIEE Berlin": {
+      "count": 4,
+      "uid": [
+        "002328252",
+        "002363402",
+        "002329619",
+        "002327230"
+      ],
+      "name": [
+        "Vincent Chen",
+        "Keaton Lai",
+        "Owen Johnson",
+        "Alex Gilliland"
+      ]
+    },
+    "Asian - East Asian (e.g., Chinese, Japanese, Korean)": {
+      "count": 3,
+      "uid": [
+        "002328252",
+        "002363402",
+        "002409040"
+      ],
+      "name": [
+        "Vincent Chen",
+        "Keaton Lai",
+        "Maya Quon"
+      ]
+    },
+    "My teachers or others have frequently told me that I am a good writer-2": {
+      "count": 4,
+      "uid": [
+        "002363402",
+        "002319708",
+        "002208939",
+        "002327230"
+      ],
+      "name": [
+        "Keaton Lai",
+        "joey florentine",
+        "Jai Saraf",
+        "Alex Gilliland"
+      ]
+    },
+    "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-5": {
+      "count": 2,
+      "uid": [
+        "002327716",
+        "002208939"
+      ],
+      "name": [
+        "Jessica Poprik",
+        "Jai Saraf"
+      ]
+    },
+    "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-0": {
+      "count": 2,
+      "uid": [
+        "002319708",
+        "002409040"
+      ],
+      "name": [
+        "joey florentine",
+        "Maya Quon"
+      ]
+    },
+    "N.U.in Portugal – CIEE Lisbon": {
+      "count": 3,
+      "uid": [
+        "002319708",
+        "002361011",
+        "002357962"
+      ],
+      "name": [
+        "joey florentine",
+        "Bhavi Doshi ",
+        "Elizabeth (Ellie) Stram"
+      ]
+    },
+    "Hispanic or Latino/a/x": {
+      "count": 1,
+      "uid": [
+        "002319708"
+      ],
+      "name": [
+        "joey florentine"
+      ]
+    },
+    "pursuingYr-Second Year": {
+      "count": 1,
+      "uid": [
+        "002208939"
+      ],
+      "name": [
+        "Jai Saraf"
+      ]
+    },
+    "How comfortable are you presenting in front of others or speaking publicly?-5": {
+      "count": 2,
+      "uid": [
+        "002208939",
+        "002327230"
+      ],
+      "name": [
+        "Jai Saraf",
+        "Alex Gilliland"
+      ]
+    },
+    "Asian - South Asian (e.g., Indian, Pakistani, Bangladeshi)": {
+      "count": 3,
+      "uid": [
+        "002208939",
+        "002328837",
+        "002361011"
+      ],
+      "name": [
+        "Jai Saraf",
+        "Natasha Khosla",
+        "Bhavi Doshi "
+      ]
+    },
+    "MGMT": {
+      "count": 2,
+      "uid": [
+        "002328837",
+        "002329619"
+      ],
+      "name": [
+        "Natasha Khosla",
+        "Owen Johnson"
+      ]
+    },
+    "N.U.in France – The American University of Paris": {
+      "count": 2,
+      "uid": [
+        "002328837",
+        "002381270"
+      ],
+      "name": [
+        "Natasha Khosla",
+        "Lily Belanger "
+      ]
+    },
+    "How comfortable are you presenting in front of others or speaking publicly?-0": {
+      "count": 2,
+      "uid": [
+        "00231493d",
+        "00231493d"
+      ],
+      "name": [
+        "Leah Bulavsky",
+        "Leah Bulavsky"
+      ]
+    },
+    "My teachers or others have frequently told me that I am a good writer-5": {
+      "count": 2,
+      "uid": [
+        "00231493d",
+        "00231493d"
+      ],
+      "name": [
+        "Leah Bulavsky",
+        "Leah Bulavsky"
+      ]
+    },
+    "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-4": {
+      "count": 3,
+      "uid": [
+        "00231493d",
+        "00231493d",
+        "002361011"
+      ],
+      "name": [
+        "Leah Bulavsky",
+        "Leah Bulavsky",
+        "Bhavi Doshi "
+      ]
+    },
+    "My teachers or others have frequently told me that I am a good writer-3": {
+      "count": 5,
+      "uid": [
+        "002381270",
+        "002329619",
+        "002361011",
+        "002326630",
+        "002357962"
+      ],
+      "name": [
+        "Lily Belanger ",
+        "Owen Johnson",
+        "Bhavi Doshi ",
+        "Gavin Parma",
+        "Elizabeth (Ellie) Stram"
+      ]
+    },
+    "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-1": {
+      "count": 2,
+      "uid": [
+        "002381270",
+        "002329619"
+      ],
+      "name": [
+        "Lily Belanger ",
+        "Owen Johnson"
+      ]
+    },
+    "Entrepreneurship": {
+      "count": 1,
+      "uid": [
+        "002409040"
+      ],
+      "name": [
+        "Maya Quon"
+      ]
+    },
+    "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-4": {
+      "count": 1,
+      "uid": [
+        "002361011"
+      ],
+      "name": [
+        "Bhavi Doshi "
+      ]
+    },
+    "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-0": {
+      "count": 1,
+      "uid": [
+        "002327230"
+      ],
+      "name": [
+        "Alex Gilliland"
+      ]
+    },
+    "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-3": {
+      "count": 1,
+      "uid": [
+        "002326630"
+      ],
+      "name": [
+        "Gavin Parma"
+      ]
+    },
+    "FINTECH": {
+      "count": 1,
+      "uid": [
+        "002326630"
+      ],
+      "name": [
+        "Gavin Parma"
+      ]
+    },
+    "Multiracial": {
+      "count": 1,
+      "uid": [
+        "002326630"
+      ],
+      "name": [
+        "Gavin Parma"
+      ]
+    },
+    "Explore": {
+      "count": 1,
+      "uid": [
+        "002357962"
+      ],
+      "name": [
+        "Elizabeth (Ellie) Stram"
+      ]
+    }
+  }
+}
