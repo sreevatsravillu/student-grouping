@@ -102,23 +102,32 @@ class GroupingAlgorithm {
       let groupState = 0
       let groupedStudent = []
       let finalGroup = {}
+      let tableTitle=[]
     
       for (let i = 0; i < students.length; i++) {
        groupState  = groupState === group ? 1 : groupState+1;
        if(!Object.hasOwn(finalGroup, ["Group " + groupState])){
-         finalGroup["Group " + groupState] = { students: [], skills: [] }
+        //  finalGroup["Group " + groupState] = { students: [], skills: [] }
+        finalGroup["Group " + groupState] = {studentsAndSkills:[]}
        }
         
         if (!groupedStudent.includes(students[i]) ) {
          
-          finalGroup["Group " + groupState]["students"].push(names[i])
-          finalGroup["Group " + groupState]["skills"] = [
-            ...new Set([
-              ...finalGroup["Group " + groupState]["skills"],
-              ...formData.find((item) => item.uid === students[i].toString())
-                .skillArr,
-            ]),
-          ]
+          // finalGroup["Group " + groupState]["students"].push(names[i])
+          // finalGroup["Group " + groupState]["skills"] = [
+          //   ...new Set([
+          //     ...finalGroup["Group " + groupState]["skills"],
+          //     ...formData.find((item) => item.uid === students[i].toString())
+          //       .skillArr,
+          //   ]),
+          // ]
+          finalGroup["Group " + groupState]["studentsAndSkills"].push({name:names[i],
+            skills:formData.find((item) => item.uid === students[i].toString())
+            .tableSkills.filter(item => item.tableTitle)
+          })
+          tableTitle =[...new Set([...tableTitle, ...formData.find((item) => item.uid === students[i].toString())
+          .tableSkills.filter(item => item.tableTitle).map(item => item.tableTitle)])]
+           
         
           groupedStudent.push(students[i])
           console.log("if===",students[i],groupedStudent)
@@ -156,8 +165,131 @@ class GroupingAlgorithm {
   
       //     }
       // }
-      return finalGroup
+      return {finalGroup:finalGroup,tableTitle:tableTitle}
   }
   }
   
   module.exports = GroupingAlgorithm;
+
+
+// const fs = require('fs');
+
+// // Parse skills and priorities dynamically from a JSON file
+// const skills = JSON.parse(fs.readFileSync('data/skills.json'));
+
+// // Calculate skill weights based on priority
+// const skillWeights = {};
+// if (Array.isArray(skills.skills)) {
+//   skills.skills.forEach(skill => {
+//     skillWeights[skill.id] = 1 / skill.priority;
+//   });
+// } else {
+//   console.error("Skills array is not defined or is invalid.");
+// }
+
+// /**
+//  * Calculate the fitness of group assignments
+//  * @param {Array} groups - Array of groups, each containing student indices
+//  * @param {Array} students - Array of student objects
+//  * @returns {Number} Fitness score
+//  */
+// function calculateFitness(groups, students) {
+//   let fitness = 0;
+
+//   groups.forEach(group => {
+//     const skillSums = {};
+//     const diversity = { gender: new Set(), ethnicity: new Set(), campus: new Set(), major: {} };
+
+//     group.forEach(studentIndex => {
+//       const student = students[studentIndex];
+
+//       // Add student skills to skillSums
+//       for (const skill in student.skills) {
+//         skillSums[skill] = (skillSums[skill] || 0) + student.skills[skill] * skillWeights[skill];
+//       }
+
+//       // Track diversity
+//       diversity.gender.add(student.gender);
+//       diversity.ethnicity.add(student.ethnicity);
+//       diversity.campus.add(student.campus);
+//       diversity.major[student.major] = (diversity.major[student.major] || 0) + 1;
+//     });
+
+//     // Penalize large imbalances in skill totals
+//     for (const skill in skillSums) {
+//       fitness -= Math.abs(skillSums[skill] - skillSums[skill] / groups.length);
+//     }
+
+//     // Reward diversity
+//     fitness += diversity.gender.size;
+//     fitness += diversity.ethnicity.size;
+//     fitness += diversity.campus.size;
+
+//     // Penalize groups with more than 2 MKTG majors
+//     if (diversity.major['MKTG'] > 2) {
+//       fitness -= 10;
+//     }
+//   });
+
+//   return fitness;
+// }
+
+// /**
+//  * Genetic Algorithm for grouping
+//  * @param {Array} students - Array of student objects
+//  * @param {Number} numGroups - Number of groups to create
+//  * @param {Number} generations - Number of generations to run
+//  * @returns {Array} Best group assignment
+//  */
+// function geneticAlgorithm(students, numGroups, generations = 1000) {
+//   const populationSize = 50;
+//   let population = Array.from({ length: populationSize }, () =>
+//     Array.from({ length: students.length }, () => Math.floor(Math.random() * numGroups))
+//   );
+
+//   for (let gen = 0; gen < generations; gen++) {
+//     const fitnessScores = population.map(chromosome =>
+//       calculateFitness(chromosomeToGroups(chromosome, numGroups), students)
+//     );
+
+//     // Sort population by fitness
+//     const sorted = population.map((chromosome, i) => ({ chromosome, fitness: fitnessScores[i] }))
+//         .sort((a, b) => b.fitness - a.fitness);
+
+//     population = sorted.slice(0, populationSize / 2).map(entry => entry.chromosome);
+
+//     // Crossover
+//     while (population.length < populationSize) {
+//       const parent1 = population[Math.floor(Math.random() * (populationSize / 2))];
+//       const parent2 = population[Math.floor(Math.random() * (populationSize / 2))];
+//       population.push(crossover(parent1, parent2));
+//     }
+
+//     // Mutation
+//     population = population.map(chromosome => mutate(chromosome, numGroups));
+//   }
+
+//   // Return the best solution
+//   return chromosomeToGroups(population[0], numGroups);
+// }
+
+// function chromosomeToGroups(chromosome, numGroups) {
+//   const groups = Array.from({ length: numGroups }, () => []);
+//   chromosome.forEach((groupIndex, studentIndex) => {
+//     groups[groupIndex].push(studentIndex);
+//   });
+//   return groups;
+// }
+
+// function crossover(parent1, parent2) {
+//   const point = Math.floor(Math.random() * parent1.length);
+//   return parent1.slice(0, point).concat(parent2.slice(point));
+// }
+
+// function mutate(chromosome, numGroups) {
+//   const index = Math.floor(Math.random() * chromosome.length);
+//   chromosome[index] = Math.floor(Math.random() * numGroups);
+//   return chromosome;
+// }
+
+// module.exports = { geneticAlgorithm };
