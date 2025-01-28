@@ -20,6 +20,13 @@
       background-color: #f8f8f8;
       color: #333;
     }
+    /* Hero/Header Image */
+    .blurred-image {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
     .container {
       max-width: 800px;
       margin: 0 auto;
@@ -204,7 +211,7 @@
 
     /* A row of labels to show each possible value (0–5) */
     .slider-scale {
-      margin-top: 1rem; /* Increase this to add more spacing */
+      margin-top: 1rem; /* Extra spacing to push the scale away from the slider */
       display: flex;
       justify-content: space-between;
       font-size: 0.9rem;
@@ -215,6 +222,9 @@
 </head>
 
 <body>
+  <!-- Header / Hero image -->
+  <img src="/PPS.svg" alt="College Banner or Logo" class="blurred-image" />
+
   <div class="container">
     <h1 class="form-title">Student Skills Form</h1>
 
@@ -514,7 +524,7 @@
 
     // Slider & tooltip logic
     function updateSliderValue(input) {
-      // Update the tooltip text (if you want no hover display, remove the tooltip logic)
+      // Update the tooltip text (if you'd like no hover display, remove the tooltip logic)
       const tooltip = input.parentElement.querySelector('.slider-tooltip');
       tooltip.textContent = input.value;
       // ARIA for screen readers
