@@ -1,1 +1,3170 @@
-
+{
+  "BUSN1101-SV-1335": [
+    {
+      "name": "Bennett Lin",
+      "uid": "002408486",
+      "email": "lin.benn@northeastern.edu",
+      "gender": "Male",
+      "pursuingYr": "First Year",
+      "skillArr": [
+        "pursuingYr-First Year",
+        "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-3",
+        "How comfortable are you presenting in front of others or speaking publicly?-3",
+        "My teachers or others have frequently told me that I am a good writer-4",
+        "I am generally more outgoing than shy in social or group settings-3",
+        "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-3",
+        "MGMT",
+        "N.U.in Germany – CIEE Berlin",
+        "Asian - East Asian (e.g., Chinese, Japanese, Korean)"
+      ],
+      "skills": [
+        {
+          "skillName": "pursuingYr-First Year",
+          "value": "First Year",
+          "hasSkill": "First Year"
+        },
+        {
+          "skillName": "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-3",
+          "value": "3",
+          "hasSkill": "3"
+        },
+        {
+          "skillName": "How comfortable are you presenting in front of others or speaking publicly?-3",
+          "value": "3",
+          "hasSkill": "3"
+        },
+        {
+          "skillName": "My teachers or others have frequently told me that I am a good writer-4",
+          "value": "4",
+          "hasSkill": "4"
+        },
+        {
+          "skillName": "I am generally more outgoing than shy in social or group settings-3",
+          "value": "3",
+          "hasSkill": "3"
+        },
+        {
+          "skillName": "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-3",
+          "value": "3",
+          "hasSkill": "3"
+        },
+        {
+          "skillName": "MGMT",
+          "hasSkill": true
+        },
+        {
+          "skillName": "N.U.in Germany – CIEE Berlin",
+          "hasSkill": true
+        },
+        {
+          "skillName": "Asian - East Asian (e.g., Chinese, Japanese, Korean)",
+          "hasSkill": true
+        }
+      ]
+    },
+    {
+      "name": "Sneha Sridhar",
+      "uid": "002491885",
+      "email": "sridhar.sn@northeastern.edu",
+      "gender": "Female",
+      "pursuingYr": "First Year",
+      "skillArr": [
+        "pursuingYr-First Year",
+        "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-2",
+        "How comfortable are you presenting in front of others or speaking publicly?-5",
+        "My teachers or others have frequently told me that I am a good writer-5",
+        "I am generally more outgoing than shy in social or group settings-4",
+        "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-3",
+        "FIN",
+        "N.U.in Scotland – University of Glasgow",
+        "Asian - South Asian (e.g., Indian, Pakistani, Bangladeshi)"
+      ],
+      "skills": [
+        {
+          "skillName": "pursuingYr-First Year",
+          "value": "First Year",
+          "hasSkill": "First Year"
+        },
+        {
+          "skillName": "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-2",
+          "value": "2",
+          "hasSkill": "2"
+        },
+        {
+          "skillName": "How comfortable are you presenting in front of others or speaking publicly?-5",
+          "value": "5",
+          "hasSkill": "5"
+        },
+        {
+          "skillName": "My teachers or others have frequently told me that I am a good writer-5",
+          "value": "5",
+          "hasSkill": "5"
+        },
+        {
+          "skillName": "I am generally more outgoing than shy in social or group settings-4",
+          "value": "4",
+          "hasSkill": "4"
+        },
+        {
+          "skillName": "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-3",
+          "value": "3",
+          "hasSkill": "3"
+        },
+        {
+          "skillName": "FIN",
+          "hasSkill": true
+        },
+        {
+          "skillName": "N.U.in Scotland – University of Glasgow",
+          "hasSkill": true
+        },
+        {
+          "skillName": "Asian - South Asian (e.g., Indian, Pakistani, Bangladeshi)",
+          "hasSkill": true
+        }
+      ]
+    },
+    {
+      "name": "Bharat Jain",
+      "uid": "002407208",
+      "email": "jain.bhar@northeastern.edu",
+      "gender": "Male",
+      "pursuingYr": "First Year",
+      "skillArr": [
+        "pursuingYr-First Year",
+        "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-3",
+        "How comfortable are you presenting in front of others or speaking publicly?-4",
+        "My teachers or others have frequently told me that I am a good writer-1",
+        "I am generally more outgoing than shy in social or group settings-3",
+        "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-1",
+        "FIN",
+        "N.U.in Scotland – University of Glasgow",
+        "Asian - South Asian (e.g., Indian, Pakistani, Bangladeshi)"
+      ],
+      "skills": [
+        {
+          "skillName": "pursuingYr-First Year",
+          "value": "First Year",
+          "hasSkill": "First Year"
+        },
+        {
+          "skillName": "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-3",
+          "value": "3",
+          "hasSkill": "3"
+        },
+        {
+          "skillName": "How comfortable are you presenting in front of others or speaking publicly?-4",
+          "value": "4",
+          "hasSkill": "4"
+        },
+        {
+          "skillName": "My teachers or others have frequently told me that I am a good writer-1",
+          "value": "1",
+          "hasSkill": "1"
+        },
+        {
+          "skillName": "I am generally more outgoing than shy in social or group settings-3",
+          "value": "3",
+          "hasSkill": "3"
+        },
+        {
+          "skillName": "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-1",
+          "value": "1",
+          "hasSkill": "1"
+        },
+        {
+          "skillName": "FIN",
+          "hasSkill": true
+        },
+        {
+          "skillName": "N.U.in Scotland – University of Glasgow",
+          "hasSkill": true
+        },
+        {
+          "skillName": "Asian - South Asian (e.g., Indian, Pakistani, Bangladeshi)",
+          "hasSkill": true
+        }
+      ]
+    },
+    {
+      "name": "Max Griffin",
+      "uid": "002403463",
+      "email": "griffin.max@northeastern.edu",
+      "gender": "Male",
+      "pursuingYr": "First Year",
+      "skillArr": [
+        "pursuingYr-First Year",
+        "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-0",
+        "How comfortable are you presenting in front of others or speaking publicly?-3",
+        "My teachers or others have frequently told me that I am a good writer-4",
+        "I am generally more outgoing than shy in social or group settings-4",
+        "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-0",
+        "FIN",
+        "N.U.in Italy – John Cabot University",
+        "White"
+      ],
+      "skills": [
+        {
+          "skillName": "pursuingYr-First Year",
+          "value": "First Year",
+          "hasSkill": "First Year"
+        },
+        {
+          "skillName": "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-0",
+          "value": "0",
+          "hasSkill": "0"
+        },
+        {
+          "skillName": "How comfortable are you presenting in front of others or speaking publicly?-3",
+          "value": "3",
+          "hasSkill": "3"
+        },
+        {
+          "skillName": "My teachers or others have frequently told me that I am a good writer-4",
+          "value": "4",
+          "hasSkill": "4"
+        },
+        {
+          "skillName": "I am generally more outgoing than shy in social or group settings-4",
+          "value": "4",
+          "hasSkill": "4"
+        },
+        {
+          "skillName": "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-0",
+          "value": "0",
+          "hasSkill": "0"
+        },
+        {
+          "skillName": "FIN",
+          "hasSkill": true
+        },
+        {
+          "skillName": "N.U.in Italy – John Cabot University",
+          "hasSkill": true
+        },
+        {
+          "skillName": "White",
+          "hasSkill": true
+        }
+      ]
+    },
+    {
+      "name": "Avi Nathan ",
+      "uid": "002496961",
+      "email": "nathan.av@northeastern.edu",
+      "gender": "Male",
+      "pursuingYr": "First Year",
+      "skillArr": [
+        "pursuingYr-First Year",
+        "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-3",
+        "How comfortable are you presenting in front of others or speaking publicly?-3",
+        "My teachers or others have frequently told me that I am a good writer-3",
+        "I am generally more outgoing than shy in social or group settings-4",
+        "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-5",
+        "FIN",
+        "N.U.in Germany – CIEE Berlin",
+        "Asian - South Asian (e.g., Indian, Pakistani, Bangladeshi)"
+      ],
+      "skills": [
+        {
+          "skillName": "pursuingYr-First Year",
+          "value": "First Year",
+          "hasSkill": "First Year"
+        },
+        {
+          "skillName": "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-3",
+          "value": "3",
+          "hasSkill": "3"
+        },
+        {
+          "skillName": "How comfortable are you presenting in front of others or speaking publicly?-3",
+          "value": "3",
+          "hasSkill": "3"
+        },
+        {
+          "skillName": "My teachers or others have frequently told me that I am a good writer-3",
+          "value": "3",
+          "hasSkill": "3"
+        },
+        {
+          "skillName": "I am generally more outgoing than shy in social or group settings-4",
+          "value": "4",
+          "hasSkill": "4"
+        },
+        {
+          "skillName": "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-5",
+          "value": "5",
+          "hasSkill": "5"
+        },
+        {
+          "skillName": "FIN",
+          "hasSkill": true
+        },
+        {
+          "skillName": "N.U.in Germany – CIEE Berlin",
+          "hasSkill": true
+        },
+        {
+          "skillName": "Asian - South Asian (e.g., Indian, Pakistani, Bangladeshi)",
+          "hasSkill": true
+        }
+      ]
+    },
+    {
+      "name": "Ayushi Merchant",
+      "uid": "002494443",
+      "email": "merchant.ay@northeastern.edu",
+      "gender": "Female",
+      "pursuingYr": "First Year",
+      "skillArr": [
+        "pursuingYr-First Year",
+        "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-2",
+        "How comfortable are you presenting in front of others or speaking publicly?-4",
+        "My teachers or others have frequently told me that I am a good writer-3",
+        "I am generally more outgoing than shy in social or group settings-3",
+        "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-4",
+        "Explore",
+        "N.U.in Czech Republic – University of New York in Prague",
+        "Asian - South Asian (e.g., Indian, Pakistani, Bangladeshi)"
+      ],
+      "skills": [
+        {
+          "skillName": "pursuingYr-First Year",
+          "value": "First Year",
+          "hasSkill": "First Year"
+        },
+        {
+          "skillName": "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-2",
+          "value": "2",
+          "hasSkill": "2"
+        },
+        {
+          "skillName": "How comfortable are you presenting in front of others or speaking publicly?-4",
+          "value": "4",
+          "hasSkill": "4"
+        },
+        {
+          "skillName": "My teachers or others have frequently told me that I am a good writer-3",
+          "value": "3",
+          "hasSkill": "3"
+        },
+        {
+          "skillName": "I am generally more outgoing than shy in social or group settings-3",
+          "value": "3",
+          "hasSkill": "3"
+        },
+        {
+          "skillName": "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-4",
+          "value": "4",
+          "hasSkill": "4"
+        },
+        {
+          "skillName": "Explore",
+          "hasSkill": true
+        },
+        {
+          "skillName": "N.U.in Czech Republic – University of New York in Prague",
+          "hasSkill": true
+        },
+        {
+          "skillName": "Asian - South Asian (e.g., Indian, Pakistani, Bangladeshi)",
+          "hasSkill": true
+        }
+      ]
+    },
+    {
+      "name": "Eric Elbery",
+      "uid": "002353143",
+      "email": "elbery.e@northeastern.edu",
+      "gender": "Male",
+      "pursuingYr": "First Year",
+      "skillArr": [
+        "pursuingYr-First Year",
+        "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-4",
+        "How comfortable are you presenting in front of others or speaking publicly?-4",
+        "My teachers or others have frequently told me that I am a good writer-3",
+        "I am generally more outgoing than shy in social or group settings-4",
+        "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-1",
+        "FIN",
+        "N.U.in France – The American University of Paris",
+        "White"
+      ],
+      "skills": [
+        {
+          "skillName": "pursuingYr-First Year",
+          "value": "First Year",
+          "hasSkill": "First Year"
+        },
+        {
+          "skillName": "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-4",
+          "value": "4",
+          "hasSkill": "4"
+        },
+        {
+          "skillName": "How comfortable are you presenting in front of others or speaking publicly?-4",
+          "value": "4",
+          "hasSkill": "4"
+        },
+        {
+          "skillName": "My teachers or others have frequently told me that I am a good writer-3",
+          "value": "3",
+          "hasSkill": "3"
+        },
+        {
+          "skillName": "I am generally more outgoing than shy in social or group settings-4",
+          "value": "4",
+          "hasSkill": "4"
+        },
+        {
+          "skillName": "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-1",
+          "value": "1",
+          "hasSkill": "1"
+        },
+        {
+          "skillName": "FIN",
+          "hasSkill": true
+        },
+        {
+          "skillName": "N.U.in France – The American University of Paris",
+          "hasSkill": true
+        },
+        {
+          "skillName": "White",
+          "hasSkill": true
+        }
+      ]
+    },
+    {
+      "name": "Timothy Rocki",
+      "uid": "002491553",
+      "email": "rocki.t@northeastern.edu",
+      "gender": "Male",
+      "pursuingYr": "First Year",
+      "skillArr": [
+        "pursuingYr-First Year",
+        "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-2",
+        "How comfortable are you presenting in front of others or speaking publicly?-3",
+        "My teachers or others have frequently told me that I am a good writer-3",
+        "I am generally more outgoing than shy in social or group settings-4",
+        "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-5",
+        "FIN",
+        "N.U.in Portugal – CIEE Lisbon",
+        "White"
+      ],
+      "skills": [
+        {
+          "skillName": "pursuingYr-First Year",
+          "value": "First Year",
+          "hasSkill": "First Year"
+        },
+        {
+          "skillName": "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-2",
+          "value": "2",
+          "hasSkill": "2"
+        },
+        {
+          "skillName": "How comfortable are you presenting in front of others or speaking publicly?-3",
+          "value": "3",
+          "hasSkill": "3"
+        },
+        {
+          "skillName": "My teachers or others have frequently told me that I am a good writer-3",
+          "value": "3",
+          "hasSkill": "3"
+        },
+        {
+          "skillName": "I am generally more outgoing than shy in social or group settings-4",
+          "value": "4",
+          "hasSkill": "4"
+        },
+        {
+          "skillName": "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-5",
+          "value": "5",
+          "hasSkill": "5"
+        },
+        {
+          "skillName": "FIN",
+          "hasSkill": true
+        },
+        {
+          "skillName": "N.U.in Portugal – CIEE Lisbon",
+          "hasSkill": true
+        },
+        {
+          "skillName": "White",
+          "hasSkill": true
+        }
+      ]
+    },
+    {
+      "name": "Amy Derr",
+      "uid": "002496445",
+      "email": "derr.a@northeastern.edu",
+      "gender": "Female",
+      "pursuingYr": "First Year",
+      "skillArr": [
+        "pursuingYr-First Year",
+        "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-0",
+        "How comfortable are you presenting in front of others or speaking publicly?-3",
+        "My teachers or others have frequently told me that I am a good writer-4",
+        "I am generally more outgoing than shy in social or group settings-5",
+        "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-3",
+        "Explore",
+        "N.U.in Portugal – CIEE Lisbon",
+        "White"
+      ],
+      "skills": [
+        {
+          "skillName": "pursuingYr-First Year",
+          "value": "First Year",
+          "hasSkill": "First Year"
+        },
+        {
+          "skillName": "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-0",
+          "value": "0",
+          "hasSkill": "0"
+        },
+        {
+          "skillName": "How comfortable are you presenting in front of others or speaking publicly?-3",
+          "value": "3",
+          "hasSkill": "3"
+        },
+        {
+          "skillName": "My teachers or others have frequently told me that I am a good writer-4",
+          "value": "4",
+          "hasSkill": "4"
+        },
+        {
+          "skillName": "I am generally more outgoing than shy in social or group settings-5",
+          "value": "5",
+          "hasSkill": "5"
+        },
+        {
+          "skillName": "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-3",
+          "value": "3",
+          "hasSkill": "3"
+        },
+        {
+          "skillName": "Explore",
+          "hasSkill": true
+        },
+        {
+          "skillName": "N.U.in Portugal – CIEE Lisbon",
+          "hasSkill": true
+        },
+        {
+          "skillName": "White",
+          "hasSkill": true
+        }
+      ]
+    },
+    {
+      "name": "Matthew Tobin",
+      "uid": "002496062",
+      "email": "tobin.jo@northeastern.edu",
+      "gender": "Male",
+      "pursuingYr": "First Year",
+      "skillArr": [
+        "pursuingYr-First Year",
+        "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-3",
+        "How comfortable are you presenting in front of others or speaking publicly?-4",
+        "My teachers or others have frequently told me that I am a good writer-4",
+        "I am generally more outgoing than shy in social or group settings-4",
+        "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-4",
+        "MKTG",
+        "N.U.in Italy – John Cabot University",
+        "White"
+      ],
+      "skills": [
+        {
+          "skillName": "pursuingYr-First Year",
+          "value": "First Year",
+          "hasSkill": "First Year"
+        },
+        {
+          "skillName": "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-3",
+          "value": "3",
+          "hasSkill": "3"
+        },
+        {
+          "skillName": "How comfortable are you presenting in front of others or speaking publicly?-4",
+          "value": "4",
+          "hasSkill": "4"
+        },
+        {
+          "skillName": "My teachers or others have frequently told me that I am a good writer-4",
+          "value": "4",
+          "hasSkill": "4"
+        },
+        {
+          "skillName": "I am generally more outgoing than shy in social or group settings-4",
+          "value": "4",
+          "hasSkill": "4"
+        },
+        {
+          "skillName": "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-4",
+          "value": "4",
+          "hasSkill": "4"
+        },
+        {
+          "skillName": "MKTG",
+          "hasSkill": true
+        },
+        {
+          "skillName": "N.U.in Italy – John Cabot University",
+          "hasSkill": true
+        },
+        {
+          "skillName": "White",
+          "hasSkill": true
+        }
+      ]
+    },
+    {
+      "name": "Sarah Cheung",
+      "uid": "002407183",
+      "email": "cheung.sarah@northeastern.edu",
+      "gender": "Female",
+      "pursuingYr": "First Year",
+      "skillArr": [
+        "pursuingYr-First Year",
+        "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-1",
+        "How comfortable are you presenting in front of others or speaking publicly?-3",
+        "My teachers or others have frequently told me that I am a good writer-5",
+        "I am generally more outgoing than shy in social or group settings-4",
+        "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-5",
+        "FIN",
+        "N.U.in Italy – John Cabot University",
+        "Asian - East Asian (e.g., Chinese, Japanese, Korean)"
+      ],
+      "skills": [
+        {
+          "skillName": "pursuingYr-First Year",
+          "value": "First Year",
+          "hasSkill": "First Year"
+        },
+        {
+          "skillName": "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-1",
+          "value": "1",
+          "hasSkill": "1"
+        },
+        {
+          "skillName": "How comfortable are you presenting in front of others or speaking publicly?-3",
+          "value": "3",
+          "hasSkill": "3"
+        },
+        {
+          "skillName": "My teachers or others have frequently told me that I am a good writer-5",
+          "value": "5",
+          "hasSkill": "5"
+        },
+        {
+          "skillName": "I am generally more outgoing than shy in social or group settings-4",
+          "value": "4",
+          "hasSkill": "4"
+        },
+        {
+          "skillName": "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-5",
+          "value": "5",
+          "hasSkill": "5"
+        },
+        {
+          "skillName": "FIN",
+          "hasSkill": true
+        },
+        {
+          "skillName": "N.U.in Italy – John Cabot University",
+          "hasSkill": true
+        },
+        {
+          "skillName": "Asian - East Asian (e.g., Chinese, Japanese, Korean)",
+          "hasSkill": true
+        }
+      ]
+    },
+    {
+      "name": "Naoki",
+      "uid": "002495512",
+      "email": "yang.nao@northeastern.edu",
+      "gender": "Male",
+      "pursuingYr": "First Year",
+      "skillArr": [
+        "pursuingYr-First Year",
+        "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-1",
+        "How comfortable are you presenting in front of others or speaking publicly?-3",
+        "My teachers or others have frequently told me that I am a good writer-1",
+        "I am generally more outgoing than shy in social or group settings-3",
+        "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-4",
+        "MGMT",
+        "N.U.in Portugal – CIEE Lisbon",
+        "Asian - East Asian (e.g., Chinese, Japanese, Korean)"
+      ],
+      "skills": [
+        {
+          "skillName": "pursuingYr-First Year",
+          "value": "First Year",
+          "hasSkill": "First Year"
+        },
+        {
+          "skillName": "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-1",
+          "value": "1",
+          "hasSkill": "1"
+        },
+        {
+          "skillName": "How comfortable are you presenting in front of others or speaking publicly?-3",
+          "value": "3",
+          "hasSkill": "3"
+        },
+        {
+          "skillName": "My teachers or others have frequently told me that I am a good writer-1",
+          "value": "1",
+          "hasSkill": "1"
+        },
+        {
+          "skillName": "I am generally more outgoing than shy in social or group settings-3",
+          "value": "3",
+          "hasSkill": "3"
+        },
+        {
+          "skillName": "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-4",
+          "value": "4",
+          "hasSkill": "4"
+        },
+        {
+          "skillName": "MGMT",
+          "hasSkill": true
+        },
+        {
+          "skillName": "N.U.in Portugal – CIEE Lisbon",
+          "hasSkill": true
+        },
+        {
+          "skillName": "Asian - East Asian (e.g., Chinese, Japanese, Korean)",
+          "hasSkill": true
+        }
+      ]
+    },
+    {
+      "name": "Andy",
+      "uid": "002408395",
+      "email": "wu.siyuan@northeastern.edu",
+      "gender": "Male",
+      "pursuingYr": "First Year",
+      "skillArr": [
+        "pursuingYr-First Year",
+        "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-1",
+        "How comfortable are you presenting in front of others or speaking publicly?-4",
+        "My teachers or others have frequently told me that I am a good writer-2",
+        "I am generally more outgoing than shy in social or group settings-3",
+        "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-2",
+        "FIN",
+        "N.U.in Czech Republic – University of New York in Prague",
+        "Asian - East Asian (e.g., Chinese, Japanese, Korean)"
+      ],
+      "skills": [
+        {
+          "skillName": "pursuingYr-First Year",
+          "value": "First Year",
+          "hasSkill": "First Year"
+        },
+        {
+          "skillName": "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-1",
+          "value": "1",
+          "hasSkill": "1"
+        },
+        {
+          "skillName": "How comfortable are you presenting in front of others or speaking publicly?-4",
+          "value": "4",
+          "hasSkill": "4"
+        },
+        {
+          "skillName": "My teachers or others have frequently told me that I am a good writer-2",
+          "value": "2",
+          "hasSkill": "2"
+        },
+        {
+          "skillName": "I am generally more outgoing than shy in social or group settings-3",
+          "value": "3",
+          "hasSkill": "3"
+        },
+        {
+          "skillName": "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-2",
+          "value": "2",
+          "hasSkill": "2"
+        },
+        {
+          "skillName": "FIN",
+          "hasSkill": true
+        },
+        {
+          "skillName": "N.U.in Czech Republic – University of New York in Prague",
+          "hasSkill": true
+        },
+        {
+          "skillName": "Asian - East Asian (e.g., Chinese, Japanese, Korean)",
+          "hasSkill": true
+        }
+      ]
+    },
+    {
+      "name": "Rebecca Fang",
+      "uid": "002496806",
+      "email": "fang.re@northeastern.edu",
+      "gender": "Female",
+      "pursuingYr": "First Year",
+      "skillArr": [
+        "pursuingYr-First Year",
+        "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-1",
+        "How comfortable are you presenting in front of others or speaking publicly?-4",
+        "My teachers or others have frequently told me that I am a good writer-3",
+        "I am generally more outgoing than shy in social or group settings-4",
+        "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-2",
+        "MKTG",
+        "N.U.in Germany – CIEE Berlin",
+        "Asian - East Asian (e.g., Chinese, Japanese, Korean)"
+      ],
+      "skills": [
+        {
+          "skillName": "pursuingYr-First Year",
+          "value": "First Year",
+          "hasSkill": "First Year"
+        },
+        {
+          "skillName": "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-1",
+          "value": "1",
+          "hasSkill": "1"
+        },
+        {
+          "skillName": "How comfortable are you presenting in front of others or speaking publicly?-4",
+          "value": "4",
+          "hasSkill": "4"
+        },
+        {
+          "skillName": "My teachers or others have frequently told me that I am a good writer-3",
+          "value": "3",
+          "hasSkill": "3"
+        },
+        {
+          "skillName": "I am generally more outgoing than shy in social or group settings-4",
+          "value": "4",
+          "hasSkill": "4"
+        },
+        {
+          "skillName": "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-2",
+          "value": "2",
+          "hasSkill": "2"
+        },
+        {
+          "skillName": "MKTG",
+          "hasSkill": true
+        },
+        {
+          "skillName": "N.U.in Germany – CIEE Berlin",
+          "hasSkill": true
+        },
+        {
+          "skillName": "Asian - East Asian (e.g., Chinese, Japanese, Korean)",
+          "hasSkill": true
+        }
+      ]
+    }
+  ],
+  "BUSN1101-JA-1335": [
+    {
+      "name": "Bina",
+      "uid": "002236168",
+      "email": "jeong.b@northeastern.edu",
+      "gender": "Female",
+      "pursuingYr": "Second Year",
+      "skillArr": [
+        "pursuingYr-Second Year",
+        "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-5",
+        "How comfortable are you presenting in front of others or speaking publicly?-5",
+        "My teachers or others have frequently told me that I am a good writer-5",
+        "I am generally more outgoing than shy in social or group settings-5",
+        "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-4",
+        "Entrepreneurship",
+        "N.U.in Czech Republic – University of New York in Prague",
+        "Asian - East Asian (e.g., Chinese, Japanese, Korean)"
+      ],
+      "skills": [
+        {
+          "skillName": "pursuingYr-Second Year",
+          "value": "Second Year",
+          "hasSkill": "Second Year"
+        },
+        {
+          "skillName": "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-5",
+          "value": "5",
+          "hasSkill": "5"
+        },
+        {
+          "skillName": "How comfortable are you presenting in front of others or speaking publicly?-5",
+          "value": "5",
+          "hasSkill": "5"
+        },
+        {
+          "skillName": "My teachers or others have frequently told me that I am a good writer-5",
+          "value": "5",
+          "hasSkill": "5"
+        },
+        {
+          "skillName": "I am generally more outgoing than shy in social or group settings-5",
+          "value": "5",
+          "hasSkill": "5"
+        },
+        {
+          "skillName": "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-4",
+          "value": "4",
+          "hasSkill": "4"
+        },
+        {
+          "skillName": "Entrepreneurship",
+          "hasSkill": true
+        },
+        {
+          "skillName": "N.U.in Czech Republic – University of New York in Prague",
+          "hasSkill": true
+        },
+        {
+          "skillName": "Asian - East Asian (e.g., Chinese, Japanese, Korean)",
+          "hasSkill": true
+        }
+      ]
+    },
+    {
+      "name": "Eleni Augoustiniatos",
+      "uid": "002325766",
+      "email": "augoustiniatos.e@northeastern.edu",
+      "gender": "Female",
+      "pursuingYr": "First Year",
+      "skillArr": [
+        "pursuingYr-First Year",
+        "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-1",
+        "How comfortable are you presenting in front of others or speaking publicly?-3",
+        "My teachers or others have frequently told me that I am a good writer-2",
+        "I am generally more outgoing than shy in social or group settings-4",
+        "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-0",
+        "Accounting",
+        "N.U.in Czech Republic – University of New York in Prague",
+        "White"
+      ],
+      "skills": [
+        {
+          "skillName": "pursuingYr-First Year",
+          "value": "First Year",
+          "hasSkill": "First Year"
+        },
+        {
+          "skillName": "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-1",
+          "value": "1",
+          "hasSkill": "1"
+        },
+        {
+          "skillName": "How comfortable are you presenting in front of others or speaking publicly?-3",
+          "value": "3",
+          "hasSkill": "3"
+        },
+        {
+          "skillName": "My teachers or others have frequently told me that I am a good writer-2",
+          "value": "2",
+          "hasSkill": "2"
+        },
+        {
+          "skillName": "I am generally more outgoing than shy in social or group settings-4",
+          "value": "4",
+          "hasSkill": "4"
+        },
+        {
+          "skillName": "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-0",
+          "value": "0",
+          "hasSkill": "0"
+        },
+        {
+          "skillName": "Accounting",
+          "hasSkill": true
+        },
+        {
+          "skillName": "N.U.in Czech Republic – University of New York in Prague",
+          "hasSkill": true
+        },
+        {
+          "skillName": "White",
+          "hasSkill": true
+        }
+      ]
+    },
+    {
+      "name": "Rohin Ariff",
+      "uid": "002359489",
+      "email": "ariff.r@northeastern.edu",
+      "gender": "Male",
+      "pursuingYr": "First Year",
+      "skillArr": [
+        "pursuingYr-First Year",
+        "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-3",
+        "How comfortable are you presenting in front of others or speaking publicly?-4",
+        "My teachers or others have frequently told me that I am a good writer-4",
+        "I am generally more outgoing than shy in social or group settings-4",
+        "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-4",
+        "FIN",
+        "N.U.in Czech Republic – University of New York in Prague",
+        "Asian - South Asian (e.g., Indian, Pakistani, Bangladeshi)"
+      ],
+      "skills": [
+        {
+          "skillName": "pursuingYr-First Year",
+          "value": "First Year",
+          "hasSkill": "First Year"
+        },
+        {
+          "skillName": "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-3",
+          "value": "3",
+          "hasSkill": "3"
+        },
+        {
+          "skillName": "How comfortable are you presenting in front of others or speaking publicly?-4",
+          "value": "4",
+          "hasSkill": "4"
+        },
+        {
+          "skillName": "My teachers or others have frequently told me that I am a good writer-4",
+          "value": "4",
+          "hasSkill": "4"
+        },
+        {
+          "skillName": "I am generally more outgoing than shy in social or group settings-4",
+          "value": "4",
+          "hasSkill": "4"
+        },
+        {
+          "skillName": "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-4",
+          "value": "4",
+          "hasSkill": "4"
+        },
+        {
+          "skillName": "FIN",
+          "hasSkill": true
+        },
+        {
+          "skillName": "N.U.in Czech Republic – University of New York in Prague",
+          "hasSkill": true
+        },
+        {
+          "skillName": "Asian - South Asian (e.g., Indian, Pakistani, Bangladeshi)",
+          "hasSkill": true
+        }
+      ]
+    },
+    {
+      "name": "William Baynes",
+      "uid": "002495610",
+      "email": "baynes.w@northeastern.edu",
+      "gender": "Male",
+      "pursuingYr": "First Year",
+      "skillArr": [
+        "pursuingYr-First Year",
+        "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-3",
+        "How comfortable are you presenting in front of others or speaking publicly?-3",
+        "My teachers or others have frequently told me that I am a good writer-2",
+        "I am generally more outgoing than shy in social or group settings-2",
+        "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-4",
+        "MGMT",
+        "N.U.in Czech Republic – University of New York in Prague",
+        "White"
+      ],
+      "skills": [
+        {
+          "skillName": "pursuingYr-First Year",
+          "value": "First Year",
+          "hasSkill": "First Year"
+        },
+        {
+          "skillName": "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-3",
+          "value": "3",
+          "hasSkill": "3"
+        },
+        {
+          "skillName": "How comfortable are you presenting in front of others or speaking publicly?-3",
+          "value": "3",
+          "hasSkill": "3"
+        },
+        {
+          "skillName": "My teachers or others have frequently told me that I am a good writer-2",
+          "value": "2",
+          "hasSkill": "2"
+        },
+        {
+          "skillName": "I am generally more outgoing than shy in social or group settings-2",
+          "value": "2",
+          "hasSkill": "2"
+        },
+        {
+          "skillName": "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-4",
+          "value": "4",
+          "hasSkill": "4"
+        },
+        {
+          "skillName": "MGMT",
+          "hasSkill": true
+        },
+        {
+          "skillName": "N.U.in Czech Republic – University of New York in Prague",
+          "hasSkill": true
+        },
+        {
+          "skillName": "White",
+          "hasSkill": true
+        }
+      ]
+    },
+    {
+      "name": "Rahul Kaycee",
+      "uid": "002210104",
+      "email": "rkayceeahul@gmail.com",
+      "gender": "Male",
+      "pursuingYr": "Second Year",
+      "skillArr": [
+        "pursuingYr-Second Year",
+        "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-2",
+        "How comfortable are you presenting in front of others or speaking publicly?-4",
+        "My teachers or others have frequently told me that I am a good writer-3",
+        "I am generally more outgoing than shy in social or group settings-2",
+        "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-2",
+        "FIN",
+        "N.U.in Czech Republic – University of New York in Prague",
+        "Multiracial"
+      ],
+      "skills": [
+        {
+          "skillName": "pursuingYr-Second Year",
+          "value": "Second Year",
+          "hasSkill": "Second Year"
+        },
+        {
+          "skillName": "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-2",
+          "value": "2",
+          "hasSkill": "2"
+        },
+        {
+          "skillName": "How comfortable are you presenting in front of others or speaking publicly?-4",
+          "value": "4",
+          "hasSkill": "4"
+        },
+        {
+          "skillName": "My teachers or others have frequently told me that I am a good writer-3",
+          "value": "3",
+          "hasSkill": "3"
+        },
+        {
+          "skillName": "I am generally more outgoing than shy in social or group settings-2",
+          "value": "2",
+          "hasSkill": "2"
+        },
+        {
+          "skillName": "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-2",
+          "value": "2",
+          "hasSkill": "2"
+        },
+        {
+          "skillName": "FIN",
+          "hasSkill": true
+        },
+        {
+          "skillName": "N.U.in Czech Republic – University of New York in Prague",
+          "hasSkill": true
+        },
+        {
+          "skillName": "Multiracial",
+          "hasSkill": true
+        }
+      ]
+    },
+    {
+      "name": "Abhilash Polaki",
+      "uid": "002407883",
+      "email": "polaki.a@northeastern.edu",
+      "gender": "Male",
+      "pursuingYr": "First Year",
+      "skillArr": [
+        "pursuingYr-First Year",
+        "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-2",
+        "How comfortable are you presenting in front of others or speaking publicly?-2",
+        "My teachers or others have frequently told me that I am a good writer-1",
+        "I am generally more outgoing than shy in social or group settings-4",
+        "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-3",
+        "MIS",
+        "N.U.in Italy – John Cabot University",
+        "Asian - South Asian (e.g., Indian, Pakistani, Bangladeshi)"
+      ],
+      "skills": [
+        {
+          "skillName": "pursuingYr-First Year",
+          "value": "First Year",
+          "hasSkill": "First Year"
+        },
+        {
+          "skillName": "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-2",
+          "value": "2",
+          "hasSkill": "2"
+        },
+        {
+          "skillName": "How comfortable are you presenting in front of others or speaking publicly?-2",
+          "value": "2",
+          "hasSkill": "2"
+        },
+        {
+          "skillName": "My teachers or others have frequently told me that I am a good writer-1",
+          "value": "1",
+          "hasSkill": "1"
+        },
+        {
+          "skillName": "I am generally more outgoing than shy in social or group settings-4",
+          "value": "4",
+          "hasSkill": "4"
+        },
+        {
+          "skillName": "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-3",
+          "value": "3",
+          "hasSkill": "3"
+        },
+        {
+          "skillName": "MIS",
+          "hasSkill": true
+        },
+        {
+          "skillName": "N.U.in Italy – John Cabot University",
+          "hasSkill": true
+        },
+        {
+          "skillName": "Asian - South Asian (e.g., Indian, Pakistani, Bangladeshi)",
+          "hasSkill": true
+        }
+      ]
+    },
+    {
+      "name": "stella leroy",
+      "uid": "002388483",
+      "email": "leroy.s@northeastern.edu",
+      "gender": "Female",
+      "pursuingYr": "First Year",
+      "skillArr": [
+        "pursuingYr-First Year",
+        "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-4",
+        "How comfortable are you presenting in front of others or speaking publicly?-3",
+        "My teachers or others have frequently told me that I am a good writer-2",
+        "I am generally more outgoing than shy in social or group settings-4",
+        "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-2",
+        "MGMT",
+        "N.U.in Czech Republic – University of New York in Prague",
+        "Multiracial"
+      ],
+      "skills": [
+        {
+          "skillName": "pursuingYr-First Year",
+          "value": "First Year",
+          "hasSkill": "First Year"
+        },
+        {
+          "skillName": "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-4",
+          "value": "4",
+          "hasSkill": "4"
+        },
+        {
+          "skillName": "How comfortable are you presenting in front of others or speaking publicly?-3",
+          "value": "3",
+          "hasSkill": "3"
+        },
+        {
+          "skillName": "My teachers or others have frequently told me that I am a good writer-2",
+          "value": "2",
+          "hasSkill": "2"
+        },
+        {
+          "skillName": "I am generally more outgoing than shy in social or group settings-4",
+          "value": "4",
+          "hasSkill": "4"
+        },
+        {
+          "skillName": "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-2",
+          "value": "2",
+          "hasSkill": "2"
+        },
+        {
+          "skillName": "MGMT",
+          "hasSkill": true
+        },
+        {
+          "skillName": "N.U.in Czech Republic – University of New York in Prague",
+          "hasSkill": true
+        },
+        {
+          "skillName": "Multiracial",
+          "hasSkill": true
+        }
+      ]
+    },
+    {
+      "name": "anaayah makaney",
+      "uid": "002499270",
+      "email": "makaney.a@northeastern.edu",
+      "gender": "Female",
+      "pursuingYr": "First Year",
+      "skillArr": [
+        "pursuingYr-First Year",
+        "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-3",
+        "How comfortable are you presenting in front of others or speaking publicly?-2",
+        "My teachers or others have frequently told me that I am a good writer-1",
+        "I am generally more outgoing than shy in social or group settings-3",
+        "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-3",
+        "FIN",
+        "N.U.in Portugal – CIEE Lisbon",
+        "Asian - South Asian (e.g., Indian, Pakistani, Bangladeshi)"
+      ],
+      "skills": [
+        {
+          "skillName": "pursuingYr-First Year",
+          "value": "First Year",
+          "hasSkill": "First Year"
+        },
+        {
+          "skillName": "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-3",
+          "value": "3",
+          "hasSkill": "3"
+        },
+        {
+          "skillName": "How comfortable are you presenting in front of others or speaking publicly?-2",
+          "value": "2",
+          "hasSkill": "2"
+        },
+        {
+          "skillName": "My teachers or others have frequently told me that I am a good writer-1",
+          "value": "1",
+          "hasSkill": "1"
+        },
+        {
+          "skillName": "I am generally more outgoing than shy in social or group settings-3",
+          "value": "3",
+          "hasSkill": "3"
+        },
+        {
+          "skillName": "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-3",
+          "value": "3",
+          "hasSkill": "3"
+        },
+        {
+          "skillName": "FIN",
+          "hasSkill": true
+        },
+        {
+          "skillName": "N.U.in Portugal – CIEE Lisbon",
+          "hasSkill": true
+        },
+        {
+          "skillName": "Asian - South Asian (e.g., Indian, Pakistani, Bangladeshi)",
+          "hasSkill": true
+        }
+      ]
+    },
+    {
+      "name": "Junkang Pan",
+      "uid": "002712225",
+      "email": "pan.junk@northeastern.edu",
+      "gender": "Male",
+      "pursuingYr": "Third Year",
+      "skillArr": [
+        "pursuingYr-Third Year",
+        "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-1",
+        "How comfortable are you presenting in front of others or speaking publicly?-1",
+        "My teachers or others have frequently told me that I am a good writer-1",
+        "I am generally more outgoing than shy in social or group settings-0",
+        "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-2",
+        "Entrepreneurship",
+        "N.U.in Czech Republic – University of New York in Prague",
+        "Asian - East Asian (e.g., Chinese, Japanese, Korean)"
+      ],
+      "skills": [
+        {
+          "skillName": "pursuingYr-Third Year",
+          "value": "Third Year",
+          "hasSkill": "Third Year"
+        },
+        {
+          "skillName": "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-1",
+          "value": "1",
+          "hasSkill": "1"
+        },
+        {
+          "skillName": "How comfortable are you presenting in front of others or speaking publicly?-1",
+          "value": "1",
+          "hasSkill": "1"
+        },
+        {
+          "skillName": "My teachers or others have frequently told me that I am a good writer-1",
+          "value": "1",
+          "hasSkill": "1"
+        },
+        {
+          "skillName": "I am generally more outgoing than shy in social or group settings-0",
+          "value": "0",
+          "hasSkill": "0"
+        },
+        {
+          "skillName": "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-2",
+          "value": "2",
+          "hasSkill": "2"
+        },
+        {
+          "skillName": "Entrepreneurship",
+          "hasSkill": true
+        },
+        {
+          "skillName": "N.U.in Czech Republic – University of New York in Prague",
+          "hasSkill": true
+        },
+        {
+          "skillName": "Asian - East Asian (e.g., Chinese, Japanese, Korean)",
+          "hasSkill": true
+        }
+      ]
+    },
+    {
+      "name": "Lin Li",
+      "uid": "001009804",
+      "email": "li.lin7@northeastern.edu",
+      "gender": "Female",
+      "pursuingYr": "Fifth Year",
+      "skillArr": [
+        "pursuingYr-Fifth Year",
+        "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-4",
+        "How comfortable are you presenting in front of others or speaking publicly?-3",
+        "My teachers or others have frequently told me that I am a good writer-3",
+        "I am generally more outgoing than shy in social or group settings-1",
+        "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-3",
+        "MKTG",
+        "N.U.in Czech Republic – University of New York in Prague",
+        "Asian - East Asian (e.g., Chinese, Japanese, Korean)"
+      ],
+      "skills": [
+        {
+          "skillName": "pursuingYr-Fifth Year",
+          "value": "Fifth Year",
+          "hasSkill": "Fifth Year"
+        },
+        {
+          "skillName": "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-4",
+          "value": "4",
+          "hasSkill": "4"
+        },
+        {
+          "skillName": "How comfortable are you presenting in front of others or speaking publicly?-3",
+          "value": "3",
+          "hasSkill": "3"
+        },
+        {
+          "skillName": "My teachers or others have frequently told me that I am a good writer-3",
+          "value": "3",
+          "hasSkill": "3"
+        },
+        {
+          "skillName": "I am generally more outgoing than shy in social or group settings-1",
+          "value": "1",
+          "hasSkill": "1"
+        },
+        {
+          "skillName": "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-3",
+          "value": "3",
+          "hasSkill": "3"
+        },
+        {
+          "skillName": "MKTG",
+          "hasSkill": true
+        },
+        {
+          "skillName": "N.U.in Czech Republic – University of New York in Prague",
+          "hasSkill": true
+        },
+        {
+          "skillName": "Asian - East Asian (e.g., Chinese, Japanese, Korean)",
+          "hasSkill": true
+        }
+      ]
+    },
+    {
+      "name": "Greta Gado ",
+      "uid": "002409905",
+      "email": "gado.g@northeastern.edu",
+      "gender": "Female",
+      "pursuingYr": "First Year",
+      "skillArr": [
+        "pursuingYr-First Year",
+        "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-1",
+        "How comfortable are you presenting in front of others or speaking publicly?-2",
+        "My teachers or others have frequently told me that I am a good writer-4",
+        "I am generally more outgoing than shy in social or group settings-2",
+        "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-0",
+        "MKTG",
+        "N.U.in Italy – John Cabot University",
+        "White"
+      ],
+      "skills": [
+        {
+          "skillName": "pursuingYr-First Year",
+          "value": "First Year",
+          "hasSkill": "First Year"
+        },
+        {
+          "skillName": "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-1",
+          "value": "1",
+          "hasSkill": "1"
+        },
+        {
+          "skillName": "How comfortable are you presenting in front of others or speaking publicly?-2",
+          "value": "2",
+          "hasSkill": "2"
+        },
+        {
+          "skillName": "My teachers or others have frequently told me that I am a good writer-4",
+          "value": "4",
+          "hasSkill": "4"
+        },
+        {
+          "skillName": "I am generally more outgoing than shy in social or group settings-2",
+          "value": "2",
+          "hasSkill": "2"
+        },
+        {
+          "skillName": "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-0",
+          "value": "0",
+          "hasSkill": "0"
+        },
+        {
+          "skillName": "MKTG",
+          "hasSkill": true
+        },
+        {
+          "skillName": "N.U.in Italy – John Cabot University",
+          "hasSkill": true
+        },
+        {
+          "skillName": "White",
+          "hasSkill": true
+        }
+      ]
+    },
+    {
+      "name": "Hart Mette",
+      "uid": "002971515",
+      "email": "mette.h@northeastern.edu",
+      "gender": "Female",
+      "pursuingYr": "Third Year",
+      "skillArr": [
+        "pursuingYr-Third Year",
+        "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-2",
+        "How comfortable are you presenting in front of others or speaking publicly?-4",
+        "My teachers or others have frequently told me that I am a good writer-3",
+        "I am generally more outgoing than shy in social or group settings-5",
+        "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-0",
+        "MKTG",
+        "N.U.in Czech Republic – University of New York in Prague",
+        "White"
+      ],
+      "skills": [
+        {
+          "skillName": "pursuingYr-Third Year",
+          "value": "Third Year",
+          "hasSkill": "Third Year"
+        },
+        {
+          "skillName": "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-2",
+          "value": "2",
+          "hasSkill": "2"
+        },
+        {
+          "skillName": "How comfortable are you presenting in front of others or speaking publicly?-4",
+          "value": "4",
+          "hasSkill": "4"
+        },
+        {
+          "skillName": "My teachers or others have frequently told me that I am a good writer-3",
+          "value": "3",
+          "hasSkill": "3"
+        },
+        {
+          "skillName": "I am generally more outgoing than shy in social or group settings-5",
+          "value": "5",
+          "hasSkill": "5"
+        },
+        {
+          "skillName": "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-0",
+          "value": "0",
+          "hasSkill": "0"
+        },
+        {
+          "skillName": "MKTG",
+          "hasSkill": true
+        },
+        {
+          "skillName": "N.U.in Czech Republic – University of New York in Prague",
+          "hasSkill": true
+        },
+        {
+          "skillName": "White",
+          "hasSkill": true
+        }
+      ]
+    },
+    {
+      "name": "Diana Ricci ",
+      "uid": "002490125",
+      "email": "ricci.di@northeastern.edu",
+      "gender": "Female",
+      "pursuingYr": "First Year",
+      "skillArr": [
+        "pursuingYr-First Year",
+        "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-4",
+        "How comfortable are you presenting in front of others or speaking publicly?-2",
+        "My teachers or others have frequently told me that I am a good writer-3",
+        "I am generally more outgoing than shy in social or group settings-1",
+        "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-1",
+        "MKTG",
+        "N.U.in Czech Republic – University of New York in Prague",
+        "Hispanic or Latino/a/x"
+      ],
+      "skills": [
+        {
+          "skillName": "pursuingYr-First Year",
+          "value": "First Year",
+          "hasSkill": "First Year"
+        },
+        {
+          "skillName": "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-4",
+          "value": "4",
+          "hasSkill": "4"
+        },
+        {
+          "skillName": "How comfortable are you presenting in front of others or speaking publicly?-2",
+          "value": "2",
+          "hasSkill": "2"
+        },
+        {
+          "skillName": "My teachers or others have frequently told me that I am a good writer-3",
+          "value": "3",
+          "hasSkill": "3"
+        },
+        {
+          "skillName": "I am generally more outgoing than shy in social or group settings-1",
+          "value": "1",
+          "hasSkill": "1"
+        },
+        {
+          "skillName": "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-1",
+          "value": "1",
+          "hasSkill": "1"
+        },
+        {
+          "skillName": "MKTG",
+          "hasSkill": true
+        },
+        {
+          "skillName": "N.U.in Czech Republic – University of New York in Prague",
+          "hasSkill": true
+        },
+        {
+          "skillName": "Hispanic or Latino/a/x",
+          "hasSkill": true
+        }
+      ]
+    },
+    {
+      "name": "Augustin Crepy D'Orleans",
+      "uid": "002496406",
+      "email": "crepydorleans.a@northeastern.edu",
+      "gender": "Male",
+      "pursuingYr": "First Year",
+      "skillArr": [
+        "pursuingYr-First Year",
+        "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-0",
+        "How comfortable are you presenting in front of others or speaking publicly?-1",
+        "My teachers or others have frequently told me that I am a good writer-2",
+        "I am generally more outgoing than shy in social or group settings-3",
+        "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-3",
+        "Entrepreneurship",
+        "N.U.in France – The American University of Paris",
+        "White"
+      ],
+      "skills": [
+        {
+          "skillName": "pursuingYr-First Year",
+          "value": "First Year",
+          "hasSkill": "First Year"
+        },
+        {
+          "skillName": "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-0",
+          "value": "0",
+          "hasSkill": "0"
+        },
+        {
+          "skillName": "How comfortable are you presenting in front of others or speaking publicly?-1",
+          "value": "1",
+          "hasSkill": "1"
+        },
+        {
+          "skillName": "My teachers or others have frequently told me that I am a good writer-2",
+          "value": "2",
+          "hasSkill": "2"
+        },
+        {
+          "skillName": "I am generally more outgoing than shy in social or group settings-3",
+          "value": "3",
+          "hasSkill": "3"
+        },
+        {
+          "skillName": "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-3",
+          "value": "3",
+          "hasSkill": "3"
+        },
+        {
+          "skillName": "Entrepreneurship",
+          "hasSkill": true
+        },
+        {
+          "skillName": "N.U.in France – The American University of Paris",
+          "hasSkill": true
+        },
+        {
+          "skillName": "White",
+          "hasSkill": true
+        }
+      ]
+    },
+    {
+      "name": "Tina Shahani",
+      "uid": "002355150",
+      "email": "shahani.t@northeastern.edu",
+      "gender": "Female",
+      "pursuingYr": "First Year",
+      "skillArr": [
+        "pursuingYr-First Year",
+        "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-3",
+        "How comfortable are you presenting in front of others or speaking publicly?-2",
+        "My teachers or others have frequently told me that I am a good writer-4",
+        "I am generally more outgoing than shy in social or group settings-2",
+        "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-2",
+        "MGMT",
+        "N.U.in Italy – John Cabot University",
+        "Asian - South Asian (e.g., Indian, Pakistani, Bangladeshi)"
+      ],
+      "skills": [
+        {
+          "skillName": "pursuingYr-First Year",
+          "value": "First Year",
+          "hasSkill": "First Year"
+        },
+        {
+          "skillName": "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-3",
+          "value": "3",
+          "hasSkill": "3"
+        },
+        {
+          "skillName": "How comfortable are you presenting in front of others or speaking publicly?-2",
+          "value": "2",
+          "hasSkill": "2"
+        },
+        {
+          "skillName": "My teachers or others have frequently told me that I am a good writer-4",
+          "value": "4",
+          "hasSkill": "4"
+        },
+        {
+          "skillName": "I am generally more outgoing than shy in social or group settings-2",
+          "value": "2",
+          "hasSkill": "2"
+        },
+        {
+          "skillName": "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-2",
+          "value": "2",
+          "hasSkill": "2"
+        },
+        {
+          "skillName": "MGMT",
+          "hasSkill": true
+        },
+        {
+          "skillName": "N.U.in Italy – John Cabot University",
+          "hasSkill": true
+        },
+        {
+          "skillName": "Asian - South Asian (e.g., Indian, Pakistani, Bangladeshi)",
+          "hasSkill": true
+        }
+      ]
+    },
+    {
+      "name": "Jack Voges",
+      "uid": "002490773",
+      "email": "voges.j@northeastern.edu",
+      "gender": "Male",
+      "pursuingYr": "First Year",
+      "skillArr": [
+        "pursuingYr-First Year",
+        "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-3",
+        "How comfortable are you presenting in front of others or speaking publicly?-3",
+        "My teachers or others have frequently told me that I am a good writer-1",
+        "I am generally more outgoing than shy in social or group settings-4",
+        "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-0",
+        "MGMT",
+        "N.U.in Czech Republic – University of New York in Prague",
+        "White"
+      ],
+      "skills": [
+        {
+          "skillName": "pursuingYr-First Year",
+          "value": "First Year",
+          "hasSkill": "First Year"
+        },
+        {
+          "skillName": "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-3",
+          "value": "3",
+          "hasSkill": "3"
+        },
+        {
+          "skillName": "How comfortable are you presenting in front of others or speaking publicly?-3",
+          "value": "3",
+          "hasSkill": "3"
+        },
+        {
+          "skillName": "My teachers or others have frequently told me that I am a good writer-1",
+          "value": "1",
+          "hasSkill": "1"
+        },
+        {
+          "skillName": "I am generally more outgoing than shy in social or group settings-4",
+          "value": "4",
+          "hasSkill": "4"
+        },
+        {
+          "skillName": "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-0",
+          "value": "0",
+          "hasSkill": "0"
+        },
+        {
+          "skillName": "MGMT",
+          "hasSkill": true
+        },
+        {
+          "skillName": "N.U.in Czech Republic – University of New York in Prague",
+          "hasSkill": true
+        },
+        {
+          "skillName": "White",
+          "hasSkill": true
+        }
+      ]
+    },
+    {
+      "name": "Zain Chaudhry",
+      "uid": "0058617",
+      "email": "chaudhry.z@northeastern.edu",
+      "gender": "Male",
+      "pursuingYr": "First Year",
+      "skillArr": [
+        "pursuingYr-First Year",
+        "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-1",
+        "How comfortable are you presenting in front of others or speaking publicly?-4",
+        "My teachers or others have frequently told me that I am a good writer-3",
+        "I am generally more outgoing than shy in social or group settings-3",
+        "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-2",
+        "FIN",
+        "N.U.in Czech Republic – University of New York in Prague",
+        "Asian - South Asian (e.g., Indian, Pakistani, Bangladeshi)"
+      ],
+      "skills": [
+        {
+          "skillName": "pursuingYr-First Year",
+          "value": "First Year",
+          "hasSkill": "First Year"
+        },
+        {
+          "skillName": "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-1",
+          "value": "1",
+          "hasSkill": "1"
+        },
+        {
+          "skillName": "How comfortable are you presenting in front of others or speaking publicly?-4",
+          "value": "4",
+          "hasSkill": "4"
+        },
+        {
+          "skillName": "My teachers or others have frequently told me that I am a good writer-3",
+          "value": "3",
+          "hasSkill": "3"
+        },
+        {
+          "skillName": "I am generally more outgoing than shy in social or group settings-3",
+          "value": "3",
+          "hasSkill": "3"
+        },
+        {
+          "skillName": "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-2",
+          "value": "2",
+          "hasSkill": "2"
+        },
+        {
+          "skillName": "FIN",
+          "hasSkill": true
+        },
+        {
+          "skillName": "N.U.in Czech Republic – University of New York in Prague",
+          "hasSkill": true
+        },
+        {
+          "skillName": "Asian - South Asian (e.g., Indian, Pakistani, Bangladeshi)",
+          "hasSkill": true
+        }
+      ]
+    }
+  ],
+  "BUSN1101-SV-1030": [
+    {
+      "name": "Madison Garcia",
+      "uid": "002327524",
+      "email": "garcia.mad@northeastern.edu",
+      "gender": "Female",
+      "pursuingYr": "First Year",
+      "skillArr": [
+        "pursuingYr-First Year",
+        "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-1",
+        "How comfortable are you presenting in front of others or speaking publicly?-3",
+        "My teachers or others have frequently told me that I am a good writer-1",
+        "I am generally more outgoing than shy in social or group settings-3",
+        "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-2",
+        "MKTG",
+        "N.U.in Scotland – University of Glasgow",
+        "Asian - Southeast Asian (e.g., Vietnamese, Filipino, Thai)"
+      ],
+      "skills": [
+        {
+          "skillName": "pursuingYr-First Year",
+          "value": "First Year",
+          "hasSkill": "First Year"
+        },
+        {
+          "skillName": "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-1",
+          "value": "1",
+          "hasSkill": "1"
+        },
+        {
+          "skillName": "How comfortable are you presenting in front of others or speaking publicly?-3",
+          "value": "3",
+          "hasSkill": "3"
+        },
+        {
+          "skillName": "My teachers or others have frequently told me that I am a good writer-1",
+          "value": "1",
+          "hasSkill": "1"
+        },
+        {
+          "skillName": "I am generally more outgoing than shy in social or group settings-3",
+          "value": "3",
+          "hasSkill": "3"
+        },
+        {
+          "skillName": "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-2",
+          "value": "2",
+          "hasSkill": "2"
+        },
+        {
+          "skillName": "MKTG",
+          "hasSkill": true
+        },
+        {
+          "skillName": "N.U.in Scotland – University of Glasgow",
+          "hasSkill": true
+        },
+        {
+          "skillName": "Asian - Southeast Asian (e.g., Vietnamese, Filipino, Thai)",
+          "hasSkill": true
+        }
+      ]
+    },
+    {
+      "name": "Katherine Datlow",
+      "uid": "002353097",
+      "email": "datlow.k@northeastern.edu",
+      "gender": "Female",
+      "pursuingYr": "First Year",
+      "skillArr": [
+        "pursuingYr-First Year",
+        "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-1",
+        "How comfortable are you presenting in front of others or speaking publicly?-4",
+        "My teachers or others have frequently told me that I am a good writer-4",
+        "I am generally more outgoing than shy in social or group settings-5",
+        "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-3",
+        "FIN",
+        "N.U.in Czech Republic – University of New York in Prague",
+        "White"
+      ],
+      "skills": [
+        {
+          "skillName": "pursuingYr-First Year",
+          "value": "First Year",
+          "hasSkill": "First Year"
+        },
+        {
+          "skillName": "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-1",
+          "value": "1",
+          "hasSkill": "1"
+        },
+        {
+          "skillName": "How comfortable are you presenting in front of others or speaking publicly?-4",
+          "value": "4",
+          "hasSkill": "4"
+        },
+        {
+          "skillName": "My teachers or others have frequently told me that I am a good writer-4",
+          "value": "4",
+          "hasSkill": "4"
+        },
+        {
+          "skillName": "I am generally more outgoing than shy in social or group settings-5",
+          "value": "5",
+          "hasSkill": "5"
+        },
+        {
+          "skillName": "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-3",
+          "value": "3",
+          "hasSkill": "3"
+        },
+        {
+          "skillName": "FIN",
+          "hasSkill": true
+        },
+        {
+          "skillName": "N.U.in Czech Republic – University of New York in Prague",
+          "hasSkill": true
+        },
+        {
+          "skillName": "White",
+          "hasSkill": true
+        }
+      ]
+    },
+    {
+      "name": "Parla Atalay",
+      "uid": "002383315",
+      "email": "atalay.p@northeastern.edu",
+      "gender": "Female",
+      "pursuingYr": "First Year",
+      "skillArr": [
+        "pursuingYr-First Year",
+        "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-1",
+        "How comfortable are you presenting in front of others or speaking publicly?-3",
+        "My teachers or others have frequently told me that I am a good writer-4",
+        "I am generally more outgoing than shy in social or group settings-4",
+        "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-2",
+        "MKTG",
+        "N.U.in Italy – John Cabot University",
+        "African American or Black"
+      ],
+      "skills": [
+        {
+          "skillName": "pursuingYr-First Year",
+          "value": "First Year",
+          "hasSkill": "First Year"
+        },
+        {
+          "skillName": "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-1",
+          "value": "1",
+          "hasSkill": "1"
+        },
+        {
+          "skillName": "How comfortable are you presenting in front of others or speaking publicly?-3",
+          "value": "3",
+          "hasSkill": "3"
+        },
+        {
+          "skillName": "My teachers or others have frequently told me that I am a good writer-4",
+          "value": "4",
+          "hasSkill": "4"
+        },
+        {
+          "skillName": "I am generally more outgoing than shy in social or group settings-4",
+          "value": "4",
+          "hasSkill": "4"
+        },
+        {
+          "skillName": "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-2",
+          "value": "2",
+          "hasSkill": "2"
+        },
+        {
+          "skillName": "MKTG",
+          "hasSkill": true
+        },
+        {
+          "skillName": "N.U.in Italy – John Cabot University",
+          "hasSkill": true
+        },
+        {
+          "skillName": "African American or Black",
+          "hasSkill": true
+        }
+      ]
+    },
+    {
+      "name": "Vincent Chen",
+      "uid": "002328252",
+      "email": "chen.vincen@northeastern.edu",
+      "gender": "Male",
+      "pursuingYr": "First Year",
+      "skillArr": [
+        "pursuingYr-First Year",
+        "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-2",
+        "How comfortable are you presenting in front of others or speaking publicly?-4",
+        "My teachers or others have frequently told me that I am a good writer-1",
+        "I am generally more outgoing than shy in social or group settings-4",
+        "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-2",
+        "FIN",
+        "N.U.in Germany – CIEE Berlin",
+        "Asian - East Asian (e.g., Chinese, Japanese, Korean)"
+      ],
+      "skills": [
+        {
+          "skillName": "pursuingYr-First Year",
+          "value": "First Year",
+          "hasSkill": "First Year"
+        },
+        {
+          "skillName": "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-2",
+          "value": "2",
+          "hasSkill": "2"
+        },
+        {
+          "skillName": "How comfortable are you presenting in front of others or speaking publicly?-4",
+          "value": "4",
+          "hasSkill": "4"
+        },
+        {
+          "skillName": "My teachers or others have frequently told me that I am a good writer-1",
+          "value": "1",
+          "hasSkill": "1"
+        },
+        {
+          "skillName": "I am generally more outgoing than shy in social or group settings-4",
+          "value": "4",
+          "hasSkill": "4"
+        },
+        {
+          "skillName": "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-2",
+          "value": "2",
+          "hasSkill": "2"
+        },
+        {
+          "skillName": "FIN",
+          "hasSkill": true
+        },
+        {
+          "skillName": "N.U.in Germany – CIEE Berlin",
+          "hasSkill": true
+        },
+        {
+          "skillName": "Asian - East Asian (e.g., Chinese, Japanese, Korean)",
+          "hasSkill": true
+        }
+      ]
+    },
+    {
+      "name": "Keaton Lai",
+      "uid": "002363402",
+      "email": "lai.kea@northeastern.edu",
+      "gender": "Male",
+      "pursuingYr": "First Year",
+      "skillArr": [
+        "pursuingYr-First Year",
+        "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-2",
+        "How comfortable are you presenting in front of others or speaking publicly?-4",
+        "My teachers or others have frequently told me that I am a good writer-2",
+        "I am generally more outgoing than shy in social or group settings-5",
+        "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-3",
+        "FIN",
+        "N.U.in Germany – CIEE Berlin",
+        "Asian - East Asian (e.g., Chinese, Japanese, Korean)"
+      ],
+      "skills": [
+        {
+          "skillName": "pursuingYr-First Year",
+          "value": "First Year",
+          "hasSkill": "First Year"
+        },
+        {
+          "skillName": "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-2",
+          "value": "2",
+          "hasSkill": "2"
+        },
+        {
+          "skillName": "How comfortable are you presenting in front of others or speaking publicly?-4",
+          "value": "4",
+          "hasSkill": "4"
+        },
+        {
+          "skillName": "My teachers or others have frequently told me that I am a good writer-2",
+          "value": "2",
+          "hasSkill": "2"
+        },
+        {
+          "skillName": "I am generally more outgoing than shy in social or group settings-5",
+          "value": "5",
+          "hasSkill": "5"
+        },
+        {
+          "skillName": "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-3",
+          "value": "3",
+          "hasSkill": "3"
+        },
+        {
+          "skillName": "FIN",
+          "hasSkill": true
+        },
+        {
+          "skillName": "N.U.in Germany – CIEE Berlin",
+          "hasSkill": true
+        },
+        {
+          "skillName": "Asian - East Asian (e.g., Chinese, Japanese, Korean)",
+          "hasSkill": true
+        }
+      ]
+    },
+    {
+      "name": "Jessica Poprik",
+      "uid": "002327716",
+      "email": "poprik.j@northeastern.edu",
+      "gender": "Female",
+      "pursuingYr": "First Year",
+      "skillArr": [
+        "pursuingYr-First Year",
+        "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-2",
+        "How comfortable are you presenting in front of others or speaking publicly?-3",
+        "My teachers or others have frequently told me that I am a good writer-4",
+        "I am generally more outgoing than shy in social or group settings-3",
+        "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-5",
+        "FIN",
+        "N.U.in Czech Republic – University of New York in Prague",
+        "White"
+      ],
+      "skills": [
+        {
+          "skillName": "pursuingYr-First Year",
+          "value": "First Year",
+          "hasSkill": "First Year"
+        },
+        {
+          "skillName": "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-2",
+          "value": "2",
+          "hasSkill": "2"
+        },
+        {
+          "skillName": "How comfortable are you presenting in front of others or speaking publicly?-3",
+          "value": "3",
+          "hasSkill": "3"
+        },
+        {
+          "skillName": "My teachers or others have frequently told me that I am a good writer-4",
+          "value": "4",
+          "hasSkill": "4"
+        },
+        {
+          "skillName": "I am generally more outgoing than shy in social or group settings-3",
+          "value": "3",
+          "hasSkill": "3"
+        },
+        {
+          "skillName": "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-5",
+          "value": "5",
+          "hasSkill": "5"
+        },
+        {
+          "skillName": "FIN",
+          "hasSkill": true
+        },
+        {
+          "skillName": "N.U.in Czech Republic – University of New York in Prague",
+          "hasSkill": true
+        },
+        {
+          "skillName": "White",
+          "hasSkill": true
+        }
+      ]
+    },
+    {
+      "name": "joey florentine",
+      "uid": "002319708",
+      "email": "florentine.j@northeastern.edu",
+      "gender": "Male",
+      "pursuingYr": "First Year",
+      "skillArr": [
+        "pursuingYr-First Year",
+        "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-1",
+        "How comfortable are you presenting in front of others or speaking publicly?-4",
+        "My teachers or others have frequently told me that I am a good writer-2",
+        "I am generally more outgoing than shy in social or group settings-3",
+        "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-0",
+        "MKTG",
+        "N.U.in Portugal – CIEE Lisbon",
+        "Hispanic or Latino/a/x"
+      ],
+      "skills": [
+        {
+          "skillName": "pursuingYr-First Year",
+          "value": "First Year",
+          "hasSkill": "First Year"
+        },
+        {
+          "skillName": "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-1",
+          "value": "1",
+          "hasSkill": "1"
+        },
+        {
+          "skillName": "How comfortable are you presenting in front of others or speaking publicly?-4",
+          "value": "4",
+          "hasSkill": "4"
+        },
+        {
+          "skillName": "My teachers or others have frequently told me that I am a good writer-2",
+          "value": "2",
+          "hasSkill": "2"
+        },
+        {
+          "skillName": "I am generally more outgoing than shy in social or group settings-3",
+          "value": "3",
+          "hasSkill": "3"
+        },
+        {
+          "skillName": "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-0",
+          "value": "0",
+          "hasSkill": "0"
+        },
+        {
+          "skillName": "MKTG",
+          "hasSkill": true
+        },
+        {
+          "skillName": "N.U.in Portugal – CIEE Lisbon",
+          "hasSkill": true
+        },
+        {
+          "skillName": "Hispanic or Latino/a/x",
+          "hasSkill": true
+        }
+      ]
+    },
+    {
+      "name": "Jai Saraf",
+      "uid": "002208939",
+      "email": "saraf.j@northeastern.edu",
+      "gender": "Male",
+      "pursuingYr": "Second Year",
+      "skillArr": [
+        "pursuingYr-Second Year",
+        "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-2",
+        "How comfortable are you presenting in front of others or speaking publicly?-5",
+        "My teachers or others have frequently told me that I am a good writer-2",
+        "I am generally more outgoing than shy in social or group settings-5",
+        "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-5",
+        "MKTG",
+        "N.U.in Scotland – University of Glasgow",
+        "Asian - South Asian (e.g., Indian, Pakistani, Bangladeshi)"
+      ],
+      "skills": [
+        {
+          "skillName": "pursuingYr-Second Year",
+          "value": "Second Year",
+          "hasSkill": "Second Year"
+        },
+        {
+          "skillName": "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-2",
+          "value": "2",
+          "hasSkill": "2"
+        },
+        {
+          "skillName": "How comfortable are you presenting in front of others or speaking publicly?-5",
+          "value": "5",
+          "hasSkill": "5"
+        },
+        {
+          "skillName": "My teachers or others have frequently told me that I am a good writer-2",
+          "value": "2",
+          "hasSkill": "2"
+        },
+        {
+          "skillName": "I am generally more outgoing than shy in social or group settings-5",
+          "value": "5",
+          "hasSkill": "5"
+        },
+        {
+          "skillName": "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-5",
+          "value": "5",
+          "hasSkill": "5"
+        },
+        {
+          "skillName": "MKTG",
+          "hasSkill": true
+        },
+        {
+          "skillName": "N.U.in Scotland – University of Glasgow",
+          "hasSkill": true
+        },
+        {
+          "skillName": "Asian - South Asian (e.g., Indian, Pakistani, Bangladeshi)",
+          "hasSkill": true
+        }
+      ]
+    },
+    {
+      "name": "Natasha Khosla",
+      "uid": "002328837",
+      "email": "khosla.nat@northeastern.edu",
+      "gender": "Female",
+      "pursuingYr": "First Year",
+      "skillArr": [
+        "pursuingYr-First Year",
+        "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-2",
+        "How comfortable are you presenting in front of others or speaking publicly?-4",
+        "My teachers or others have frequently told me that I am a good writer-1",
+        "I am generally more outgoing than shy in social or group settings-5",
+        "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-2",
+        "MGMT",
+        "N.U.in France – The American University of Paris",
+        "Asian - South Asian (e.g., Indian, Pakistani, Bangladeshi)"
+      ],
+      "skills": [
+        {
+          "skillName": "pursuingYr-First Year",
+          "value": "First Year",
+          "hasSkill": "First Year"
+        },
+        {
+          "skillName": "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-2",
+          "value": "2",
+          "hasSkill": "2"
+        },
+        {
+          "skillName": "How comfortable are you presenting in front of others or speaking publicly?-4",
+          "value": "4",
+          "hasSkill": "4"
+        },
+        {
+          "skillName": "My teachers or others have frequently told me that I am a good writer-1",
+          "value": "1",
+          "hasSkill": "1"
+        },
+        {
+          "skillName": "I am generally more outgoing than shy in social or group settings-5",
+          "value": "5",
+          "hasSkill": "5"
+        },
+        {
+          "skillName": "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-2",
+          "value": "2",
+          "hasSkill": "2"
+        },
+        {
+          "skillName": "MGMT",
+          "hasSkill": true
+        },
+        {
+          "skillName": "N.U.in France – The American University of Paris",
+          "hasSkill": true
+        },
+        {
+          "skillName": "Asian - South Asian (e.g., Indian, Pakistani, Bangladeshi)",
+          "hasSkill": true
+        }
+      ]
+    },
+    {
+      "name": "Leah Bulavsky",
+      "uid": "00231493d",
+      "email": "bulavsky.l@northeastern.edu",
+      "gender": "Female",
+      "pursuingYr": "First Year",
+      "skillArr": [
+        "pursuingYr-First Year",
+        "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-2",
+        "How comfortable are you presenting in front of others or speaking publicly?-0",
+        "My teachers or others have frequently told me that I am a good writer-5",
+        "I am generally more outgoing than shy in social or group settings-3",
+        "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-4",
+        "FIN",
+        "N.U.in Czech Republic – University of New York in Prague",
+        "White"
+      ],
+      "skills": [
+        {
+          "skillName": "pursuingYr-First Year",
+          "value": "First Year",
+          "hasSkill": "First Year"
+        },
+        {
+          "skillName": "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-2",
+          "value": "2",
+          "hasSkill": "2"
+        },
+        {
+          "skillName": "How comfortable are you presenting in front of others or speaking publicly?-0",
+          "value": "0",
+          "hasSkill": "0"
+        },
+        {
+          "skillName": "My teachers or others have frequently told me that I am a good writer-5",
+          "value": "5",
+          "hasSkill": "5"
+        },
+        {
+          "skillName": "I am generally more outgoing than shy in social or group settings-3",
+          "value": "3",
+          "hasSkill": "3"
+        },
+        {
+          "skillName": "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-4",
+          "value": "4",
+          "hasSkill": "4"
+        },
+        {
+          "skillName": "FIN",
+          "hasSkill": true
+        },
+        {
+          "skillName": "N.U.in Czech Republic – University of New York in Prague",
+          "hasSkill": true
+        },
+        {
+          "skillName": "White",
+          "hasSkill": true
+        }
+      ]
+    },
+    {
+      "name": "Lily Belanger ",
+      "uid": "002381270",
+      "email": "belanger.li@northeastern.edu",
+      "gender": "Female",
+      "pursuingYr": "First Year",
+      "skillArr": [
+        "pursuingYr-First Year",
+        "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-1",
+        "How comfortable are you presenting in front of others or speaking publicly?-3",
+        "My teachers or others have frequently told me that I am a good writer-3",
+        "I am generally more outgoing than shy in social or group settings-4",
+        "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-1",
+        "MKTG",
+        "N.U.in France – The American University of Paris",
+        "White"
+      ],
+      "skills": [
+        {
+          "skillName": "pursuingYr-First Year",
+          "value": "First Year",
+          "hasSkill": "First Year"
+        },
+        {
+          "skillName": "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-1",
+          "value": "1",
+          "hasSkill": "1"
+        },
+        {
+          "skillName": "How comfortable are you presenting in front of others or speaking publicly?-3",
+          "value": "3",
+          "hasSkill": "3"
+        },
+        {
+          "skillName": "My teachers or others have frequently told me that I am a good writer-3",
+          "value": "3",
+          "hasSkill": "3"
+        },
+        {
+          "skillName": "I am generally more outgoing than shy in social or group settings-4",
+          "value": "4",
+          "hasSkill": "4"
+        },
+        {
+          "skillName": "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-1",
+          "value": "1",
+          "hasSkill": "1"
+        },
+        {
+          "skillName": "MKTG",
+          "hasSkill": true
+        },
+        {
+          "skillName": "N.U.in France – The American University of Paris",
+          "hasSkill": true
+        },
+        {
+          "skillName": "White",
+          "hasSkill": true
+        }
+      ]
+    },
+    {
+      "name": "Leah Bulavsky",
+      "uid": "00231493d",
+      "email": "bulavsky.l@northeastern.edu",
+      "gender": "Female",
+      "pursuingYr": "First Year",
+      "skillArr": [
+        "pursuingYr-First Year",
+        "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-2",
+        "How comfortable are you presenting in front of others or speaking publicly?-0",
+        "My teachers or others have frequently told me that I am a good writer-5",
+        "I am generally more outgoing than shy in social or group settings-3",
+        "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-4",
+        "FIN",
+        "N.U.in Italy – John Cabot University",
+        "White"
+      ],
+      "skills": [
+        {
+          "skillName": "pursuingYr-First Year",
+          "value": "First Year",
+          "hasSkill": "First Year"
+        },
+        {
+          "skillName": "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-2",
+          "value": "2",
+          "hasSkill": "2"
+        },
+        {
+          "skillName": "How comfortable are you presenting in front of others or speaking publicly?-0",
+          "value": "0",
+          "hasSkill": "0"
+        },
+        {
+          "skillName": "My teachers or others have frequently told me that I am a good writer-5",
+          "value": "5",
+          "hasSkill": "5"
+        },
+        {
+          "skillName": "I am generally more outgoing than shy in social or group settings-3",
+          "value": "3",
+          "hasSkill": "3"
+        },
+        {
+          "skillName": "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-4",
+          "value": "4",
+          "hasSkill": "4"
+        },
+        {
+          "skillName": "FIN",
+          "hasSkill": true
+        },
+        {
+          "skillName": "N.U.in Italy – John Cabot University",
+          "hasSkill": true
+        },
+        {
+          "skillName": "White",
+          "hasSkill": true
+        }
+      ]
+    },
+    {
+      "name": "Georgia Elsener ",
+      "uid": "002313424",
+      "email": "elsener.g@northeastern.edu",
+      "gender": "Female",
+      "pursuingYr": "First Year",
+      "skillArr": [
+        "pursuingYr-First Year",
+        "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-2",
+        "How comfortable are you presenting in front of others or speaking publicly?-3",
+        "My teachers or others have frequently told me that I am a good writer-4",
+        "I am generally more outgoing than shy in social or group settings-4",
+        "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-3",
+        "MKTG",
+        "N.U.in Czech Republic – University of New York in Prague",
+        "White"
+      ],
+      "skills": [
+        {
+          "skillName": "pursuingYr-First Year",
+          "value": "First Year",
+          "hasSkill": "First Year"
+        },
+        {
+          "skillName": "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-2",
+          "value": "2",
+          "hasSkill": "2"
+        },
+        {
+          "skillName": "How comfortable are you presenting in front of others or speaking publicly?-3",
+          "value": "3",
+          "hasSkill": "3"
+        },
+        {
+          "skillName": "My teachers or others have frequently told me that I am a good writer-4",
+          "value": "4",
+          "hasSkill": "4"
+        },
+        {
+          "skillName": "I am generally more outgoing than shy in social or group settings-4",
+          "value": "4",
+          "hasSkill": "4"
+        },
+        {
+          "skillName": "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-3",
+          "value": "3",
+          "hasSkill": "3"
+        },
+        {
+          "skillName": "MKTG",
+          "hasSkill": true
+        },
+        {
+          "skillName": "N.U.in Czech Republic – University of New York in Prague",
+          "hasSkill": true
+        },
+        {
+          "skillName": "White",
+          "hasSkill": true
+        }
+      ]
+    },
+    {
+      "name": "Maya Quon",
+      "uid": "002409040",
+      "email": "maya.quon@icloud.com",
+      "gender": "Female",
+      "pursuingYr": "First Year",
+      "skillArr": [
+        "pursuingYr-First Year",
+        "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-1",
+        "How comfortable are you presenting in front of others or speaking publicly?-3",
+        "My teachers or others have frequently told me that I am a good writer-4",
+        "I am generally more outgoing than shy in social or group settings-3",
+        "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-0",
+        "Entrepreneurship",
+        "N.U.in Czech Republic – University of New York in Prague",
+        "Asian - East Asian (e.g., Chinese, Japanese, Korean)"
+      ],
+      "skills": [
+        {
+          "skillName": "pursuingYr-First Year",
+          "value": "First Year",
+          "hasSkill": "First Year"
+        },
+        {
+          "skillName": "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-1",
+          "value": "1",
+          "hasSkill": "1"
+        },
+        {
+          "skillName": "How comfortable are you presenting in front of others or speaking publicly?-3",
+          "value": "3",
+          "hasSkill": "3"
+        },
+        {
+          "skillName": "My teachers or others have frequently told me that I am a good writer-4",
+          "value": "4",
+          "hasSkill": "4"
+        },
+        {
+          "skillName": "I am generally more outgoing than shy in social or group settings-3",
+          "value": "3",
+          "hasSkill": "3"
+        },
+        {
+          "skillName": "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-0",
+          "value": "0",
+          "hasSkill": "0"
+        },
+        {
+          "skillName": "Entrepreneurship",
+          "hasSkill": true
+        },
+        {
+          "skillName": "N.U.in Czech Republic – University of New York in Prague",
+          "hasSkill": true
+        },
+        {
+          "skillName": "Asian - East Asian (e.g., Chinese, Japanese, Korean)",
+          "hasSkill": true
+        }
+      ]
+    },
+    {
+      "name": "Nick Bonaiuto",
+      "uid": "002374342",
+      "email": "bonaiuto.n@northeastern.edu",
+      "gender": "Male",
+      "pursuingYr": "First Year",
+      "skillArr": [
+        "pursuingYr-First Year",
+        "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-2",
+        "How comfortable are you presenting in front of others or speaking publicly?-4",
+        "My teachers or others have frequently told me that I am a good writer-4",
+        "I am generally more outgoing than shy in social or group settings-3",
+        "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-2",
+        "FIN",
+        "N.U.in Italy – John Cabot University",
+        "White"
+      ],
+      "skills": [
+        {
+          "skillName": "pursuingYr-First Year",
+          "value": "First Year",
+          "hasSkill": "First Year"
+        },
+        {
+          "skillName": "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-2",
+          "value": "2",
+          "hasSkill": "2"
+        },
+        {
+          "skillName": "How comfortable are you presenting in front of others or speaking publicly?-4",
+          "value": "4",
+          "hasSkill": "4"
+        },
+        {
+          "skillName": "My teachers or others have frequently told me that I am a good writer-4",
+          "value": "4",
+          "hasSkill": "4"
+        },
+        {
+          "skillName": "I am generally more outgoing than shy in social or group settings-3",
+          "value": "3",
+          "hasSkill": "3"
+        },
+        {
+          "skillName": "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-2",
+          "value": "2",
+          "hasSkill": "2"
+        },
+        {
+          "skillName": "FIN",
+          "hasSkill": true
+        },
+        {
+          "skillName": "N.U.in Italy – John Cabot University",
+          "hasSkill": true
+        },
+        {
+          "skillName": "White",
+          "hasSkill": true
+        }
+      ]
+    },
+    {
+      "name": "Owen Johnson",
+      "uid": "002329619",
+      "email": "johnson.owe@northeastern.edu",
+      "gender": "Male",
+      "pursuingYr": "First Year",
+      "skillArr": [
+        "pursuingYr-First Year",
+        "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-1",
+        "How comfortable are you presenting in front of others or speaking publicly?-4",
+        "My teachers or others have frequently told me that I am a good writer-3",
+        "I am generally more outgoing than shy in social or group settings-3",
+        "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-1",
+        "MGMT",
+        "N.U.in Germany – CIEE Berlin",
+        "White"
+      ],
+      "skills": [
+        {
+          "skillName": "pursuingYr-First Year",
+          "value": "First Year",
+          "hasSkill": "First Year"
+        },
+        {
+          "skillName": "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-1",
+          "value": "1",
+          "hasSkill": "1"
+        },
+        {
+          "skillName": "How comfortable are you presenting in front of others or speaking publicly?-4",
+          "value": "4",
+          "hasSkill": "4"
+        },
+        {
+          "skillName": "My teachers or others have frequently told me that I am a good writer-3",
+          "value": "3",
+          "hasSkill": "3"
+        },
+        {
+          "skillName": "I am generally more outgoing than shy in social or group settings-3",
+          "value": "3",
+          "hasSkill": "3"
+        },
+        {
+          "skillName": "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-1",
+          "value": "1",
+          "hasSkill": "1"
+        },
+        {
+          "skillName": "MGMT",
+          "hasSkill": true
+        },
+        {
+          "skillName": "N.U.in Germany – CIEE Berlin",
+          "hasSkill": true
+        },
+        {
+          "skillName": "White",
+          "hasSkill": true
+        }
+      ]
+    },
+    {
+      "name": "Bhavi Doshi ",
+      "uid": "002361011",
+      "email": "doshi.bhav@northeastern.edu",
+      "gender": "Female",
+      "pursuingYr": "First Year",
+      "skillArr": [
+        "pursuingYr-First Year",
+        "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-4",
+        "How comfortable are you presenting in front of others or speaking publicly?-4",
+        "My teachers or others have frequently told me that I am a good writer-3",
+        "I am generally more outgoing than shy in social or group settings-5",
+        "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-4",
+        "MKTG",
+        "N.U.in Portugal – CIEE Lisbon",
+        "Asian - South Asian (e.g., Indian, Pakistani, Bangladeshi)"
+      ],
+      "skills": [
+        {
+          "skillName": "pursuingYr-First Year",
+          "value": "First Year",
+          "hasSkill": "First Year"
+        },
+        {
+          "skillName": "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-4",
+          "value": "4",
+          "hasSkill": "4"
+        },
+        {
+          "skillName": "How comfortable are you presenting in front of others or speaking publicly?-4",
+          "value": "4",
+          "hasSkill": "4"
+        },
+        {
+          "skillName": "My teachers or others have frequently told me that I am a good writer-3",
+          "value": "3",
+          "hasSkill": "3"
+        },
+        {
+          "skillName": "I am generally more outgoing than shy in social or group settings-5",
+          "value": "5",
+          "hasSkill": "5"
+        },
+        {
+          "skillName": "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-4",
+          "value": "4",
+          "hasSkill": "4"
+        },
+        {
+          "skillName": "MKTG",
+          "hasSkill": true
+        },
+        {
+          "skillName": "N.U.in Portugal – CIEE Lisbon",
+          "hasSkill": true
+        },
+        {
+          "skillName": "Asian - South Asian (e.g., Indian, Pakistani, Bangladeshi)",
+          "hasSkill": true
+        }
+      ]
+    },
+    {
+      "name": "Alex Gilliland",
+      "uid": "002327230",
+      "email": "gilliland.a@northeastern.edu",
+      "gender": "Male",
+      "pursuingYr": "First Year",
+      "skillArr": [
+        "pursuingYr-First Year",
+        "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-0",
+        "How comfortable are you presenting in front of others or speaking publicly?-5",
+        "My teachers or others have frequently told me that I am a good writer-2",
+        "I am generally more outgoing than shy in social or group settings-5",
+        "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-2",
+        "MKTG",
+        "N.U.in Germany – CIEE Berlin",
+        "White"
+      ],
+      "skills": [
+        {
+          "skillName": "pursuingYr-First Year",
+          "value": "First Year",
+          "hasSkill": "First Year"
+        },
+        {
+          "skillName": "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-0",
+          "value": "0",
+          "hasSkill": "0"
+        },
+        {
+          "skillName": "How comfortable are you presenting in front of others or speaking publicly?-5",
+          "value": "5",
+          "hasSkill": "5"
+        },
+        {
+          "skillName": "My teachers or others have frequently told me that I am a good writer-2",
+          "value": "2",
+          "hasSkill": "2"
+        },
+        {
+          "skillName": "I am generally more outgoing than shy in social or group settings-5",
+          "value": "5",
+          "hasSkill": "5"
+        },
+        {
+          "skillName": "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-2",
+          "value": "2",
+          "hasSkill": "2"
+        },
+        {
+          "skillName": "MKTG",
+          "hasSkill": true
+        },
+        {
+          "skillName": "N.U.in Germany – CIEE Berlin",
+          "hasSkill": true
+        },
+        {
+          "skillName": "White",
+          "hasSkill": true
+        }
+      ]
+    },
+    {
+      "name": "Gavin Parma",
+      "uid": "002326630",
+      "email": "parma.g@northeastern.edu",
+      "gender": "Male",
+      "pursuingYr": "First Year",
+      "skillArr": [
+        "pursuingYr-First Year",
+        "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-3",
+        "How comfortable are you presenting in front of others or speaking publicly?-4",
+        "My teachers or others have frequently told me that I am a good writer-3",
+        "I am generally more outgoing than shy in social or group settings-5",
+        "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-3",
+        "FINTECH",
+        "N.U.in Czech Republic – University of New York in Prague",
+        "Multiracial"
+      ],
+      "skills": [
+        {
+          "skillName": "pursuingYr-First Year",
+          "value": "First Year",
+          "hasSkill": "First Year"
+        },
+        {
+          "skillName": "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-3",
+          "value": "3",
+          "hasSkill": "3"
+        },
+        {
+          "skillName": "How comfortable are you presenting in front of others or speaking publicly?-4",
+          "value": "4",
+          "hasSkill": "4"
+        },
+        {
+          "skillName": "My teachers or others have frequently told me that I am a good writer-3",
+          "value": "3",
+          "hasSkill": "3"
+        },
+        {
+          "skillName": "I am generally more outgoing than shy in social or group settings-5",
+          "value": "5",
+          "hasSkill": "5"
+        },
+        {
+          "skillName": "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-3",
+          "value": "3",
+          "hasSkill": "3"
+        },
+        {
+          "skillName": "FINTECH",
+          "hasSkill": true
+        },
+        {
+          "skillName": "N.U.in Czech Republic – University of New York in Prague",
+          "hasSkill": true
+        },
+        {
+          "skillName": "Multiracial",
+          "hasSkill": true
+        }
+      ]
+    },
+    {
+      "name": "Elizabeth (Ellie) Stram",
+      "uid": "002357962",
+      "email": "stram.e@northeastern.edu",
+      "gender": "Female",
+      "pursuingYr": "First Year",
+      "skillArr": [
+        "pursuingYr-First Year",
+        "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-1",
+        "How comfortable are you presenting in front of others or speaking publicly?-3",
+        "My teachers or others have frequently told me that I am a good writer-3",
+        "I am generally more outgoing than shy in social or group settings-4",
+        "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-2",
+        "Explore",
+        "N.U.in Portugal – CIEE Lisbon",
+        "White"
+      ],
+      "skills": [
+        {
+          "skillName": "pursuingYr-First Year",
+          "value": "First Year",
+          "hasSkill": "First Year"
+        },
+        {
+          "skillName": "How proficient are you in using spreadsheet software like Microsoft Excel or Google Sheets?-1",
+          "value": "1",
+          "hasSkill": "1"
+        },
+        {
+          "skillName": "How comfortable are you presenting in front of others or speaking publicly?-3",
+          "value": "3",
+          "hasSkill": "3"
+        },
+        {
+          "skillName": "My teachers or others have frequently told me that I am a good writer-3",
+          "value": "3",
+          "hasSkill": "3"
+        },
+        {
+          "skillName": "I am generally more outgoing than shy in social or group settings-4",
+          "value": "4",
+          "hasSkill": "4"
+        },
+        {
+          "skillName": "How much prior experience do you have with business planning (e.g., creating business models, strategies, plans)?-2",
+          "value": "2",
+          "hasSkill": "2"
+        },
+        {
+          "skillName": "Explore",
+          "hasSkill": true
+        },
+        {
+          "skillName": "N.U.in Portugal – CIEE Lisbon",
+          "hasSkill": true
+        },
+        {
+          "skillName": "White",
+          "hasSkill": true
+        }
+      ]
+    }
+  ]
+}
